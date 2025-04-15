@@ -5,8 +5,8 @@ using System.Collections.Generic;
 
 public class ThreeCardMonty : MonoBehaviour
 {
+    //INIT
     [SerializeField] Button[] cards;
-
     private int winningCardIndex;
     private Vector3[] originalPositions;
     [SerializeField] float duration = 0.5f;
@@ -27,7 +27,6 @@ public class ThreeCardMonty : MonoBehaviour
         // Temporarily turn winning card red
         Image cardImage = cards[winningCardIndex].GetComponent<Image>();
         Color originalColor = cardImage.color;
-
         cardImage.color = Color.red;
         yield return new WaitForSeconds(1.5f); // Show red briefly
         cardImage.color = originalColor;
@@ -52,11 +51,9 @@ public class ThreeCardMonty : MonoBehaviour
             }
 
             // Animate cards moving to new positions
-            for (float t = 0; t < duration; t += Time.deltaTime)
-            {
+            for (float t = 0; t < duration; t += Time.deltaTime){
                 float lerpFactor = t / duration;
-                for (int i = 0; i < cards.Length; i++)
-                {
+                for (int i = 0; i < cards.Length; i++){
                     RectTransform rect = cards[i].GetComponent<RectTransform>();
                     rect.anchoredPosition = Vector3.Lerp(rect.anchoredPosition, positions[i], lerpFactor);
                 }
@@ -64,21 +61,16 @@ public class ThreeCardMonty : MonoBehaviour
             }
 
             // Snap to final positions
-            for (int i = 0; i < cards.Length; i++)
-            {
+            for (int i = 0; i < cards.Length; i++){
                 cards[i].GetComponent<RectTransform>().anchoredPosition = positions[i];
             }
 
         }
-
-
-        
         // Randomize winning card
         winningCardIndex = Random.Range(0, cards.Length);
 
         // Re-enable interactions
-        for (int i = 0; i < cards.Length; i++)
-        {
+        for (int i = 0; i < cards.Length; i++){
             int index = i;
             cards[i].onClick.RemoveAllListeners();
             cards[i].onClick.AddListener(() => OnCardSelected(index));
@@ -98,23 +90,18 @@ void OnCardSelected(int selectedIndex){
 
     // Reveal winning card by turning it red
     cards[winningCardIndex].GetComponent<Image>().color = Color.red;
-
     DisableAllCards();
 }
 
 
-    void DisableAllCards()
-    {
-        foreach (var card in cards)
-        {
+    void DisableAllCards(){
+        foreach (var card in cards){
             card.interactable = false;
         }
     }
 
-    void EnableAllCards()
-    {
-        foreach (var card in cards)
-        {
+    void EnableAllCards(){
+        foreach (var card in cards){
             card.interactable = true;
         }
     }
