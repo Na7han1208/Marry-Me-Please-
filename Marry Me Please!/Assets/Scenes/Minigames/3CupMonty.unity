@@ -1081,7 +1081,7 @@ MonoBehaviour:
   - {fileID: 362416415}
   - {fileID: 1610143096}
   duration: 0.7
-  numMovements: 7
+  numMovements: 5
 --- !u!4 &1402842795
 Transform:
   m_ObjectHideFlags: 0
