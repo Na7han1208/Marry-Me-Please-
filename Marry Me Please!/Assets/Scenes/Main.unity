@@ -2020,8 +2020,8 @@ MonoBehaviour:
   Sounds:
   - name: 
     clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+    volume: 0.163
+    pitch: 0.32
     source: {fileID: 0}
 --- !u!1 &1884777536
 GameObject:
