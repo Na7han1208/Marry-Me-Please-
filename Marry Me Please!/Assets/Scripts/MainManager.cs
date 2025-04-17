@@ -24,9 +24,10 @@ public class MainManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
+    void Update(){
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            returnToMenu();
+        }
     }
 
     public void returnToMenu(){

@@ -2261,21 +2261,21 @@ MonoBehaviour:
       vel nisi non dui convallis hendrerit sed in arcu.
     choice1: C1
     response1: R1
+    choice2: C2
+    response2: R2
+    choice3: C3
+    response3: R3
+    choice4: C4
+    response4: R4
     choiceMethod1:
       m_PersistentCalls:
         m_Calls: []
-    choice2: C2
-    response2: R2
     choiceMethod2:
       m_PersistentCalls:
         m_Calls: []
-    choice3: C3
-    response3: R3
     choiceMethod3:
       m_PersistentCalls:
         m_Calls: []
-    choice4: C4
-    response4: R4
     choiceMethod4:
       m_PersistentCalls:
         m_Calls: []
@@ -2295,21 +2295,21 @@ MonoBehaviour:
       eu ullamcorper est, id fringilla augue.
     choice1: C21
     response1: R21
+    choice2: C22
+    response2: R22
+    choice3: 
+    response3: 
+    choice4: 
+    response4: 
     choiceMethod1:
       m_PersistentCalls:
         m_Calls: []
-    choice2: C22
-    response2: R22
     choiceMethod2:
       m_PersistentCalls:
         m_Calls: []
-    choice3: 
-    response3: 
     choiceMethod3:
       m_PersistentCalls:
         m_Calls: []
-    choice4: 
-    response4: 
     choiceMethod4:
       m_PersistentCalls:
         m_Calls: []
@@ -2319,6 +2319,47 @@ MonoBehaviour:
     methodOnEnd:
       m_PersistentCalls:
         m_Calls: []
+  - characterName: Yilin
+    dialogueText: Let's go find some snails and dumplings and shit
+    choice1: 
+    response1: 
+    choice2: 
+    response2: 
+    choice3: 
+    response3: 
+    choice4: 
+    response4: 
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1649142606}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: load3CupMonty
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 0
+  dialogueSpeed: 0.015
 --- !u!1 &1658394674
 GameObject:
   m_ObjectHideFlags: 0
