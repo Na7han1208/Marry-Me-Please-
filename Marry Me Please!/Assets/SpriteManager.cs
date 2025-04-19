@@ -191,3 +191,9 @@ public class SpriteManager : MonoBehaviour
         return null;
     }
 }
+
+/*
+NOTE:
+Is a big switch case good practice? no it isn't expandable, however this project calls for a fixed number of character sprites
+and since we know how many character sprites exist before hand because of planning, we can use this much simpler system
+*/
