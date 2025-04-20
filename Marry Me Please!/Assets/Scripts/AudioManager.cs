@@ -17,6 +17,10 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    void Start(){
+        Play("In_Game_Music");
+    }
+
     public void Play(string name){
         foreach(Sound s in Sounds){
             if(s.name == name){

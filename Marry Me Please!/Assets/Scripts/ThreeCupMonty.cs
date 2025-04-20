@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 
 public class ThreeCardMonty : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class ThreeCardMonty : MonoBehaviour
     private Vector3[] originalPositions;
     [SerializeField] float duration = 0.5f;
     [SerializeField] int numMovements = 7; 
+    [SerializeField] TMP_Text AboveCupsText;
 
     void Start()
     {
@@ -20,6 +22,7 @@ public class ThreeCardMonty : MonoBehaviour
             originalPositions[i] = cards[i].GetComponent<RectTransform>().anchoredPosition;
         }
         winningCardIndex = Random.Range(0, cards.Length);
+        AboveCupsText.text = "Watch the cups!";
         StartCoroutine(ShowWinningCardThenShuffle());
     }
 
@@ -38,6 +41,8 @@ public class ThreeCardMonty : MonoBehaviour
     IEnumerator ShuffleAndStart()
     {
         DisableAllCards();
+        yield return new WaitForSeconds(3f);
+        AboveCupsText.text = "";
         Debug.Log("Shuffling...");
         for(int k = 0; k < numMovements; k++){
             // Shuffle target positions
@@ -75,19 +80,10 @@ public class ThreeCardMonty : MonoBehaviour
             cards[i].onClick.RemoveAllListeners();
             cards[i].onClick.AddListener(() => OnCardSelected(index));
         }
-
-        Debug.Log("Pick a card!");
         EnableAllCards();
     }
 
 void OnCardSelected(int selectedIndex){
-    if (selectedIndex == winningCardIndex){
-        Debug.Log("You found the winning card!");
-    }
-    else{
-        Debug.Log("Wrong! The winning card was Card " + (winningCardIndex+1));
-    }
-
     // Reveal winning card by turning it red
     cards[winningCardIndex].GetComponent<Image>().color = Color.red;
     DisableAllCards();
