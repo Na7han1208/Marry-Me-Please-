@@ -77,6 +77,7 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TypeText(line.dialogueText, () =>
         {
             if (line.methodOnEnd != null){
+                wait(3);
                 line.methodOnEnd.Invoke();
             }
             if (HasChoices(line)){
@@ -184,6 +185,13 @@ public class DialogueManager : MonoBehaviour
 
     public void changeSprite(int moodIndex){
         spriteManager.changeSprite(moodIndex, characterNameText.text);
+    }
+
+    public void skipToLine(int targetIndex){
+        if(targetIndex >= 0 && targetIndex < dialogueLines.Length){
+            currentLine = targetIndex;
+            ShowNextDialogue();
+        }
     }
 }
 

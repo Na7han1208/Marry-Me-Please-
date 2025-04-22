@@ -4,35 +4,34 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 
-public class ThreeCardMonty : MonoBehaviour
+public class ThreeCupMonty : MonoBehaviour
 {
     //INIT
-    [SerializeField] Button[] cards;
-    private int winningCardIndex;
+    [SerializeField] Button[] Cups;
+    private int winningCupIndex;
     private Vector3[] originalPositions;
     [SerializeField] float duration = 0.5f;
     [SerializeField] int numMovements = 7; 
     [SerializeField] TMP_Text AboveCupsText;
 
-    void Start()
-    {
+    void Start(){
         // Store original positions
-        originalPositions = new Vector3[cards.Length];
-        for (int i = 0; i < cards.Length; i++){
-            originalPositions[i] = cards[i].GetComponent<RectTransform>().anchoredPosition;
+        originalPositions = new Vector3[Cups.Length];
+        for (int i = 0; i < Cups.Length; i++){
+            originalPositions[i] = Cups[i].GetComponent<RectTransform>().anchoredPosition;
         }
-        winningCardIndex = Random.Range(0, cards.Length);
+        winningCupIndex = Random.Range(0, Cups.Length);
         AboveCupsText.text = "Watch the cups!";
-        StartCoroutine(ShowWinningCardThenShuffle());
+        StartCoroutine(ShowWinningCupThenShuffle());
     }
 
-    IEnumerator ShowWinningCardThenShuffle(){
-        // Temporarily turn winning card red
-        Image cardImage = cards[winningCardIndex].GetComponent<Image>();
-        Color originalColor = cardImage.color;
-        cardImage.color = Color.red;
+    IEnumerator ShowWinningCupThenShuffle(){
+        // Temporarily turn winning Cup red (Later will show where the dumplings are)
+        Image CupImage = Cups[winningCupIndex].GetComponent<Image>();
+        Color originalColor = CupImage.color;
+        CupImage.color = Color.red;
         yield return new WaitForSeconds(1.5f); // Show red briefly
-        cardImage.color = originalColor;
+        CupImage.color = originalColor;
 
         // Start the shuffle animation
         yield return StartCoroutine(ShuffleAndStart());
@@ -40,10 +39,9 @@ public class ThreeCardMonty : MonoBehaviour
 
     IEnumerator ShuffleAndStart()
     {
-        DisableAllCards();
+        DisableAllCups();
         yield return new WaitForSeconds(3f);
         AboveCupsText.text = "";
-        Debug.Log("Shuffling...");
         for(int k = 0; k < numMovements; k++){
             // Shuffle target positions
             List<Vector3> positions = new List<Vector3>(originalPositions);
@@ -55,50 +53,50 @@ public class ThreeCardMonty : MonoBehaviour
                 positions[j] = temp;
             }
 
-            // Animate cards moving to new positions
+            // Animate Cups moving to new positions
             for (float t = 0; t < duration; t += Time.deltaTime){
                 float lerpFactor = t / duration;
-                for (int i = 0; i < cards.Length; i++){
-                    RectTransform rect = cards[i].GetComponent<RectTransform>();
+                for (int i = 0; i < Cups.Length; i++){
+                    RectTransform rect = Cups[i].GetComponent<RectTransform>();
                     rect.anchoredPosition = Vector3.Lerp(rect.anchoredPosition, positions[i], lerpFactor);
                 }
                 yield return null;
             }
 
             // Snap to final positions
-            for (int i = 0; i < cards.Length; i++){
-                cards[i].GetComponent<RectTransform>().anchoredPosition = positions[i];
+            for (int i = 0; i < Cups.Length; i++){
+                Cups[i].GetComponent<RectTransform>().anchoredPosition = positions[i];
             }
 
         }
-        // Randomize winning card
-        winningCardIndex = Random.Range(0, cards.Length);
+        // Randomize winning Cup
+        winningCupIndex = Random.Range(0, Cups.Length);
 
         // Re-enable interactions
-        for (int i = 0; i < cards.Length; i++){
+        for (int i = 0; i < Cups.Length; i++){
             int index = i;
-            cards[i].onClick.RemoveAllListeners();
-            cards[i].onClick.AddListener(() => OnCardSelected(index));
+            Cups[i].onClick.RemoveAllListeners();
+            Cups[i].onClick.AddListener(() => OnCupSelected(index));
         }
-        EnableAllCards();
+        EnableAllCups();
     }
 
-void OnCardSelected(int selectedIndex){
-    // Reveal winning card by turning it red
-    cards[winningCardIndex].GetComponent<Image>().color = Color.red;
-    DisableAllCards();
+void OnCupSelected(int selectedIndex){
+    // Reveal winning Cup by turning it red
+    Cups[winningCupIndex].GetComponent<Image>().color = Color.red;
+    DisableAllCups();
 }
 
 
-    void DisableAllCards(){
-        foreach (var card in cards){
-            card.interactable = false;
+    void DisableAllCups(){
+        foreach (var Cup in Cups){
+            Cup.interactable = false;
         }
     }
 
-    void EnableAllCards(){
-        foreach (var card in cards){
-            card.interactable = true;
+    void EnableAllCups(){
+        foreach (var Cup in Cups){
+            Cup.interactable = true;
         }
     }
 }

@@ -12,11 +12,14 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 2669c77f78826154d9643168478c4e60
   - enabled: 1
-    path: Assets/Scenes/Main.unity
-    guid: 7361d077da7e8cd46997bc463d88b949
-  - enabled: 1
     path: Assets/Scenes/Settings.unity
     guid: 9b8be5825de973e4085b8f539e6e7596
+  - enabled: 1
+    path: Assets/Scenes/ChooseName.unity
+    guid: 0e47cefd5c42a2b47a5f69151818c519
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 7361d077da7e8cd46997bc463d88b949
   - enabled: 1
     path: Assets/Scenes/Minigames/3CupMonty.unity
     guid: 32a566887133d1d428cd59932b848f47
