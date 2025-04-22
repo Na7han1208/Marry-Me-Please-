@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -25,6 +26,9 @@ public class AudioManager : MonoBehaviour
         foreach(Sound s in Sounds){
             if(s.name == name){
                 s.source.Play();
+                s.source.volume = s.volume;
+                s.source.pitch = s.pitch;
+                s.source.loop = s.loop;
             }
         }
     }

@@ -475,15 +475,15 @@ RectTransform:
   m_GameObject: {fileID: 372251045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.17, y: 0.17, z: 0.17}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1829302937}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 344, y: -125}
-  m_SizeDelta: {x: 529.7, y: 1073.38}
+  m_AnchoredPosition: {x: 344, y: -231}
+  m_SizeDelta: {x: 2892, y: 7664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &372251047
 MonoBehaviour:
@@ -1514,6 +1514,138 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1914230682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1278374199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1278374200}
+  - component: {fileID: 1278374203}
+  - component: {fileID: 1278374202}
+  - component: {fileID: 1278374201}
+  m_Layer: 5
+  m_Name: PauseButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1278374200
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278374199}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5400066, y: 0.5400066, z: 5.400003}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1829302937}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -761, y: 415.00012}
+  m_SizeDelta: {x: 599, y: 313.00003}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1278374201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278374199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1278374202}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1649142608}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: returnToMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1278374202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278374199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -5113469029405553909, guid: e60ee6358b1e39442aa0c41ce3e1bb7f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1278374203
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278374199}
+  m_CullTransparentMesh: 1
 --- !u!1 &1280439029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1681,9 +1813,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Name
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd163f292ac04e641acd3769c1695ec0, type: 2}
   m_sharedMaterial: {fileID: -874025721158157560, guid: bd163f292ac04e641acd3769c1695ec0, type: 2}
@@ -1819,9 +1949,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
-    eleifend justo, sit amet gravida erat. Phasellus pharetra libero sem, quis dignissim
-    diam pretium nec. '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1848,7 +1976,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.55
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2264,7 +2392,7 @@ MonoBehaviour:
       Royal Advisor Wu has to say. He had said to you yesterday that his news was
       of utmost importance. As the heir to the Throne of the Northern Chinese Empire,
       your coronation is in 7 days. You have no time to worry about much else.
-    choice1: 
+    choice1: Continue
     response1: 
     affection1: 0
     choice2: 
@@ -2326,7 +2454,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1649142608}
           m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: changeSprite
+          m_MethodName: ChangeSprite
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2577,7 +2705,19 @@ MonoBehaviour:
         m_Calls: []
     methodOnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -2828,16 +2968,16 @@ MonoBehaviour:
     characterName: Ming
     dialogueText: Now, who would you like to continue this conversation with?
     choice1: Jinhui
-    response1: ...If you must.
+    response1: 
     affection1: -2
     choice2: Yilin
-    response2: ...Fine.
+    response2: 
     affection2: -1
     choice3: Fen
-    response3: I guess I cannot argue with your choice.
+    response3: 
     affection3: 0
     choice4: Ming
-    response4: A wise choice my liege.
+    response4: 
     affection4: 2
     choiceMethod1:
       m_PersistentCalls:
@@ -2849,7 +2989,7 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 19
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -2864,7 +3004,7 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 21
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -2879,26 +3019,14 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 23
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
     choiceMethod4:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: skipToLine
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
     methodOnStart:
       m_PersistentCalls:
         m_Calls: []
@@ -2937,7 +3065,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1649142608}
           m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: changeSprite
+          m_MethodName: ChangeSprite
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3039,7 +3167,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1649142608}
           m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: changeSprite
+          m_MethodName: ChangeSprite
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3084,7 +3212,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1649142608}
           m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: changeSprite
+          m_MethodName: ChangeSprite
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3141,7 +3269,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1649142608}
           m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: changeSprite
+          m_MethodName: ChangeSprite
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3186,7 +3314,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1649142608}
           m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: changeSprite
+          m_MethodName: ChangeSprite
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3212,8 +3340,8 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - dialogueIndex: 0
-    characterName: Yilin
-    dialogueText: Fen  Dialogue Line 2
+    characterName: Fen
+    dialogueText: Fen Dialogue Line 1
     choice1: Positive
     response1: Positive Reaction
     affection1: 2
@@ -3243,7 +3371,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1649142608}
           m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: changeSprite
+          m_MethodName: ChangeSprite
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3286,7 +3414,7 @@ MonoBehaviour:
     methodOnStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1649142608}
+        - m_Target: {fileID: 1649142606}
           m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
           m_MethodName: changeSprite
           m_Mode: 3
@@ -3333,7 +3461,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1649142608}
           m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: changeSprite
+          m_MethodName: ChangeSprite
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3359,6 +3487,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   dialogueSpeed: 0.015
+  spriteManager: {fileID: 1649142609}
 --- !u!114 &1649142609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3371,7 +3500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8795251dddae475428dde92f04122c82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mingNeutral: {fileID: 0}
+  mingNeutral: {fileID: -782117617173883080, guid: bebfd689642ac9b4292378dcb01e8bd3, type: 3}
   mingHappy: {fileID: 0}
   mingSad: {fileID: 0}
   mingAngry: {fileID: 0}
@@ -3380,7 +3509,7 @@ MonoBehaviour:
   mingIrritated: {fileID: 0}
   mingTerror: {fileID: 0}
   mingSmug: {fileID: 0}
-  jinhuiNeutral: {fileID: 0}
+  jinhuiNeutral: {fileID: -5834652182648715005, guid: c2c38003cc72c6a4596c0dc629a97eb6, type: 3}
   jinhuiHappy: {fileID: 0}
   jinhuiSad: {fileID: 0}
   jinhuiAngry: {fileID: 0}
@@ -3389,7 +3518,7 @@ MonoBehaviour:
   jinhuiIrritated: {fileID: 0}
   jinhuiTerror: {fileID: 0}
   jinhuiSmug: {fileID: 0}
-  yilinNeutral: {fileID: 0}
+  yilinNeutral: {fileID: -9029922364625917327, guid: 73fc6b28993d99b438b561a4b016e36b, type: 3}
   yilinHappy: {fileID: 0}
   yilinSad: {fileID: 0}
   yilinAngry: {fileID: 0}
@@ -3398,7 +3527,7 @@ MonoBehaviour:
   yilinIrritated: {fileID: 0}
   yilinTerror: {fileID: 0}
   yilinSmug: {fileID: 0}
-  fenNeutral: {fileID: 0}
+  fenNeutral: {fileID: 9211586117587512486, guid: ae0c3fe7feb958c409e537699a944f20, type: 3}
   fenHappy: {fileID: 0}
   fenSad: {fileID: 0}
   fenAngry: {fileID: 0}
@@ -3434,7 +3563,7 @@ MonoBehaviour:
   zihanIrritated: {fileID: 0}
   zihanTerror: {fileID: 0}
   zihanSmug: {fileID: 0}
-  wu: {fileID: 0}
+  wu: {fileID: -5535626106447275181, guid: b144f0ca137833346ab1ad9cbe3d43ad, type: 3}
 --- !u!1 &1658394674
 GameObject:
   m_ObjectHideFlags: 0
@@ -3744,6 +3873,7 @@ RectTransform:
   - {fileID: 1685131767}
   - {fileID: 898164587}
   - {fileID: 870291844}
+  - {fileID: 1278374200}
   m_Father: {fileID: 696715180}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3863,11 +3993,13 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 7a178806d6154924ebb3518569efc757, type: 3}
     volume: 1
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: In_Game_Music
     clip: {fileID: 8300000, guid: c0db5c0d990634845917e633707e2f45, type: 3}
     volume: 0.1
     pitch: 1
+    loop: 1
     source: {fileID: 0}
 --- !u!1 &1884777536
 GameObject:

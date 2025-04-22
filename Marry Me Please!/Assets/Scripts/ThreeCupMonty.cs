@@ -3,6 +3,8 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+//using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class ThreeCupMonty : MonoBehaviour
 {
@@ -23,6 +25,12 @@ public class ThreeCupMonty : MonoBehaviour
         winningCupIndex = Random.Range(0, Cups.Length);
         AboveCupsText.text = "Watch the cups!";
         StartCoroutine(ShowWinningCupThenShuffle());
+    }
+
+    void Update(){
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            returnToMenu();
+        }
     }
 
     IEnumerator ShowWinningCupThenShuffle(){
@@ -98,5 +106,9 @@ void OnCupSelected(int selectedIndex){
         foreach (var Cup in Cups){
             Cup.interactable = true;
         }
+    }
+
+    public void returnToMenu(){
+        SceneManager.LoadScene("MainMenu");
     }
 }

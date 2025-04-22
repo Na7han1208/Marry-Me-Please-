@@ -97,103 +97,113 @@ public class SpriteManager : MonoBehaviour
             8:  Terror/Panik
             9:  Smug
         */
-        switch(characterName){
-            case "Ming": 
-            switch(mood){
-                case 1: return mingNeutral;
-                case 2: return mingHappy;
-                case 3: return mingSad;
-                case 4: return mingAngry;
-                case 5: return mingBlushing;
-                case 6: return mingSurprised;
-                case 7: return mingIrritated;
-                case 8: return mingTerror;
-                case 9: return mingSmug;
-                default: return null;
-            }               
-            case "Jinhui":   
-            switch(mood){
-                case 1: return jinhuiNeutral;
-                case 2: return jinhuiHappy;
-                case 3: return jinhuiSad;
-                case 4: return jinhuiAngry;
-                case 5: return jinhuiBlushing;
-                case 6: return jinhuiSurprised;
-                case 7: return jinhuiIrritated;
-                case 8: return jinhuiTerror;
-                case 9: return jinhuiSmug;
-                default: return null;
-            }          
-            case "Yilin":             
-            switch(mood){
-                case 1: return yilinNeutral;
-                case 2: return yilinHappy;
-                case 3: return yilinSad;
-                case 4: return yilinAngry;
-                case 5: return yilinBlushing;
-                case 6: return yilinSurprised;
-                case 7: return yilinIrritated;
-                case 8: return yilinTerror;
-                case 9: return yilinSmug;
-                default: return null;
-            }     
-            case "Fen":   
-            switch(mood){
-                case 1: return fenNeutral;
-                case 2: return fenHappy;
-                case 3: return fenSad;
-                case 4: return fenAngry;
-                case 5: return fenBlushing;
-                case 6: return fenSurprised;
-                case 7: return fenIrritated;
-                case 8: return fenTerror;
-                case 9: return fenSmug;
-                default: return null;
-            }                   
-            case "Yuki":    
-            switch(mood){
-                case 1: return yukiNeutral;
-                case 2: return yukiHappy;
-                case 3: return yukiSad;
-                case 4: return yukiAngry;
-                case 5: return yukiBlushing;
-                case 6: return yukiSurprised;
-                case 7: return yukiIrritated;
-                case 8: return yukiTerror;
-                case 9: return yukiSmug;
-                default: return null;
-            }                              
-            case "Theodore":
-            switch(mood){
-                case 1: return theodoreNeutral;
-                case 2: return theodoreHappy;
-                case 3: return theodoreSad;
-                case 4: return theodoreAngry;
-                case 5: return theodoreBlushing;
-                case 6: return theodoreSurprised;
-                case 7: return theodoreIrritated;
-                case 8: return theodoreTerror;
-                case 9: return theodoreSmug;
-                default: return null;
-            }                            
-            case "Zihan":      
-            switch(mood){
-                case 1: return zihanNeutral;
-                case 2: return zihanHappy;
-                case 3: return zihanSad;
-                case 4: return zihanAngry;
-                case 5: return zihanBlushing;
-                case 6: return zihanSurprised;
-                case 7: return zihanIrritated;
-                case 8: return zihanTerror;
-                case 9: return zihanSmug;
-                default: return null;
-            }     
-            case "Wu":
-            return wu;                      
-            default: Debug.Log("Character not found"); break;
+        Debug.Log("SpriteManager Class" + mood + "\t" + characterName);
+        try{
+            switch(characterName){
+                case "Ming": 
+                switch(mood){
+                    case 0: return mingNeutral;
+                    case 1: return mingHappy;
+                    case 2: return mingSad;
+                    case 3: return mingAngry;
+                    case 4: return mingBlushing;
+                    case 5: return mingSurprised;
+                    case 6: return mingIrritated;
+                    case 7: return mingTerror;
+                    case 8: return mingSmug;
+                    default: return null;
+                }               
+                case "Jinhui":   
+                switch(mood){
+                    case 0: return jinhuiNeutral;
+                    case 1: return jinhuiHappy;
+                    case 2: return jinhuiSad;
+                    case 3: return jinhuiAngry;
+                    case 4: return jinhuiBlushing;
+                    case 5: return jinhuiSurprised;
+                    case 6: return jinhuiIrritated;
+                    case 7: return jinhuiTerror;
+                    case 8: return jinhuiSmug;
+                    default: return null;
+                }          
+                case "Yilin":             
+                switch(mood){
+                    case 0: return yilinNeutral;
+                    case 1: return yilinHappy;
+                    case 2: return yilinSad;
+                    case 3: return yilinAngry;
+                    case 4: return yilinBlushing;
+                    case 5: return yilinSurprised;
+                    case 6: return yilinIrritated;
+                    case 7: return yilinTerror;
+                    case 8: return yilinSmug;
+                    default: return null;
+                }     
+                case "Fen":   
+                switch(mood){
+                    case 0: return fenNeutral;
+                    case 1: return fenHappy;
+                    case 2: return fenSad;
+                    case 3: return fenAngry;
+                    case 4: return fenBlushing;
+                    case 5: return fenSurprised;
+                    case 6: return fenIrritated;
+                    case 7: return fenTerror;
+                    case 8: return fenSmug;
+                    default: return null;
+                }                   
+                case "Yuki":    
+                switch(mood){
+                    case 0: return yukiNeutral;
+                    case 1: return yukiHappy;
+                    case 2: return yukiSad;
+                    case 3: return yukiAngry;
+                    case 4: return yukiBlushing;
+                    case 5: return yukiSurprised;
+                    case 6: return yukiIrritated;
+                    case 7: return yukiTerror;
+                    case 8: return yukiSmug;
+                    default: return null;
+                }                              
+                case "Theodore":
+                switch(mood){
+                    case 0: return theodoreNeutral;
+                    case 1: return theodoreHappy;
+                    case 2: return theodoreSad;
+                    case 3: return theodoreAngry;
+                    case 4: return theodoreBlushing;
+                    case 5: return theodoreSurprised;
+                    case 6: return theodoreIrritated;
+                    case 7: return theodoreTerror;
+                    case 8: return theodoreSmug;
+                    default: return null;
+                }                            
+                case "Zihan":      
+                switch(mood){
+                    case 0: return zihanNeutral;
+                    case 1: return zihanHappy;
+                    case 2: return zihanSad;
+                    case 3: return zihanAngry;
+                    case 4: return zihanBlushing;
+                    case 5: return zihanSurprised;
+                    case 6: return zihanIrritated;
+                    case 7: return zihanTerror;
+                    case 8: return zihanSmug;
+                    default: return null;
+                }     
+                case "Wu":    
+                switch(mood){
+                    case 0: return wu;
+                    default: return null;
+                }                 
+                default: Debug.Log("Character not found"); break;
+            }
+            return null;
         }
-        return null;
+        catch(Exception e){
+            Debug.Log(e);
+            return null;
+        }
     }
 }
 

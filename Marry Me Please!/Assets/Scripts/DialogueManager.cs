@@ -7,6 +7,7 @@ using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
 using UnityEngine.Rendering.Universal;
 using System;
+using NUnit.Framework;
 
 public class DialogueManager : MonoBehaviour
 {    
@@ -32,7 +33,9 @@ public class DialogueManager : MonoBehaviour
     private int currentLine = 0;
     private bool awaitingSpacebar = false;
     public float dialogueSpeed = 0.015f;
-    private SpriteManager spriteManager;
+    private Coroutine typingCoroutine;
+    private bool isTyping = false;
+    [SerializeField] private SpriteManager spriteManager;
 
    
 
@@ -50,53 +53,93 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    void Update(){
-        if (awaitingSpacebar && Input.GetKeyDown(KeyCode.Space)){
-            awaitingSpacebar = false;
-            currentLine++;
-            ShowNextDialogue();
-            spacebarReminder.gameObject.SetActive(false);
-        }
+void Update()
+{
+    if (awaitingSpacebar && !isTyping && Input.GetKeyDown(KeyCode.Space))
+    {
+        awaitingSpacebar = false;
+        currentLine++;
+        ShowNextDialogue();
+        spacebarReminder.gameObject.SetActive(false);
     }
 
-    public void ShowNextDialogue(){
-        //Makes sure we're not out of bounds, and if we are just displays end of convo
-        if (currentLine >= dialogueLines.Length){
+    if(Input.GetKeyDown(KeyCode.Escape)){
+        returnToMenu();
+    }
+}
+
+
+    public void ShowNextDialogue()
+    {
+        // Prevent if already typing
+        if (isTyping) return;
+
+        // End the conversation if we're out of bounds
+        if (currentLine >= dialogueLines.Length)
+        {
             dialogueText.text = "End of conversation.";
             foreach (var button in choiceButtons) button.gameObject.SetActive(false);
             return;
         }
 
         DialogueLine line = dialogueLines[currentLine];
-
+        
         if (line.methodOnStart != null){
             line.methodOnStart.Invoke();
         }
+        // Debug: Log the dialogue and character name for each line
+        Debug.Log("Current Line: " + currentLine);
+        Debug.Log("Dialogue: " + line.dialogueText);
+        Debug.Log("Character: " + line.characterName);
+
+        // Set the character's name
         characterNameText.text = line.characterName;
 
-        StartCoroutine(TypeText(line.dialogueText, () =>
+        // Stop any ongoing typing coroutine
+        if (typingCoroutine != null)
         {
-            if (line.methodOnEnd != null){
-                wait(3);
+            StopCoroutine(typingCoroutine);
+            typingCoroutine = null;
+        }
+
+        // Start typing coroutine
+        isTyping = true;
+        typingCoroutine = StartCoroutine(TypeText(line.dialogueText, () =>
+        {
+            if(line.methodOnEnd != null){
                 line.methodOnEnd.Invoke();
             }
-            if (HasChoices(line)){
+            // After typing is done, check if choices exist
+            if (HasChoices(line))
+            {
                 ShowChoices(line);
             }
-            else{
-                awaitingSpacebar = true; 
+            else
+            {
+                awaitingSpacebar = true;
+                spacebarReminder.gameObject.SetActive(true);
             }
         }));
     }
 
-    IEnumerator TypeText(string text, UnityAction onComplete){
+
+
+    IEnumerator TypeText(string text, UnityAction onComplete)
+    {
         dialogueText.text = "";
-        foreach (char c in text){
+        foreach (char c in text)
+        {
             dialogueText.text += c;
             yield return new WaitForSeconds(dialogueSpeed);
         }
+
+        // Debug: Log the text after typing is complete
+        Debug.Log("Text Typed: " + dialogueText.text);
+
+        isTyping = false;
         onComplete.Invoke();
     }
+
 
     //Checks if the choices are empty, if all of them are empty it returns false
     bool HasChoices(DialogueLine line){
@@ -172,8 +215,7 @@ public class DialogueManager : MonoBehaviour
     public void load3CupMonty(){
         SceneManager.LoadScene("3CupMonty");
     }
-
-    
+       
     //This allows me to use the WaitForSeconds method even when not in an IEnumerator
     public void wait(float time){
         StartCoroutine(waitOutsideCoroutine(time));
@@ -183,15 +225,32 @@ public class DialogueManager : MonoBehaviour
         yield return new WaitForSeconds(time);
     }
 
-    public void changeSprite(int moodIndex){
-        spriteManager.changeSprite(moodIndex, characterNameText.text);
+    public void ChangeSprite(int moodIndex){
+        characterSprite.sprite = spriteManager.changeSprite(moodIndex, dialogueLines[currentLine].characterName);
+        Debug.Log("Change Sprite Called:\nMoodIndex:\t" + moodIndex + "Character Name:\t" + dialogueLines[currentLine].characterName);
     }
 
     public void skipToLine(int targetIndex){
         if(targetIndex >= 0 && targetIndex < dialogueLines.Length){
+            // Stop any ongoing typing coroutine
+            if(typingCoroutine != null){
+                StopCoroutine(typingCoroutine);
+            }
+
+            // Reset the dialogue text and choices
+            dialogueText.text = "";
+            foreach (var button in choiceButtons) {
+                button.gameObject.SetActive(false);
+            }
+
+            // Set the current line and display the new dialogue
             currentLine = targetIndex;
             ShowNextDialogue();
         }
+    }
+
+    public void returnToMenu(){
+        SceneManager.LoadScene("MainMenu");
     }
 }
 
