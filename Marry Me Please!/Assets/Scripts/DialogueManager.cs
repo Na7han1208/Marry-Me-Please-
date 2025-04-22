@@ -11,6 +11,7 @@ using NUnit.Framework;
 
 public class DialogueManager : MonoBehaviour
 {    
+    //INIT
     [Header("Affinity Data")]
     private int mingAffinity = 0;
     private int jinhuiAffinity = 0;
@@ -37,8 +38,6 @@ public class DialogueManager : MonoBehaviour
     private bool isTyping = false;
     [SerializeField] private SpriteManager spriteManager;
 
-   
-
     void Start(){
         //Initialise important things to be inactive then call the first bit of dialogue
         spacebarReminder.gameObject.SetActive(false);
@@ -53,28 +52,26 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-void Update()
-{
-    if (awaitingSpacebar && !isTyping && Input.GetKeyDown(KeyCode.Space))
+    void Update()
     {
-        awaitingSpacebar = false;
-        currentLine++;
-        ShowNextDialogue();
-        spacebarReminder.gameObject.SetActive(false);
+        if (awaitingSpacebar && !isTyping && Input.GetKeyDown(KeyCode.Space)){
+            awaitingSpacebar = false;
+            currentLine++;
+            ShowNextDialogue();
+            spacebarReminder.gameObject.SetActive(false);
+        }
+
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            returnToMenu();
+        }
     }
 
-    if(Input.GetKeyDown(KeyCode.Escape)){
-        returnToMenu();
-    }
-}
 
-
-    public void ShowNextDialogue()
-    {
-        // Prevent if already typing
+    public void ShowNextDialogue(){
+        // Kill the method if already typing
         if (isTyping) return;
 
-        // End the conversation if we're out of bounds
+        // End convo is out of lines
         if (currentLine >= dialogueLines.Length)
         {
             dialogueText.text = "End of conversation.";
@@ -87,15 +84,9 @@ void Update()
         if (line.methodOnStart != null){
             line.methodOnStart.Invoke();
         }
-        // Debug: Log the dialogue and character name for each line
-        Debug.Log("Current Line: " + currentLine);
-        Debug.Log("Dialogue: " + line.dialogueText);
-        Debug.Log("Character: " + line.characterName);
 
-        // Set the character's name
         characterNameText.text = line.characterName;
 
-        // Stop any ongoing typing coroutine
         if (typingCoroutine != null)
         {
             StopCoroutine(typingCoroutine);
@@ -106,35 +97,31 @@ void Update()
         isTyping = true;
         typingCoroutine = StartCoroutine(TypeText(line.dialogueText, () =>
         {
-            if(line.methodOnEnd != null){
-                line.methodOnEnd.Invoke();
-            }
-            // After typing is done, check if choices exist
-            if (HasChoices(line))
-            {
+            if (HasChoices(line)) {
                 ShowChoices(line);
-            }
-            else
-            {
+            } else {
                 awaitingSpacebar = true;
-                spacebarReminder.gameObject.SetActive(true);
+                spacebarReminder.gameObject.SetActive(true);              
             }
+            StartCoroutine(WaitForSpacebarThenInvoke(line));
         }));
     }
 
+    IEnumerator WaitForSpacebarThenInvoke(DialogueLine line){
+        // Wait until space is pressed
+        yield return new WaitUntil(() => !awaitingSpacebar);
 
+        if (line.methodOnEnd != null) {
+            line.methodOnEnd.Invoke();
+        }
+    }
 
-    IEnumerator TypeText(string text, UnityAction onComplete)
-    {
+    IEnumerator TypeText(string text, UnityAction onComplete){
         dialogueText.text = "";
-        foreach (char c in text)
-        {
+        foreach (char c in text){
             dialogueText.text += c;
             yield return new WaitForSeconds(dialogueSpeed);
         }
-
-        // Debug: Log the text after typing is complete
-        Debug.Log("Text Typed: " + dialogueText.text);
 
         isTyping = false;
         onComplete.Invoke();
@@ -192,8 +179,6 @@ void Update()
         });
     }
 
-    
-
     public void changeAffinity(int affinity){
         switch(characterNameText.text){
             case "Ming":        mingAffinity+=affinity;         break;
@@ -206,12 +191,8 @@ void Update()
             default: Debug.Log("Character not found");          break;
             
         }
-        //DEBUG
-        Debug.Log("Ming:\t" + mingAffinity + "\nJinhui:\t" + jinhuiAffinity + "\nYilin:\t" + yilinAffinity + "\nFen:\t" + fenAffinity);
     }
 
-
-    //Methods called by dialogue \/
     public void load3CupMonty(){
         SceneManager.LoadScene("3CupMonty");
     }

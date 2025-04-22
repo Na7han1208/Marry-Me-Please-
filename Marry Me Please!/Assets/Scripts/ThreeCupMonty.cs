@@ -3,7 +3,6 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-//using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 
 public class ThreeCupMonty : MonoBehaviour
@@ -34,7 +33,7 @@ public class ThreeCupMonty : MonoBehaviour
     }
 
     IEnumerator ShowWinningCupThenShuffle(){
-        // Temporarily turn winning Cup red (Later will show where the dumplings are)
+        // Temporarily turn winning Cup red (Later we will show where the dumplings are)
         Image CupImage = Cups[winningCupIndex].GetComponent<Image>();
         Color originalColor = CupImage.color;
         CupImage.color = Color.red;
@@ -45,8 +44,7 @@ public class ThreeCupMonty : MonoBehaviour
         yield return StartCoroutine(ShuffleAndStart());
     }
 
-    IEnumerator ShuffleAndStart()
-    {
+    IEnumerator ShuffleAndStart(){
         DisableAllCups();
         yield return new WaitForSeconds(3f);
         AboveCupsText.text = "";
@@ -94,7 +92,6 @@ void OnCupSelected(int selectedIndex){
     Cups[winningCupIndex].GetComponent<Image>().color = Color.red;
     DisableAllCups();
 }
-
 
     void DisableAllCups(){
         foreach (var Cup in Cups){
