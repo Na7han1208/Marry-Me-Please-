@@ -4,8 +4,8 @@ Marry me please! Heir of chance. A unity game about marrying both for love and p
 
 -Members-
 
-Nathan Fouche 2687558
+Nathan Fouche 
 
-Chloe Quan 2825008
+Chloe Quan 
 
-Naseeha Shar 2819056 
+Naseeha Shar  
