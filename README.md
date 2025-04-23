@@ -7,8 +7,6 @@ Marry me please! Heir of chance.
 
 -Members-
 
-Nathan Fouche 2687558
-
-Chloe Quan
-
-Naseeha Shar 2819056
+Nathan Fouche 2687558 
+Chloe Quan 
+Naseeha Shar 2819056 
