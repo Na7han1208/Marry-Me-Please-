@@ -64,7 +64,7 @@ public class DialogueManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape)){
             returnToMenu();
         }
-    }
+    } 
 
 
     public void ShowNextDialogue(){
@@ -236,8 +236,11 @@ public class DialogueManager : MonoBehaviour
 }
 
 /*
+  Gerald
     _
 .__(.)< (meow)
- \__)
+ \___)
 
 */
+
+
