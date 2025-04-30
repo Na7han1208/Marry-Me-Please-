@@ -7,4 +7,12 @@ public class ParticleOnCursor : MonoBehaviour
         sakuraSpawner = GetComponent<ParticleSystem>();
         sakuraSpawner.Play();
     }
+
+    public void StartParticle(){
+        sakuraSpawner.Play();
+    }
+
+    public void StopParticle(){
+        sakuraSpawner.Stop();
+    }
 }
