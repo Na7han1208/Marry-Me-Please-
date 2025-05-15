@@ -781,7 +781,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputField: {fileID: 1497285249}
   submitButton: {fileID: 1861469799}
+  submitButtonText: {fileID: 1541374070}
   pauseButton: {fileID: 367401487}
+  scrollBurnMaterial: {fileID: 2100000, guid: 1f199d6c7a3206249b8bd06cd023cc04, type: 2}
+  burnDuration: 3
 --- !u!4 &957402743
 Transform:
   m_ObjectHideFlags: 0
