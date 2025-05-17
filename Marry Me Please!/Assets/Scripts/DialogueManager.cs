@@ -10,7 +10,7 @@ using System;
 using NUnit.Framework;
 
 public class DialogueManager : MonoBehaviour
-{    
+{
     //INIT
     [Header("Affinity Data")]
     private int mingAffinity = 0;
@@ -20,7 +20,7 @@ public class DialogueManager : MonoBehaviour
     private int yukiAffinity = 0;
     private int theodoreAffinity = 0;
     private int zihanAffinity = 0;
-    
+
     [Header("UI References")]
     public TMP_Text characterNameText;
     public Image characterSprite;
@@ -37,37 +37,45 @@ public class DialogueManager : MonoBehaviour
     private Coroutine typingCoroutine;
     private bool isTyping = false;
     [SerializeField] private SpriteManager spriteManager;
+    [SerializeField] private LightingManager lightingManager;
 
-    void Start(){
+    void Start()
+    {
         //Initialise important things to be inactive then call the first bit of dialogue
         spacebarReminder.gameObject.SetActive(false);
-        foreach(var button in choiceButtons){
+        foreach (var button in choiceButtons)
+        {
             button.gameObject.SetActive(false);
         }
         ShowNextDialogue();
 
         //Dialogue index used for referencing dialogue.
-        for(int i = 0; i < dialogueLines.Length; i++){
+        for (int i = 0; i < dialogueLines.Length; i++)
+        {
             dialogueLines[i].dialogueIndex = i;
         }
+        StartCoroutine(AutoSave(20f));
     }
 
     void Update()
     {
-        if (awaitingSpacebar && !isTyping && Input.GetKeyDown(KeyCode.Space)){
+        if (awaitingSpacebar && !isTyping && Input.GetKeyDown(KeyCode.Space))
+        {
             awaitingSpacebar = false;
             currentLine++;
             ShowNextDialogue();
             spacebarReminder.gameObject.SetActive(false);
         }
 
-        if(Input.GetKeyDown(KeyCode.Escape)){
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
             returnToMenu();
         }
-    } 
+    }
 
 
-    public void ShowNextDialogue(){
+    public void ShowNextDialogue()
+    {
         // Kill the method if already typing
         if (isTyping) return;
 
@@ -80,8 +88,9 @@ public class DialogueManager : MonoBehaviour
         }
 
         DialogueLine line = dialogueLines[currentLine];
-        
-        if (line.methodOnStart != null){
+
+        if (line.methodOnStart != null)
+        {
             line.methodOnStart.Invoke();
         }
 
@@ -97,28 +106,35 @@ public class DialogueManager : MonoBehaviour
         isTyping = true;
         typingCoroutine = StartCoroutine(TypeText(line.dialogueText, () =>
         {
-            if (HasChoices(line)) {
+            if (HasChoices(line))
+            {
                 ShowChoices(line);
-            } else {
+            }
+            else
+            {
                 awaitingSpacebar = true;
-                spacebarReminder.gameObject.SetActive(true);              
+                spacebarReminder.gameObject.SetActive(true);
             }
             StartCoroutine(WaitForSpacebarThenInvoke(line));
         }));
     }
 
-    IEnumerator WaitForSpacebarThenInvoke(DialogueLine line){
+    IEnumerator WaitForSpacebarThenInvoke(DialogueLine line)
+    {
         // Wait until space is pressed
         yield return new WaitUntil(() => !awaitingSpacebar);
 
-        if (line.methodOnEnd != null) {
+        if (line.methodOnEnd != null)
+        {
             line.methodOnEnd.Invoke();
         }
     }
 
-    IEnumerator TypeText(string text, UnityAction onComplete){
+    IEnumerator TypeText(string text, UnityAction onComplete)
+    {
         dialogueText.text = "";
-        foreach (char c in text){
+        foreach (char c in text)
+        {
             dialogueText.text += c;
             yield return new WaitForSeconds(dialogueSpeed);
         }
@@ -129,7 +145,8 @@ public class DialogueManager : MonoBehaviour
 
 
     //Checks if the choices are empty, if all of them are empty it returns false
-    bool HasChoices(DialogueLine line){
+    bool HasChoices(DialogueLine line)
+    {
         return !string.IsNullOrEmpty(line.choice1) ||
                !string.IsNullOrEmpty(line.choice2) ||
                !string.IsNullOrEmpty(line.choice3) ||
@@ -137,7 +154,8 @@ public class DialogueManager : MonoBehaviour
     }
 
     //Calls the set up button method for each button
-    void ShowChoices(DialogueLine line){
+    void ShowChoices(DialogueLine line)
+    {
         SetupButton(0, line.choice1, line.response1, line.choiceMethod1, line.affection1);
         SetupButton(1, line.choice2, line.response2, line.choiceMethod2, line.affection2);
         SetupButton(2, line.choice3, line.response3, line.choiceMethod3, line.affection3);
@@ -145,9 +163,11 @@ public class DialogueManager : MonoBehaviour
     }
 
     //Takes the index of the button, the text on the button, the response it will display, and the method that will run if clicked and initialises all of it
-    void SetupButton(int index, string choiceText, string responseText, UnityEvent responseMethod, int affinityChange){
+    void SetupButton(int index, string choiceText, string responseText, UnityEvent responseMethod, int affinityChange)
+    {
         //Make sure we don't set a null button... no nullPointerExceptions for us!
-        if (string.IsNullOrEmpty(choiceText)){
+        if (string.IsNullOrEmpty(choiceText))
+        {
             choiceButtons[index].gameObject.SetActive(false);
             return;
         }
@@ -160,12 +180,13 @@ public class DialogueManager : MonoBehaviour
         choiceButtons[index].onClick.AddListener(() =>
         {
             //Hides all the buttons after a button is pressed
-            foreach (var button in choiceButtons){
+            foreach (var button in choiceButtons)
+            {
                 button.gameObject.SetActive(false);
             }
 
             changeAffinity(affinityChange);
-                
+
             //Shows the applicable response text and then waits for spacebar to continue, also shows the player a reminder to press spacebar to continue
             StartCoroutine(TypeText(responseText, () =>
             {
@@ -179,48 +200,66 @@ public class DialogueManager : MonoBehaviour
         });
     }
 
-    public void changeAffinity(int affinity){
-        switch(characterNameText.text){
-            case "Ming":        mingAffinity+=affinity;         break;
-            case "Jinhui":      jinhuiAffinity+=affinity;       break;
-            case "Yilin":       yilinAffinity+=affinity;        break;
-            case "Fen":         fenAffinity+=affinity;          break;
-            case "Yuki":        yukiAffinity+=affinity;         break;
-            case "Theodore":    theodoreAffinity+=affinity;     break;
-            case "Zihan":       zihanAffinity+=affinity;        break;
-            default: Debug.Log("Character not found");          break;
-            
+    public void changeAffinity(int affinity)
+    {
+        switch (characterNameText.text)
+        {
+            case "Ming": mingAffinity += affinity; break;
+            case "Jinhui": jinhuiAffinity += affinity; break;
+            case "Yilin": yilinAffinity += affinity; break;
+            case "Fen": fenAffinity += affinity; break;
+            case "Yuki": yukiAffinity += affinity; break;
+            case "Theodore": theodoreAffinity += affinity; break;
+            case "Zihan": zihanAffinity += affinity; break;
+            default: Debug.Log("Character not found"); break;
+        }
+        if (affinity >= 8)
+        {
+            lightingManager.StartLightBlend(true);
+        }
+        else if (affinity <= -8)
+        {
+            lightingManager.StartLightBlend(false);
         }
     }
 
-    public void load3CupMonty(){
+    public void load3CupMonty()
+    {
+        SaveGame();
         SceneManager.LoadScene("3CupMonty");
     }
-       
+
     //This allows me to use the WaitForSeconds method even when not in an IEnumerator
-    public void wait(float time){
+    public void wait(float time)
+    {
         StartCoroutine(waitOutsideCoroutine(time));
     }
 
-    public IEnumerator waitOutsideCoroutine(float time){
+    public IEnumerator waitOutsideCoroutine(float time)
+    {
         yield return new WaitForSeconds(time);
     }
 
-    public void ChangeSprite(int moodIndex){
+    public void ChangeSprite(int moodIndex)
+    {
         characterSprite.sprite = spriteManager.changeSprite(moodIndex, dialogueLines[currentLine].characterName);
         Debug.Log("Change Sprite Called:\nMoodIndex:\t" + moodIndex + "Character Name:\t" + dialogueLines[currentLine].characterName);
     }
 
-    public void skipToLine(int targetIndex){
-        if(targetIndex >= 0 && targetIndex < dialogueLines.Length){
+    public void skipToLine(int targetIndex)
+    {
+        if (targetIndex >= 0 && targetIndex < dialogueLines.Length)
+        {
             // Stop any ongoing typing coroutine
-            if(typingCoroutine != null){
+            if (typingCoroutine != null)
+            {
                 StopCoroutine(typingCoroutine);
             }
 
             // Reset the dialogue text and choices
             dialogueText.text = "";
-            foreach (var button in choiceButtons) {
+            foreach (var button in choiceButtons)
+            {
                 button.gameObject.SetActive(false);
             }
 
@@ -230,8 +269,80 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void returnToMenu(){
+    public void returnToMenu()
+    {
+        SaveGame();
         SceneManager.LoadScene("MainMenu");
+    }
+
+
+    //SAVE / LOAD SYSTEM
+    string SavePath => Application.persistentDataPath + "/savefile.json";
+    public void SaveGame()
+    {
+        SaveData data = new SaveData
+        {
+            currentLine = this.currentLine,
+
+            mingAffinity = this.mingAffinity,
+            jinhuiAffinity = this.jinhuiAffinity,
+            yilinAffinity = this.yilinAffinity,
+            fenAffinity = this.fenAffinity,
+            yukiAffinity = this.yukiAffinity,
+            theodoreAffinity = this.theodoreAffinity,
+            zihanAffinity = this.zihanAffinity,
+
+            loadedSprite = characterSprite.sprite,
+
+            currentScene = SceneManager.GetActiveScene().name
+        };
+
+        string json = JsonUtility.ToJson(data);
+        System.IO.File.WriteAllText(SavePath, json);
+        Debug.Log("Game saved to " + SavePath);
+    }
+
+    public void LoadGame()
+    {
+        if (!System.IO.File.Exists(SavePath))
+        {
+            Debug.LogWarning("Save file not found ( ˶°ㅁ°)");
+            return;
+        }
+
+        string json = System.IO.File.ReadAllText(SavePath);
+        SaveData data = JsonUtility.FromJson<SaveData>(json);
+
+        this.currentLine = data.currentLine;
+
+        mingAffinity = data.mingAffinity;
+        jinhuiAffinity = data.jinhuiAffinity;
+        yilinAffinity = data.yilinAffinity;
+        fenAffinity = data.fenAffinity;
+        yukiAffinity = data.yukiAffinity;
+        theodoreAffinity = data.theodoreAffinity;
+        zihanAffinity = data.zihanAffinity;
+
+        characterSprite.sprite = data.loadedSprite;
+
+        if (SceneManager.GetActiveScene().name != data.currentScene)
+        {
+            SceneManager.LoadScene(data.currentScene);
+        }
+        else
+        {
+            ShowNextDialogue();
+        }
+        Debug.Log("Game loaded from " + SavePath);
+    }
+
+    private IEnumerator AutoSave(float delay)
+    {
+        while (true)
+        {
+            SaveGame();
+            yield return new WaitForSeconds(delay);
+        }
     }
 }
 
