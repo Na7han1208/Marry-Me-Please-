@@ -33,6 +33,7 @@ public class ChooseNameManager : MonoBehaviour
         pauseButton.enabled = false;
 
         submitButtonText.text = "";
+        inputField.text = " ";
 
         StartCoroutine(ScrollBurnEffect());
         yield return new WaitForSeconds(burnDuration);
