@@ -41,12 +41,29 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
-        //Initialise important things to be inactive then call the first bit of dialogue
         spacebarReminder.gameObject.SetActive(false);
         foreach (var button in choiceButtons)
         {
             button.gameObject.SetActive(false);
         }
+        if (SaveLoadManager.Instance.SaveExists())
+        {
+            SaveData data = SaveLoadManager.Instance.LoadGame();
+            currentLine = data.currentLine;
+            mingAffinity = data.mingAffinity;
+            jinhuiAffinity = data.jinhuiAffinity;
+            yilinAffinity = data.yilinAffinity;
+            fenAffinity = data.fenAffinity;
+            yukiAffinity = data.yukiAffinity;
+            theodoreAffinity = data.theodoreAffinity;
+            zihanAffinity = data.zihanAffinity;
+            ChangeSprite(0); //Load neutral state of current character
+        }
+        else
+        {
+            currentLine = 0; // start fresh if no save
+        }
+
         ShowNextDialogue();
 
         //Dialogue index used for referencing dialogue.
@@ -225,7 +242,7 @@ public class DialogueManager : MonoBehaviour
 
     public void load3CupMonty()
     {
-        SaveGame();
+        SaveDialogueState();
         SceneManager.LoadScene("3CupMonty");
     }
 
@@ -271,79 +288,37 @@ public class DialogueManager : MonoBehaviour
 
     public void returnToMenu()
     {
-        SaveGame();
+        SaveDialogueState();
         SceneManager.LoadScene("MainMenu");
     }
 
 
-    //SAVE / LOAD SYSTEM
-    string SavePath => Application.persistentDataPath + "/savefile.json";
-    public void SaveGame()
+    public void SaveDialogueState()
     {
-        SaveData data = new SaveData
-        {
-            currentLine = this.currentLine,
+        SaveData saveData = new SaveData();
 
-            mingAffinity = this.mingAffinity,
-            jinhuiAffinity = this.jinhuiAffinity,
-            yilinAffinity = this.yilinAffinity,
-            fenAffinity = this.fenAffinity,
-            yukiAffinity = this.yukiAffinity,
-            theodoreAffinity = this.theodoreAffinity,
-            zihanAffinity = this.zihanAffinity,
+        saveData.currentLine = currentLine;
+        saveData.mingAffinity = mingAffinity;
+        saveData.jinhuiAffinity = jinhuiAffinity;
+        saveData.yilinAffinity = yilinAffinity;
+        saveData.fenAffinity = fenAffinity;
+        saveData.yukiAffinity = yukiAffinity;
+        saveData.theodoreAffinity = theodoreAffinity;
+        saveData.zihanAffinity = zihanAffinity;
 
-            loadedSprite = characterSprite.sprite,
-
-            currentScene = SceneManager.GetActiveScene().name
-        };
-
-        string json = JsonUtility.ToJson(data);
-        System.IO.File.WriteAllText(SavePath, json);
-        Debug.Log("Game saved to " + SavePath);
-    }
-
-    public void LoadGame()
-    {
-        if (!System.IO.File.Exists(SavePath))
-        {
-            Debug.LogWarning("Save file not found ( ˶°ㅁ°)");
-            return;
-        }
-
-        string json = System.IO.File.ReadAllText(SavePath);
-        SaveData data = JsonUtility.FromJson<SaveData>(json);
-
-        this.currentLine = data.currentLine;
-
-        mingAffinity = data.mingAffinity;
-        jinhuiAffinity = data.jinhuiAffinity;
-        yilinAffinity = data.yilinAffinity;
-        fenAffinity = data.fenAffinity;
-        yukiAffinity = data.yukiAffinity;
-        theodoreAffinity = data.theodoreAffinity;
-        zihanAffinity = data.zihanAffinity;
-
-        characterSprite.sprite = data.loadedSprite;
-
-        if (SceneManager.GetActiveScene().name != data.currentScene)
-        {
-            SceneManager.LoadScene(data.currentScene);
-        }
-        else
-        {
-            ShowNextDialogue();
-        }
-        Debug.Log("Game loaded from " + SavePath);
+        SaveLoadManager.Instance.SaveGame(saveData);
     }
 
     private IEnumerator AutoSave(float delay)
     {
         while (true)
         {
-            SaveGame();
+            SaveDialogueState();
             yield return new WaitForSeconds(delay);
         }
     }
+    
+    
 }
 
 /*
