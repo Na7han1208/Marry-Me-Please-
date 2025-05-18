@@ -12,7 +12,7 @@ using NUnit.Framework;
 public class DialogueManager : MonoBehaviour
 {
     //INIT
-    [Header("Affinity Data")]
+    //[Header("Affinity Data")]
     private int mingAffinity = 0;
     private int jinhuiAffinity = 0;
     private int yilinAffinity = 0;
@@ -74,8 +74,8 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(AutoSave(20f));
     }
 
-    void Update()
-    {
+    void Update(){
+        //Spacebar Continue
         if (awaitingSpacebar && !isTyping && Input.GetKeyDown(KeyCode.Space))
         {
             awaitingSpacebar = false;
@@ -83,6 +83,14 @@ public class DialogueManager : MonoBehaviour
             ShowNextDialogue();
             spacebarReminder.gameObject.SetActive(false);
         }
+
+        //Dialogue Options through Nums
+        if (choiceButtons[0].IsActive() && Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            
+        }
+
+        
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -221,14 +229,14 @@ public class DialogueManager : MonoBehaviour
     {
         switch (characterNameText.text)
         {
-            case "Ming": mingAffinity += affinity; break;
-            case "Jinhui": jinhuiAffinity += affinity; break;
-            case "Yilin": yilinAffinity += affinity; break;
-            case "Fen": fenAffinity += affinity; break;
-            case "Yuki": yukiAffinity += affinity; break;
-            case "Theodore": theodoreAffinity += affinity; break;
-            case "Zihan": zihanAffinity += affinity; break;
-            default: Debug.Log("Character not found"); break;
+            case "Ming": mingAffinity += affinity;          break;
+            case "Jinhui": jinhuiAffinity += affinity;      break;
+            case "Yilin": yilinAffinity += affinity;        break;
+            case "Fen": fenAffinity += affinity;            break;
+            case "Yuki": yukiAffinity += affinity;          break;
+            case "Theodore": theodoreAffinity += affinity;  break;
+            case "Zihan": zihanAffinity += affinity;        break;
+            default: Debug.Log("Character not found");      break;
         }
         if (affinity >= 8)
         {
