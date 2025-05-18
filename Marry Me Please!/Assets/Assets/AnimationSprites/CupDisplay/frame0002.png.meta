@@ -17,9 +17,6 @@ TextureImporter:
   - first:
       213: 3330552231976953908
     second: frame0002_4
-  - first:
-      213: 4612512359874105263
-    second: frame0002_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -144,10 +141,10 @@ TextureImporter:
       name: frame0002_0
       rect:
         serializedVersion: 2
-        x: 546
-        y: 253
-        width: 7
-        height: 14
+        x: 407
+        y: 164
+        width: 974
+        height: 795
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +163,10 @@ TextureImporter:
       name: frame0002_1
       rect:
         serializedVersion: 2
-        x: 573
-        y: 180
-        width: 543
-        height: 592
+        x: 515
+        y: 132
+        width: 156
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,10 +185,10 @@ TextureImporter:
       name: frame0002_2
       rect:
         serializedVersion: 2
-        x: 543
-        y: 203
-        width: 34
-        height: 25
+        x: 853
+        y: 165
+        width: 21
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,10 +207,10 @@ TextureImporter:
       name: frame0002_3
       rect:
         serializedVersion: 2
-        x: 879
-        y: 170
-        width: 28
-        height: 8
+        x: 1148
+        y: 110
+        width: 67
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,10 +229,10 @@ TextureImporter:
       name: frame0002_4
       rect:
         serializedVersion: 2
-        x: 908
-        y: 176
-        width: 23
-        height: 9
+        x: 631
+        y: 0
+        width: 460
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,28 +243,6 @@ TextureImporter:
       bones: []
       spriteID: 438eed4eb9f783e20800000000000000
       internalID: 3330552231976953908
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frame0002_5
-      rect:
-        serializedVersion: 2
-        x: 843
-        y: 164
-        width: 33
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: faf056c9d8fe20040800000000000000
-      internalID: 4612512359874105263
       vertices: []
       indices: 
       edges: []
@@ -291,7 +266,6 @@ TextureImporter:
       frame0002_2: 5884928619707039904
       frame0002_3: 5639396826728861203
       frame0002_4: 3330552231976953908
-      frame0002_5: 4612512359874105263
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

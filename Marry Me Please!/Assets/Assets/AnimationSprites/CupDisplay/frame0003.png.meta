@@ -20,15 +20,6 @@ TextureImporter:
   - first:
       213: -1744306664125416308
     second: frame0003_5
-  - first:
-      213: -491195591005434541
-    second: frame0003_6
-  - first:
-      213: -5187989268619181087
-    second: frame0003_7
-  - first:
-      213: 8745409845313565886
-    second: frame0003_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -153,10 +144,10 @@ TextureImporter:
       name: frame0003_0
       rect:
         serializedVersion: 2
-        x: 672
-        y: 458
-        width: 31
-        height: 11
+        x: 528
+        y: 468
+        width: 114
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +166,10 @@ TextureImporter:
       name: frame0003_1
       rect:
         serializedVersion: 2
-        x: 736
-        y: 335
-        width: 532
-        height: 543
+        x: 556
+        y: 162
+        width: 948
+        height: 918
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +188,10 @@ TextureImporter:
       name: frame0003_2
       rect:
         serializedVersion: 2
-        x: 549
-        y: 164
-        width: 458
-        height: 270
+        x: 519
+        y: 252
+        width: 6
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,10 +210,10 @@ TextureImporter:
       name: frame0003_3
       rect:
         serializedVersion: 2
-        x: 1015
-        y: 318
-        width: 15
-        height: 27
+        x: 549
+        y: 142
+        width: 458
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +232,10 @@ TextureImporter:
       name: frame0003_4
       rect:
         serializedVersion: 2
-        x: 519
-        y: 252
-        width: 6
-        height: 15
+        x: 515
+        y: 198
+        width: 40
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,10 +254,10 @@ TextureImporter:
       name: frame0003_5
       rect:
         serializedVersion: 2
-        x: 515
-        y: 198
-        width: 40
-        height: 27
+        x: 852
+        y: 134
+        width: 11
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,72 +268,6 @@ TextureImporter:
       bones: []
       spriteID: c8c3579a45afac7e0800000000000000
       internalID: -1744306664125416308
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frame0003_6
-      rect:
-        serializedVersion: 2
-        x: 919
-        y: 174
-        width: 14
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 35d02e2663cee29f0800000000000000
-      internalID: -491195591005434541
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frame0003_7
-      rect:
-        serializedVersion: 2
-        x: 935
-        y: 178
-        width: 25
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1e34a615f3f8008b0800000000000000
-      internalID: -5187989268619181087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frame0003_8
-      rect:
-        serializedVersion: 2
-        x: 871
-        y: 166
-        width: 25
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eb47e1d4befed5970800000000000000
-      internalID: 8745409845313565886
       vertices: []
       indices: 
       edges: []
@@ -367,9 +292,6 @@ TextureImporter:
       frame0003_3: 3562745598345809493
       frame0003_4: -4472582533840943060
       frame0003_5: -1744306664125416308
-      frame0003_6: -491195591005434541
-      frame0003_7: -5187989268619181087
-      frame0003_8: 8745409845313565886
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
