@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System;
 
 public class MainMenuManager : MonoBehaviour
 {
@@ -13,15 +14,22 @@ public class MainMenuManager : MonoBehaviour
 
     void Awake()
     {
-        scroll1.GetComponent<Animator>().enabled = false;
-        scroll2.GetComponent<Animator>().enabled = false;
-        scroll3.GetComponent<Animator>().enabled = false;
-        scroll4.GetComponent<Animator>().enabled = false;
+        try
+        {
+            scroll1.GetComponent<Animator>().enabled = false;
+            scroll2.GetComponent<Animator>().enabled = false;
+            scroll3.GetComponent<Animator>().enabled = false;
+            scroll4.GetComponent<Animator>().enabled = false;
 
-        scroll1.GetComponentInChildren<TMP_Text>().enabled = false;
-        scroll2.GetComponentInChildren<TMP_Text>().enabled = false;
-        scroll3.GetComponentInChildren<TMP_Text>().enabled = false;
-        scroll4.GetComponentInChildren<TMP_Text>().enabled = false;
+            scroll1.GetComponentInChildren<TMP_Text>().enabled = false;
+            scroll2.GetComponentInChildren<TMP_Text>().enabled = false;
+            scroll3.GetComponentInChildren<TMP_Text>().enabled = false;
+            scroll4.GetComponentInChildren<TMP_Text>().enabled = false;
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning(e);
+        }
 
         StartCoroutine(ScrollsUnfurl(0.3f));
     }

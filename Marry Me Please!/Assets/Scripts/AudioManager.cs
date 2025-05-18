@@ -1,4 +1,4 @@
-using System.Diagnostics;
+using System;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -6,10 +6,13 @@ public class AudioManager : MonoBehaviour
 {
 
     public Sound[] Sounds;
-    
-    void Awake(){
+
+
+    void Awake()
+    {
         //For each unique sound create a gameObject of type audio source and instatiate attributes of the sounds class
-        foreach(Sound s in Sounds){
+        foreach (Sound s in Sounds)
+        {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
 
@@ -26,7 +29,13 @@ public class AudioManager : MonoBehaviour
         foreach(Sound s in Sounds){
             if(s.name == name){
                 s.source.Play();
-                s.source.volume = s.volume;
+                try{
+                    s.source.volume = s.volume * SaveLoadManager.Instance.LoadGame().masterVolume;
+                }
+                catch (Exception e){
+                    s.source.volume = s.volume;
+                    Debug.LogWarning(e);
+                }
                 s.source.pitch = s.pitch;
                 s.source.loop = s.loop;
             }

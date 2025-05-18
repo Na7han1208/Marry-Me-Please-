@@ -74,9 +74,10 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(AutoSave(20f));
     }
 
-    void Update(){
+    void Update()
+    {
         //Spacebar Continue
-        if (awaitingSpacebar && !isTyping && Input.GetKeyDown(KeyCode.Space))
+        if (awaitingSpacebar && !isTyping && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0)))
         {
             awaitingSpacebar = false;
             currentLine++;
@@ -87,11 +88,22 @@ public class DialogueManager : MonoBehaviour
         //Dialogue Options through Nums
         if (choiceButtons[0].IsActive() && Input.GetKeyDown(KeyCode.Alpha1))
         {
-            
+            choiceButtons[0].onClick.Invoke();
+        }
+        if (choiceButtons[1].IsActive() && Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            choiceButtons[1].onClick.Invoke();
+        }
+        if (choiceButtons[2].IsActive() && Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            choiceButtons[2].onClick.Invoke();
+        }
+        if (choiceButtons[3].IsActive() && Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            choiceButtons[3].onClick.Invoke();
         }
 
-        
-
+        //Return to Menu
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             returnToMenu();
@@ -104,7 +116,7 @@ public class DialogueManager : MonoBehaviour
         // Kill the method if already typing
         if (isTyping) return;
 
-        // End convo is out of lines
+        // End convo if out of lines
         if (currentLine >= dialogueLines.Length)
         {
             dialogueText.text = "End of conversation.";
@@ -161,17 +173,23 @@ public class DialogueManager : MonoBehaviour
         foreach (char c in text)
         {
             dialogueText.text += c;
-            yield return new WaitForSeconds(dialogueSpeed);
+            if (SaveLoadManager.Instance.SaveExists())
+            {
+                yield return new WaitForSeconds(dialogueSpeed/(SaveLoadManager.Instance.LoadGame().dialogueSpeed/20));
+            }
+            else
+            {
+                yield return new WaitForSeconds(dialogueSpeed);
+            }
+            
         }
 
         isTyping = false;
         onComplete.Invoke();
     }
 
-
     //Checks if the choices are empty, if all of them are empty it returns false
-    bool HasChoices(DialogueLine line)
-    {
+    bool HasChoices(DialogueLine line){
         return !string.IsNullOrEmpty(line.choice1) ||
                !string.IsNullOrEmpty(line.choice2) ||
                !string.IsNullOrEmpty(line.choice3) ||
@@ -229,14 +247,14 @@ public class DialogueManager : MonoBehaviour
     {
         switch (characterNameText.text)
         {
-            case "Ming": mingAffinity += affinity;          break;
-            case "Jinhui": jinhuiAffinity += affinity;      break;
-            case "Yilin": yilinAffinity += affinity;        break;
-            case "Fen": fenAffinity += affinity;            break;
-            case "Yuki": yukiAffinity += affinity;          break;
-            case "Theodore": theodoreAffinity += affinity;  break;
-            case "Zihan": zihanAffinity += affinity;        break;
-            default: Debug.Log("Character not found");      break;
+            case "Ming": mingAffinity += affinity; break;
+            case "Jinhui": jinhuiAffinity += affinity; break;
+            case "Yilin": yilinAffinity += affinity; break;
+            case "Fen": fenAffinity += affinity; break;
+            case "Yuki": yukiAffinity += affinity; break;
+            case "Theodore": theodoreAffinity += affinity; break;
+            case "Zihan": zihanAffinity += affinity; break;
+            default: Debug.Log("Character not found"); break;
         }
         if (affinity >= 8)
         {
@@ -325,8 +343,6 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(delay);
         }
     }
-    
-    
 }
 
 /*

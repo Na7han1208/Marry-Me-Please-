@@ -20,6 +20,14 @@ public class ChooseNameManager : MonoBehaviour
         scrollBurnMaterial.SetFloat("_Fade", 1f); // Set the initial value to 1
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            pressSubmitButton();
+        }
+    }
+
     public void pressSubmitButton()
     {
         StartCoroutine("BeginGame");

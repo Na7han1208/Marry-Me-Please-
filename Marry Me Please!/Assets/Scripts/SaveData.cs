@@ -13,8 +13,7 @@ public class SaveData
     public string sceneName;
 
     //Settings Variables
-    public float musicVolume;
-    public float sfxVolume;
+    public float masterVolume;
     public float dialogueSpeed;
     public bool fullscreen;
 }
