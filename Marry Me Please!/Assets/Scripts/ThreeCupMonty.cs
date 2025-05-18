@@ -16,12 +16,15 @@ public class ThreeCupMonty : MonoBehaviour
     [SerializeField] TMP_Text AboveCupsText;
 
     void Start(){
+        Cups[1].GetComponent<Animator>().StopPlayback();
+
         // Store original positions
         originalPositions = new Vector3[Cups.Length];
-        for (int i = 0; i < Cups.Length; i++){
+        for (int i = 0; i < Cups.Length; i++)
+        {
             originalPositions[i] = Cups[i].GetComponent<RectTransform>().anchoredPosition;
         }
-        winningCupIndex = Random.Range(0, Cups.Length);
+        winningCupIndex = 1;
         AboveCupsText.text = "Watch the cups!";
         StartCoroutine(ShowWinningCupThenShuffle());
     }
@@ -33,13 +36,7 @@ public class ThreeCupMonty : MonoBehaviour
     }
 
     IEnumerator ShowWinningCupThenShuffle(){
-        // Temporarily turn winning Cup red (Later we will show where the dumplings are)
-        Image CupImage = Cups[winningCupIndex].GetComponent<Image>();
-        Color originalColor = CupImage.color;
-        CupImage.color = Color.red;
-        yield return new WaitForSeconds(1.5f); // Show red briefly
-        CupImage.color = originalColor;
-
+        Cups[winningCupIndex].GetComponent<Animator>().Play(0);
         // Start the shuffle animation
         yield return StartCoroutine(ShuffleAndStart());
     }
@@ -75,8 +72,6 @@ public class ThreeCupMonty : MonoBehaviour
             }
 
         }
-        // Randomize winning Cup
-        winningCupIndex = Random.Range(0, Cups.Length);
 
         // Re-enable interactions
         for (int i = 0; i < Cups.Length; i++){
@@ -87,11 +82,29 @@ public class ThreeCupMonty : MonoBehaviour
         EnableAllCups();
     }
 
-void OnCupSelected(int selectedIndex){
-    // Reveal winning Cup by turning it red
-    Cups[winningCupIndex].GetComponent<Image>().color = Color.red;
-    DisableAllCups();
-}
+    void OnCupSelected(int selectedIndex)
+    {
+        Cups[winningCupIndex].GetComponent<Animator>().Play(0);
+        DisableAllCups();
+        SaveData data = SaveLoadManager.Instance.LoadGame();
+        if (selectedIndex == winningCupIndex)
+        {
+            AboveCupsText.text = "You win!";
+            data.mingAffinity += 5;
+            data.jinhuiAffinity += 5;
+            data.fenAffinity += 5;
+            data.theodoreAffinity += 5;
+        }
+        else
+        {
+            AboveCupsText.text = "You lose.";
+            data.mingAffinity += -5;
+            data.jinhuiAffinity += -5;
+            data.fenAffinity += -5;
+            data.theodoreAffinity += -5;
+        }
+        SaveLoadManager.Instance.SaveGame(data);
+    }
 
     void DisableAllCups(){
         foreach (var Cup in Cups){

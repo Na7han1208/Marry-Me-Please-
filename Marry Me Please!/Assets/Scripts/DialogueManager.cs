@@ -221,7 +221,7 @@ public class DialogueManager : MonoBehaviour
                 button.gameObject.SetActive(false);
             }
 
-            changeAffinity(affinityChange);
+            changeAffinity(characterNameText.text, affinityChange);
 
             //Shows the applicable response text and then waits for spacebar to continue, also shows the player a reminder to press spacebar to continue
             StartCoroutine(TypeText(responseText, () =>
@@ -236,9 +236,9 @@ public class DialogueManager : MonoBehaviour
         });
     }
 
-    public void changeAffinity(int affinity)
+    public void changeAffinity(string characterName, int affinity)
     {
-        switch (characterNameText.text)
+        switch (characterName)
         {
             case "Ming": mingAffinity += affinity; break;
             case "Jinhui": jinhuiAffinity += affinity; break;
