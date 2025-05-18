@@ -30,7 +30,7 @@ public class AudioManager : MonoBehaviour
             if(s.name == name){
                 s.source.Play();
                 try{
-                    s.source.volume = s.volume * SaveLoadManager.Instance.LoadGame().masterVolume;
+                    s.source.volume = s.volume*PlayerPrefs.GetFloat("MasterVolume", 1f);
                 }
                 catch (Exception e){
                     s.source.volume = s.volume;

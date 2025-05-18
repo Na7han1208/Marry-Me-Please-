@@ -7,6 +7,7 @@ using System;
 
 public class MainMenuManager : MonoBehaviour
 {
+    [Header("Scrolls")]
     public GameObject scroll1;
     public GameObject scroll2;
     public GameObject scroll3;
@@ -44,15 +45,7 @@ public class MainMenuManager : MonoBehaviour
     {
         if (SaveLoadManager.Instance.SaveExists())
         {
-            SaveData data = SaveLoadManager.Instance.LoadGame();
-            if (data != null && !string.IsNullOrEmpty(data.sceneName))
-            {
-                SceneManager.LoadScene(data.sceneName);
-            }
-            else
-            {
-                Debug.LogWarning("Save data corrupted or empty scene.");
-            }
+            SceneManager.LoadScene("Main");
         }
         else
         {

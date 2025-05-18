@@ -5,11 +5,18 @@ using UnityEngine.SceneManagement;
 public class SaveLoadManager : MonoBehaviour
 {
     public static SaveLoadManager Instance;
-
     private string saveFilePath;
+
+    [Header("Settings")]
+    public float masterVolume;
+    public float dialogueSpeed;
+    public bool fullscreen;
 
     private void Awake()
     {
+        masterVolume = 1f;
+        dialogueSpeed = 1f;
+        fullscreen = false;
         if (Instance == null)
         {
             Instance = this;
@@ -24,7 +31,6 @@ public class SaveLoadManager : MonoBehaviour
 
     public void SaveGame(SaveData data)
     {
-        data.sceneName = SceneManager.GetActiveScene().name;
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(saveFilePath, json);
         Debug.Log("Game saved to: " + saveFilePath);

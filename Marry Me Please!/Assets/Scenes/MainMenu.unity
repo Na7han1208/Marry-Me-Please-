@@ -440,6 +440,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83bbbddb53aa91e4a85550c3f5270a86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masterVolume: 1
+  dialogueSpeed: 1
+  fullscreen: 0
 --- !u!4 &725238868
 Transform:
   m_ObjectHideFlags: 0

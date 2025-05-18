@@ -10,10 +10,4 @@ public class SaveData
     public int yukiAffinity;
     public int theodoreAffinity;
     public int zihanAffinity;
-    public string sceneName;
-
-    //Settings Variables
-    public float masterVolume;
-    public float dialogueSpeed;
-    public bool fullscreen;
 }

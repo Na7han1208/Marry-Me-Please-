@@ -41,6 +41,11 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
+        //Dialogue index used for referencing dialogue.
+        for (int i = 0; i < dialogueLines.Length; i++)
+        {
+            dialogueLines[i].dialogueIndex = i;
+        }
         spacebarReminder.gameObject.SetActive(false);
         foreach (var button in choiceButtons)
         {
@@ -65,12 +70,6 @@ public class DialogueManager : MonoBehaviour
         }
 
         ShowNextDialogue();
-
-        //Dialogue index used for referencing dialogue.
-        for (int i = 0; i < dialogueLines.Length; i++)
-        {
-            dialogueLines[i].dialogueIndex = i;
-        }
         StartCoroutine(AutoSave(20f));
     }
 
@@ -170,18 +169,12 @@ public class DialogueManager : MonoBehaviour
     IEnumerator TypeText(string text, UnityAction onComplete)
     {
         dialogueText.text = "";
+        float adjustedSpeed = dialogueSpeed/PlayerPrefs.GetFloat("DialogueSpeed", 1f);
+        
         foreach (char c in text)
         {
             dialogueText.text += c;
-            if (SaveLoadManager.Instance.SaveExists())
-            {
-                yield return new WaitForSeconds(dialogueSpeed/(SaveLoadManager.Instance.LoadGame().dialogueSpeed/20));
-            }
-            else
-            {
-                yield return new WaitForSeconds(dialogueSpeed);
-            }
-            
+            yield return new WaitForSeconds(adjustedSpeed);
         }
 
         isTyping = false;

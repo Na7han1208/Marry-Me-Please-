@@ -1,6 +1,5 @@
 using System;
 using TMPro;
-using UnityEditor.Rendering.Fullscreen.ShaderGraph;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -21,26 +20,11 @@ public class SettingsManager : MonoBehaviour
 
     void Awake()
     {
-        if (SaveLoadManager.Instance.SaveExists())
-        {
-            SaveData data = SaveLoadManager.Instance.LoadGame();
-            MasterVolumeSlider.value = data.masterVolume;
-            DialogueSpeedSlider.value = data.dialogueSpeed;
-            isFullscreen = data.fullscreen;
-            if (data.fullscreen)
-            {
-                fullscreenDumpling.SetActive(true); ;
-            }
-            else
-            {
-                fullscreenDumpling.SetActive(false);
-            }
-        }
-        else
-        {
-            MasterVolumeSlider.value = 1f;
-            DialogueSpeedSlider.value = 1f;
-        }
+        MasterVolumeSlider.value = PlayerPrefs.GetFloat("MasterVolume", 1f);
+        DialogueSpeedSlider.value = PlayerPrefs.GetFloat("DialogueSpeed", 1f);
+        isFullscreen = PlayerPrefs.GetInt("Fullscreen", 1) == 1;
+
+        fullscreenDumpling.SetActive(isFullscreen);
     }
 
     void Update()
@@ -67,12 +51,10 @@ public class SettingsManager : MonoBehaviour
 
     public void ReturnToMenu()
     {
-        //Save Changes
-        SaveData data = SaveLoadManager.Instance.LoadGame();
-        data.masterVolume = MasterVolumeSlider.value;
-        data.dialogueSpeed = DialogueSpeedSlider.value;
-        data.fullscreen = isFullscreen;
-        SaveLoadManager.Instance.SaveGame(data);
+        PlayerPrefs.SetFloat("MasterVolume", MasterVolumeSlider.value);
+        PlayerPrefs.SetFloat("DialogueSpeed", DialogueSpeedSlider.value);
+        PlayerPrefs.SetInt("Fullscreen", isFullscreen ? 1 : 0);
+        PlayerPrefs.Save();
 
         SceneManager.LoadScene("MainMenu");
     }

@@ -497,7 +497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 595, y: -231}
+  m_AnchoredPosition: {x: 561, y: -208}
   m_SizeDelta: {x: 2892, y: 7664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &372251047
@@ -575,7 +575,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 422, y: 109}
-  m_SizeDelta: {x: 969.17, y: 118.5}
+  m_SizeDelta: {x: 863.3, y: 118.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &581103253
 MonoBehaviour:
@@ -755,6 +755,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 217618784}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &628304891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 628304892}
+  - component: {fileID: 628304894}
+  - component: {fileID: 628304893}
+  m_Layer: 5
+  m_Name: NameBackground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &628304892
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628304891}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.29287177, y: 0.13570589, z: 0.23001}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1685131767}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -362, y: 180}
+  m_SizeDelta: {x: 2780.0002, y: 820}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &628304893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628304891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 1102826241100109301, guid: cbd765e5ed0fe3346bdc21cf481f753f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &628304894
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628304891}
+  m_CullTransparentMesh: 1
 --- !u!1 &696715179
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,7 +1034,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 250}
+  m_AnchoredPosition: {x: 52, y: 250}
   m_SizeDelta: {x: -1820, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &901360402
@@ -999,7 +1074,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 421.99988, y: -173}
-  m_SizeDelta: {x: 969.17, y: 118.5}
+  m_SizeDelta: {x: 863.3, y: 118.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &901360404
 MonoBehaviour:
@@ -1132,7 +1207,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 421.99988, y: -317}
-  m_SizeDelta: {x: 969.17, y: 118.5}
+  m_SizeDelta: {x: 863.3, y: 118.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1033968540
 MonoBehaviour:
@@ -1265,7 +1340,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 421.99988, y: -31.000023}
-  m_SizeDelta: {x: 969.17, y: 118.5}
+  m_SizeDelta: {x: 863.3, y: 118.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211490789
 MonoBehaviour:
@@ -1557,15 +1632,15 @@ RectTransform:
   m_GameObject: {fileID: 1278374199}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5400066, y: 0.5400066, z: 5.400003}
+  m_LocalScale: {x: 0.11881764, y: 0.11881764, z: 1.1881626}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1829302937}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -761, y: 415.00012}
-  m_SizeDelta: {x: 599, y: 313.00003}
+  m_AnchoredPosition: {x: -829, y: 461}
+  m_SizeDelta: {x: 1652, y: 596}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1278374201
 MonoBehaviour:
@@ -1643,7 +1718,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5113469029405553909, guid: e60ee6358b1e39442aa0c41ce3e1bb7f, type: 3}
+  m_Sprite: {fileID: -9042028117199634284, guid: bcbf08be4ac4b7d48b5e91edbae63c89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1805,7 +1880,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -464, y: 191}
+  m_AnchoredPosition: {x: -368, y: 183}
   m_SizeDelta: {x: 200, y: 62.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1368570659
@@ -1837,8 +1912,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4281839571
+  m_fontColor: {r: 0.827451, g: 0.6862745, b: 0.21568628, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1855,15 +1930,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 128.5
-  m_fontSizeBase: 128.5
+  m_fontSize: 109.8
+  m_fontSizeBase: 109.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1893,7 +1968,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -239.20317, y: 0, z: -620.0107, w: 0}
+  m_margin: {x: -239.20317, y: 0, z: -228.83041, w: -29.859257}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7249,972 +7324,19 @@ MonoBehaviour:
   spacebarReminder: {fileID: 870291845}
   dialogueLines:
   - dialogueIndex: 0
-    characterName: ' '
-    dialogueText: You stand sit nervously in the Throne Room, waiting to hear what
-      Royal Advisor Wu has to say. He had said to you yesterday that his news was
-      of utmost importance. As the heir to the Throne of the Northern Chinese Empire,
-      your coronation is in 7 days. You have no time to worry about much else.
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Wu
+    characterName: Ming
     dialogueText: Lighting Test
-    choice1: Make Blush
-    response1: UWU
-    affection1: 9
-    choice2: Make Angry
+    choice1: BLush
+    response1: uwu
+    affection1: 10
+    choice2: Angy
     response2: rawr
-    affection2: -9
+    affection2: -10
     choice3: 
     response3: 
     affection3: 0
     choice4: 
     response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: ChangeSprite
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Wu
-    dialogueText: The Chance War will reach its 100th year of conflict in 7 days.
-      France has been a valient enemy, fighting the heart of the Chinese empire...
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Wu
-    dialogueText: However, we draw tired of this lengthy conflict and seek to find
-      a conclusion to this bloodshed. Though we have thus far remained triumphant,
-      our resources are dwindling.
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Wu
-    dialogueText: Thus we look to you, mighty her, to bring an end to this war...
-      through marriage
-    choice1: I understand
-    response1: Fantastic! Royal Advisor Ming will introduce you to your candidates.
-    affection1: 0
-    choice2: Marriage... why?
-    response2: It is the only way, marriage brings with it alliances.
-    affection2: 0
-    choice3: Can't we just kill the French instead?
-    response3: Your highness,  we have tried. However the French scum are far too
-      persistant.
-    affection3: 0
-    choice4: ...
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Wu
-    dialogueText: "We have prepared for you a multitude of candidates for you to
-      choose from, ranging from generals to peasants, rich to poor, hot to\u2026
-      kind. It is up to you to choose both who is the most advantageous to the empire,
-      but also, who you would like to marry. "
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Wu
-    dialogueText: My liege it has been an honour serving you, but unfortunately our
-      time together draws to an end. I have grown old and weary and thus must announce
-      my retirement. However, I have prepared for you a worthy replacement. My child
-      Ming shall fill this absence, as royal advisor, with grace and humility.
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Wu
-    dialogueText: '*He bows and skips away happily*'
-    choice1: Wait... I don't quite understand??
-    response1: 
-    affection1: 0
-    choice2: ...
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: My Liege. I am here to humbly present your candidates for marriage.
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: ChangeSprite
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: "Firstly, Yuki. A\u2026 Japanese\u2026 tea merchant who serves
-      the best tea in the kingdom. Many a dispute has been solved over his warm tea.
-      Though he is short in money\u2026 and stature. "
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: Then, Prince Zihan of the South of whom you already know after
-      your little engagement dispute. A valiant candidate who holds many political
-      benefits, but also holds many romantic flings.
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: "Then, Theo. **Checks scroll** French????! Okay this is a candidate.
-      He is a he. This seems to be the French emissary, not sure who invited him\u2026
-      moving swiftly along."
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: Then, General Fen. The new general to replaced her father, General
-      Fong, after he fell in battle. (To be honest she kind of scares me) whisper.
-      However she brings a tactical advantage on the battlefield.
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: Jinhui, a creative type. Every painting in this palace is one of
-      his works. Though he is somewhat withdrawn so finding out more about him is
-      difficult.
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: Next, Yilin, our head chef. Her dishes bring warmth into everyone's
-      hearts and homes. However cooking is all she brings to the table.
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: 'Last and not least. Me. The best candidate. Your royal advisor.
-      I know everything happening both within and outside the kingdom. '
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: Now, who would you like to continue this conversation with?
-    choice1: Jinhui
-    response1: 
-    affection1: -2
-    choice2: Yilin
-    response2: 
-    affection2: -1
-    choice3: Fen
-    response3: 
-    affection3: 0
-    choice4: Ming
-    response4: 
-    affection4: 2
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: skipToLine
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 19
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: skipToLine
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 21
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: skipToLine
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 23
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: Ming Dialogue Line 1
-    choice1: Positive
-    response1: Positive Reaction
-    affection1: 2
-    choice2: Neutral
-    response2: Neutral Reaction
-    affection2: 0
-    choice3: Negative
-    response3: Negative Reaction
-    affection3: -2
-    choice4: ...
-    response4: ...
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: ChangeSprite
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: Ming Dialogue Line 2
-    choice1: Positive
-    response1: Positive Reaction
-    affection1: 2
-    choice2: Neutral
-    response2: Neutral Reaction
-    affection2: 0
-    choice3: Negative
-    response3: Negative Reaction
-    affection3: -2
-    choice4: ...
-    response4: ...
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: ChangeSprite
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: skipToLine
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 25
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - dialogueIndex: 0
-    characterName: Jinhui
-    dialogueText: Jinhui  Dialogue Line 1
-    choice1: Positive
-    response1: Positive Reaction
-    affection1: 2
-    choice2: Neutral
-    response2: Neutral Reaction
-    affection2: 0
-    choice3: Negative
-    response3: Negative Reaction
-    affection3: -2
-    choice4: ...
-    response4: ...
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: ChangeSprite
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Jinhui
-    dialogueText: Jinhui  Dialogue Line 2
-    choice1: Positive
-    response1: Positive Reaction
-    affection1: 2
-    choice2: Neutral
-    response2: Neutral Reaction
-    affection2: 0
-    choice3: Negative
-    response3: Negative Reaction
-    affection3: -2
-    choice4: ...
-    response4: ...
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: ChangeSprite
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: skipToLine
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 25
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - dialogueIndex: 0
-    characterName: Yilin
-    dialogueText: Yilin  Dialogue Line 1
-    choice1: Positive
-    response1: Positive Reaction
-    affection1: 2
-    choice2: Neutral
-    response2: Neutral Reaction
-    affection2: 0
-    choice3: Negative
-    response3: Negative Reaction
-    affection3: -2
-    choice4: ...
-    response4: ...
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: ChangeSprite
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Yilin
-    dialogueText: Yilin  Dialogue Line 2
-    choice1: Positive
-    response1: Positive Reaction
-    affection1: 2
-    choice2: Neutral
-    response2: Neutral Reaction
-    affection2: 0
-    choice3: Negative
-    response3: Negative Reaction
-    affection3: -2
-    choice4: ...
-    response4: ...
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: ChangeSprite
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: skipToLine
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 25
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - dialogueIndex: 0
-    characterName: Fen
-    dialogueText: Fen Dialogue Line 1
-    choice1: Positive
-    response1: Positive Reaction
-    affection1: 2
-    choice2: Neutral
-    response2: Neutral Reaction
-    affection2: 0
-    choice3: Negative
-    response3: Negative Reaction
-    affection3: -2
-    choice4: ...
-    response4: ...
     affection4: 0
     choiceMethod1:
       m_PersistentCalls:
@@ -8248,61 +7370,16 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: Fen
-    dialogueText: Fen Dialogue Line 2
-    choice1: Positive
-    response1: Positive Reaction
-    affection1: 2
-    choice2: Neutral
-    response2: Neutral Reaction
-    affection2: 0
-    choice3: Negative
-    response3: Negative Reaction
-    affection3: -2
-    choice4: ...
-    response4: ...
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142606}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: changeSprite
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: Now my liege, we requrie you at the 3 cup monty tournament.
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
+    dialogueText: Fen Test - 3 Option
+    choice1: 1
+    response1: r1
+    affection1: 5
+    choice2: 2
+    response2: r2
+    affection2: 4
+    choice3: 3
+    response3: r3
+    affection3: 5
     choice4: 
     response4: 
     affection4: 0
@@ -8335,23 +7412,109 @@ MonoBehaviour:
           m_CallState: 2
     methodOnEnd:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: load3CupMonty
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: Fen
+    dialogueText: Fen Test - 4 Option
+    choice1: 1
+    response1: r1
+    affection1: 5
+    choice2: 2
+    response2: r2
+    affection2: 4
+    choice3: 3
+    response3: r3
+    affection3: 5
+    choice4: 4
+    response4: r4
+    affection4: 10
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: Fen
+    dialogueText: Fen Test - 4 Option 2
+    choice1: 1
+    response1: r1
+    affection1: 5
+    choice2: 2
+    response2: r2
+    affection2: 4
+    choice3: 3
+    response3: r3
+    affection3: 5
+    choice4: 4
+    response4: r4
+    affection4: 10
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: Fen
+    dialogueText: Fen Test - 4 Option 3
+    choice1: 1
+    response1: r1
+    affection1: 5
+    choice2: 2
+    response2: r2
+    affection2: 4
+    choice3: 3
+    response3: r3
+    affection3: 5
+    choice4: 4
+    response4: r4
+    affection4: 10
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
   dialogueSpeed: 0.015
   spriteManager: {fileID: 1649142609}
   lightingManager: {fileID: 216781390}
-  dialogueManager: {fileID: 0}
 --- !u!114 &1649142609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8489,6 +7652,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 628304892}
   - {fileID: 1368570658}
   - {fileID: 1381315266}
   m_Father: {fileID: 1829302937}
