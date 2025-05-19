@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ae0c3fe7feb958c409e537699a944f20
+guid: 3e2742121106c1d469d2f5f1b8b662be
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9211586117587512486
-    second: FenNeutral_0
+      213: 9195161786608706598
+    second: Full Body Art THEODORE Sad_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FenNeutral_0
+      name: Full Body Art THEODORE Sad_0
       rect:
         serializedVersion: 2
-        x: 159
-        y: 2
-        width: 723
-        height: 1916
+        x: 277
+        y: 0
+        width: 754
+        height: 1895
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ac29b4d4c026df70800000000000000
-      internalID: 9211586117587512486
+      spriteID: 624ee074de6cb9f70800000000000000
+      internalID: 9195161786608706598
       vertices: []
       indices: 
       edges: []

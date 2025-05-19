@@ -139,17 +139,19 @@ public class DialogueManager : MonoBehaviour
         {
             line.methodOnStart.Invoke();
         }
-
+        Color tempColor = characterSprite.GetComponent<Image>().color;
         if (line.characterName == "MC")
         {
-            characterSprite.enabled = false;
+            tempColor.a = 0f;
+            characterSprite.GetComponent<Image>().color = tempColor;
             Debug.Log("Loaded name: " + SaveLoadManager.Instance.LoadGame().playerName);
             characterNameText.text = SaveLoadManager.Instance.LoadGame().playerName;
         }
         else
         {
             characterNameText.text = line.characterName;
-            characterSprite.enabled = true;
+            tempColor.a = 1f;
+            characterSprite.GetComponent<Image>().color = tempColor;
         }
 
 

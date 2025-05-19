@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bebfd689642ac9b4292378dcb01e8bd3
+guid: c89e70618f675b24f9ebe1af5af07719
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -782117617173883080
-    second: MingNeutral_0
+      213: -9053833119717683007
+    second: Full Body Art ZIHAN Smile_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MingNeutral_0
+      name: Full Body Art ZIHAN Smile_0
       rect:
         serializedVersion: 2
-        x: 259
-        y: 4
-        width: 600
-        height: 1907
+        x: 150
+        y: 0
+        width: 774
+        height: 1920
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83796c7cb2c5525f0800000000000000
-      internalID: -782117617173883080
+      spriteID: 1c09f833fb25a5280800000000000000
+      internalID: -9053833119717683007
       vertices: []
       indices: 
       edges: []
