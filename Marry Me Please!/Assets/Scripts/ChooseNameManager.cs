@@ -30,6 +30,11 @@ public class ChooseNameManager : MonoBehaviour
 
     public void pressSubmitButton()
     {
+        //Save player name
+        SaveData data = SaveLoadManager.Instance.LoadGame();
+        data.playerName = inputField.text;
+        SaveLoadManager.Instance.SaveGame(data);
+
         StartCoroutine("BeginGame");
         AudioManager.Instance.StopAll();
         AudioManager.Instance.Play("ScrollBurn");

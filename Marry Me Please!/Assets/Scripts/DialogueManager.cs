@@ -130,8 +130,15 @@ public class DialogueManager : MonoBehaviour
         {
             line.methodOnStart.Invoke();
         }
-
-        characterNameText.text = line.characterName;
+        if (characterNameText.text == "MC")
+        {
+            characterNameText.text = SaveLoadManager.Instance.LoadGame().playerName;
+        }
+        else
+        {
+            characterNameText.text = line.characterName;
+        }
+        
 
         if (typingCoroutine != null)
         {
@@ -318,7 +325,15 @@ public class DialogueManager : MonoBehaviour
     {
         SaveData saveData = new SaveData();
 
-        saveData.currentLine = currentLine;
+        if (currentLine > 3)
+        {
+            saveData.currentLine = currentLine-2;
+        }
+        else
+        {
+            saveData.currentLine = currentLine;
+        }
+        
         saveData.mingAffinity = mingAffinity;
         saveData.jinhuiAffinity = jinhuiAffinity;
         saveData.yilinAffinity = yilinAffinity;

@@ -7546,8 +7546,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: Fen
-    dialogueText: ' '
+    characterName: MC
+    dialogueText: It is me, the dude.
     choice1: 
     response1: 
     affection1: 0
@@ -7577,6 +7577,36 @@ MonoBehaviour:
         m_Calls: []
     methodOnEnd:
       m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: Fen
+    dialogueText: ' '
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1649142608}
           m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
@@ -7590,6 +7620,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
   dialogueSpeed: 0.015
   spriteManager: {fileID: 1649142609}
   lightingManager: {fileID: 216781390}

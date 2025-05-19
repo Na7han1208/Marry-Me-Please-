@@ -10,4 +10,5 @@ public class SaveData
     public int yukiAffinity;
     public int theodoreAffinity;
     public int zihanAffinity;
+    public string playerName;
 }

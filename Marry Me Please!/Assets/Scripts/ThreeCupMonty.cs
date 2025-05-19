@@ -79,7 +79,7 @@ public class ThreeCupMonty : MonoBehaviour
         for (int i = 0; i < Cups.Length; i++){
             int index = i;
             Cups[i].onClick.RemoveAllListeners();
-            Cups[i].onClick.AddListener(() => OnCupSelected(index));
+            Cups[i].onClick.AddListener(() => StartCoroutine(OnCupSelected(index)));
         }
         EnableAllCups();
     }
@@ -123,6 +123,7 @@ public class ThreeCupMonty : MonoBehaviour
     }
 
     public void returnToMenu(){
+        AudioManager.Instance.StopAll();
         SceneManager.LoadScene("MainMenu");
     }
 }
