@@ -107,7 +107,8 @@ public class ThreeCupMonty : MonoBehaviour
         }
         SaveLoadManager.Instance.SaveGame(data);
         yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene("EndScreen");
+        AudioManager.Instance.StopAll();
+        SceneManager.LoadScene("End Screen");
     }
 
     void DisableAllCups(){

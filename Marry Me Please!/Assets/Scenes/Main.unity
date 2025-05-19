@@ -7369,17 +7369,17 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: Fen
-    dialogueText: Fen Test - 3 Option
-    choice1: 1
-    response1: r1
-    affection1: 5
-    choice2: 2
-    response2: r2
-    affection2: 4
-    choice3: 3
-    response3: r3
-    affection3: 5
+    characterName: MC
+    dialogueText: It is me, John China
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
     choice4: 
     response4: 
     affection4: 0

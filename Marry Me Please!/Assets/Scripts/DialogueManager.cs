@@ -121,17 +121,21 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueText.text = "End of conversation.";
             foreach (var button in choiceButtons) button.gameObject.SetActive(false);
+            AudioManager.Instance.StopAll();
+            SceneManager.LoadScene("MainMenu");
             return;
         }
 
         DialogueLine line = dialogueLines[currentLine];
-
+        
         if (line.methodOnStart != null)
         {
             line.methodOnStart.Invoke();
         }
-        if (characterNameText.text == "MC")
+
+        if (line.characterName == "MC")
         {
+            Debug.Log("Loaded name: " + SaveLoadManager.Instance.LoadGame().playerName);
             characterNameText.text = SaveLoadManager.Instance.LoadGame().playerName;
         }
         else
@@ -323,11 +327,14 @@ public class DialogueManager : MonoBehaviour
 
     public void SaveDialogueState()
     {
+        SaveData existingData = SaveLoadManager.Instance.LoadGame();
+
         SaveData saveData = new SaveData();
+        saveData.playerName = existingData.playerName;
 
         if (currentLine > 3)
         {
-            saveData.currentLine = currentLine-2;
+            saveData.currentLine = currentLine - 2;
         }
         else
         {

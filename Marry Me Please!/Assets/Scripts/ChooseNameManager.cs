@@ -7,11 +7,9 @@ using UnityEngine.UI;
 
 public class ChooseNameManager : MonoBehaviour
 {
-    [SerializeField] private TMP_InputField inputField;
+    [SerializeField] private TMP_Text inputText;
     [SerializeField] private Button submitButton;
-    [SerializeField] private TMP_Text submitButtonText;
     [SerializeField] private Button pauseButton;
-    public static string playerName;
 
     [SerializeField] private Material scrollBurnMaterial;
     public float burnDuration = 3f;
@@ -30,25 +28,26 @@ public class ChooseNameManager : MonoBehaviour
 
     public void pressSubmitButton()
     {
-        //Save player name
-        SaveData data = SaveLoadManager.Instance.LoadGame();
-        data.playerName = inputField.text;
-        SaveLoadManager.Instance.SaveGame(data);
+        if (inputText.text == "") {
+            inputText.text = "John China";
+        }
 
-        StartCoroutine("BeginGame");
+        //Save player name
+        SaveData data = new SaveData();
+        Debug.Log(inputText.text);
+        data.playerName = inputText.text;
+        SaveLoadManager.Instance.SaveGame(data);
+        Debug.Log("Saved name: " + data.playerName);
+
+        StartCoroutine(BeginGame());
         AudioManager.Instance.StopAll();
         AudioManager.Instance.Play("ScrollBurn");
     }
 
     IEnumerator BeginGame()
     {
-        playerName = inputField.text;
-
         submitButton.enabled = false;
         pauseButton.enabled = false;
-
-        submitButtonText.text = "";
-        inputField.text = " ";
 
         StartCoroutine(ScrollBurnEffect());
         yield return new WaitForSeconds(burnDuration);
@@ -74,10 +73,10 @@ public class ChooseNameManager : MonoBehaviour
             scrollBurnMaterial.SetFloat("_Fade", currentValue);
             timeElapsed += Time.deltaTime;
             yield return null;
-            Debug.Log("DEBUG: " + currentValue);
+            //Debug.Log("DEBUG: " + currentValue);
         }
 
         scrollBurnMaterial.SetFloat("_Fade", endValue); // Just incase the previous while fucks up
-        Debug.Log("DEBUG: Scroll Burned");
+        //Debug.Log("DEBUG: Scroll Burned");
     }
 }
