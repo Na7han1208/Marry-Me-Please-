@@ -1576,7 +1576,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.8, y: -23}
-  m_SizeDelta: {x: 3379, y: 858}
+  m_SizeDelta: {x: 2845, y: 724}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1229442904
 MonoBehaviour:
@@ -8144,7 +8144,7 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: Wu
-    dialogueText: And do not forget to let love guide your heart too, Your HIghness.
+    dialogueText: And do not forget to let love guide your heart too, Your Highness.
     choice1: 
     response1: 
     affection1: 0
@@ -8996,40 +8996,6 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: Ming
-    dialogueText: "I know that I cannot make up for my actions with words, My Liege\u2026\r\nBut
-      I will say that I kept all of your letters. \r"
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
     dialogueText: "It is in a box on the top shelf of my chambers.\r\nI must admit,
       they brought me comfort in the unfamiliar South.\r"
     choice1: 
@@ -9202,7 +9168,7 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: MC
-    dialogueText: Ming I seek one piece of advice
+    dialogueText: Royal Advisor Ming I seek one piece of advice
     choice1: 
     response1: 
     affection1: 0
@@ -9805,7 +9771,7 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: MC
-    dialogueText: ... Theodore
+    dialogueText: ... Theodore?
     choice1: 
     response1: 
     affection1: 0
@@ -10600,7 +10566,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
+    characterName: Zihan
     dialogueText: "If I may be so bold Your Highness\u2026"
     choice1: 
     response1: 
@@ -10903,7 +10869,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
+    characterName: Zihan
     dialogueText: "Well\u2026 I wanted to redeem myself after everything and I thought
       this was the best way to show you I am a different person now."
     choice1: 
@@ -10949,20 +10915,26 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
+    characterName: Zihan
     dialogueText: "Are you\u2026 displeased that I did?"
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
+    choice1: More so just thinking you are here to claim my throne because you could
+      not claim your own.
+    response1: ' It would seem that way after everything, but I can assure you Your
+      Highness, I am no threat to your throne.'
+    affection1: -7
+    choice2: ...
+    response2: " I guess you might be\u2026 but please Your Highness, I simply want
+      to reconcile with you.  Although you have said all is fine I want to make things
+      right by you."
     affection2: 0
-    choice3: 
-    response3: 
+    choice3: ' I am not displeased; I am just cautious I guess.'
+    response3: 'That is very understandable Your Highness, I do not fault you for
+      that. '
     affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
+    choice4: Oh no, fear not. I hold nothing against you. I am simply curious as
+      to what bought you here.
+    response4: "Oh! Um\u2026"
+    affection4: 10
     choiceMethod1:
       m_PersistentCalls:
         m_Calls: []
@@ -10982,7 +10954,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: Zihan
+    characterName: MC
     dialogueText: "Wreckless and na\xEFve?"
     choice1: 
     response1: 
@@ -11048,7 +11020,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
+    characterName: Zihan
     dialogueText: It looks like my time with you is up Your Highness.
     choice1: 
     response1: 
@@ -11114,7 +11086,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
+    characterName: Zihan
     dialogueText: This is where I say goodbye for now Your Highness.
     choice1: 
     response1: 
@@ -11150,18 +11122,21 @@ MonoBehaviour:
     characterName: Fen
     dialogueText: "\u2026I received summons, your honour. I\u2026 I hope I didn\u2019t
       keep you waiting.\r\n"
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
+    choice1: "I\u2019m glad you came, Fen. I was hoping to speak with you."
+    response1: "Oh! You\u2026 were? That\u2019s\u2026um\u2026thank you. I didn\u2019t
+      expect that."
+    affection1: 3
+    choice2: Is this about your strategic usefulness?
+    response2: "Yes. That too. I assumed\u2026 that was why I was summoned."
     affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
+    choice3: "Marriage? You don\u2019t seem the type."
+    response3: "I\u2026I see. I suppose I\u2019m not. But I came anyway. I follow
+      orders."
+    affection3: -8
+    choice4: "Speak freely. You\u2019re among allies."
+    response4: "That\u2019s\u2026 reassuring. I don\u2019t often get permission to
+      be myself."
+    affection4: 5
     choiceMethod1:
       m_PersistentCalls:
         m_Calls: []
@@ -11293,7 +11268,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
+    characterName: Fen
     dialogueText: "I apologize. I don\u2019t know how to talk like the others do.
       I only know how to fight."
     choice1: "You deserve more than duty, Fen. I\u2019d want a partner, not a pawn."
@@ -11341,7 +11316,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
+    characterName: Fen
     dialogueText: "I did read once\u2026 that love is like strategy. "
     choice1: 
     response1: 
@@ -11407,7 +11382,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
+    characterName: Fen
     dialogueText: Occasionally...
     choice1: 
     response1: 
@@ -11485,7 +11460,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
+    characterName: Fen
     dialogueText: "Just\u2026 strategy books\u2026 and war books."
     choice1: 
     response1: 
@@ -11531,7 +11506,7 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: -1
     characterName: MC
-    dialogueText: Are you lying to your emporor?
+    dialogueText: Are you lying to your ruler?
     choice1: 
     response1: 
     affection1: 0
@@ -11563,8 +11538,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
-    dialogueText: S-Sorry your honour. I enjoy romance books.
+    characterName: Fen
+    dialogueText: S-Sorry Your Honour. I enjoy romance books.
     choice1: 
     response1: 
     affection1: 0
@@ -11629,7 +11604,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
+    characterName: Fen
     dialogueText: "Careful strategy. Listening. Knowing when to advance\u2026 or
       retreat. I\u2019m\u2026 not sure I understood it."
     choice1: 
@@ -11675,9 +11650,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
+    characterName: Fen
     dialogueText: "Uhm, may I add, strategically\u2026 an alliance with me secures
-      our northern border. It sends a message of strength. But personally\u2026 I
+      our Northern border. It sends a message of strength. But personally\u2026 I
       would protect you. Even if it wasn\u2019t my duty."
     choice1: 
     response1: 
@@ -11755,8 +11730,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
-    dialogueText: "Yes, your honour. I don\u2019t want you to choose me out of obligation.
+    characterName: Fen
+    dialogueText: "Yes, Your Honour. I don\u2019t want you to choose me out of obligation.
       But I would never let anything happen to you. Not while I live."
     choice1: 
     response1: 
@@ -11789,8 +11764,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
-    dialogueText: "I know I\u2019m not graceful, your honour. "
+    characterName: Fen
+    dialogueText: "I know I\u2019m not graceful, Your Honour. "
     choice1: 
     response1: 
     affection1: 0
@@ -11855,7 +11830,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
+    characterName: Fen
     dialogueText: 'Or elegant. '
     choice1: 
     response1: 
@@ -11921,7 +11896,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
+    characterName: Fen
     dialogueText: "But I do care. And I\u2019ll never lie to you. If that matters."
     choice1: I hope to see more of you, not out of obligation, but choice.
     response1: "I\u2026 don\u2019t know what that means yet. But I am excited to
@@ -12084,7 +12059,19 @@ MonoBehaviour:
     affection4: 0
     choiceMethod1:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: load3CupMonty
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     choiceMethod2:
       m_PersistentCalls:
         m_Calls: []
@@ -12099,19 +12086,7 @@ MonoBehaviour:
         m_Calls: []
     methodOnEnd:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: load3CupMonty
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
   dialogueSpeed: 0.015
   spriteManager: {fileID: 1649142609}
   lightingManager: {fileID: 216781390}
@@ -12210,7 +12185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1651862430
 Transform:
   m_ObjectHideFlags: 0
@@ -12537,7 +12512,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.8, y: -23}
-  m_SizeDelta: {x: 3379, y: 858}
+  m_SizeDelta: {x: 2603, y: 662}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1804622096
 MonoBehaviour:
