@@ -775,15 +775,15 @@ RectTransform:
   m_GameObject: {fileID: 936757111}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5043431, y: 0.5043431, z: 0.5043431}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 827452748}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 421, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 388, y: -263}
+  m_SizeDelta: {x: 723, y: 1916}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &936757113
 MonoBehaviour:
@@ -805,7 +805,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 9211586117587512486, guid: ae0c3fe7feb958c409e537699a944f20, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1090,6 +1090,36 @@ MonoBehaviour:
   Sounds:
   - name: Button_Press
     clip: {fileID: 8300000, guid: cfa3d713eabd61b4abd43311cad4e461, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ScrollUnfurl
+    clip: {fileID: 8300000, guid: f49064d2e5fe63a44bb0c6f138da25dc, type: 3}
+    volume: 0.254
+    pitch: 0.36
+    loop: 0
+    source: {fileID: 0}
+  - name: MainMenuMusic
+    clip: {fileID: 8300000, guid: 63333f3ddd4a8ac448a54028bb99fb4e, type: 3}
+    volume: 0.259
+    pitch: 0.91
+    loop: 1
+    source: {fileID: 0}
+  - name: InGameMusic
+    clip: {fileID: 8300000, guid: c0db5c0d990634845917e633707e2f45, type: 3}
+    volume: 0.259
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: 3CMMusic
+    clip: {fileID: 8300000, guid: 5c8f0e6851752a049a63eb06afc7104f, type: 3}
+    volume: 0.122
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: ScrollBurn
+    clip: {fileID: 8300000, guid: c6b5a30f63a9f8046aae284254775d1c, type: 3}
     volume: 1
     pitch: 1
     loop: 0

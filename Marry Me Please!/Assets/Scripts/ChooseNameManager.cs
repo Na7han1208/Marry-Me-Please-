@@ -31,6 +31,8 @@ public class ChooseNameManager : MonoBehaviour
     public void pressSubmitButton()
     {
         StartCoroutine("BeginGame");
+        AudioManager.Instance.StopAll();
+        AudioManager.Instance.Play("ScrollBurn");
     }
 
     IEnumerator BeginGame()

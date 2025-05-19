@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System;
+using Unity.VisualScripting;
 
 public class MainMenuManager : MonoBehaviour
 {
@@ -15,6 +16,13 @@ public class MainMenuManager : MonoBehaviour
 
     void Awake()
     {
+        //DontDestroyOnLoad(this.gameObject);
+        if (!AudioManager.Instance.isPlaying("MainMenuMusic"))
+        {
+            AudioManager.Instance.Play("MainMenuMusic");
+        }
+            
+        //AudioManager.Instance.Play("MainMenuMusic");
         try
         {
             scroll1.GetComponent<Animator>().enabled = false;
@@ -46,6 +54,7 @@ public class MainMenuManager : MonoBehaviour
         if (SaveLoadManager.Instance.SaveExists())
         {
             SceneManager.LoadScene("Main");
+            AudioManager.Instance.Stop("MainMenuMusic");
         }
         else
         {
@@ -71,20 +80,25 @@ public class MainMenuManager : MonoBehaviour
 
     private IEnumerator ScrollsUnfurl(float delay)
     {
+        AudioManager audio = new AudioManager();
         scroll1.GetComponent<Animator>().enabled = true;
         yield return new WaitForSeconds(delay);
         scroll1.GetComponentInChildren<TMP_Text>().enabled = true;
+        AudioManager.Instance.Play("ScrollUnfurl");
 
         scroll2.GetComponent<Animator>().enabled = true;
         yield return new WaitForSeconds(delay);
         scroll2.GetComponentInChildren<TMP_Text>().enabled = true;
+        AudioManager.Instance.Play("ScrollUnfurl");
 
         scroll3.GetComponent<Animator>().enabled = true;
         yield return new WaitForSeconds(delay);
         scroll3.GetComponentInChildren<TMP_Text>().enabled = true;
+        AudioManager.Instance.Play("ScrollUnfurl");
 
         scroll4.GetComponent<Animator>().enabled = true;
         yield return new WaitForSeconds(delay);
         scroll4.GetComponentInChildren<TMP_Text>().enabled = true;
+        AudioManager.Instance.Play("ScrollUnfurl");
     }
 }

@@ -41,6 +41,7 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
+        AudioManager.Instance.Play("InGameMusic");
         //Dialogue index used for referencing dialogue.
         for (int i = 0; i < dialogueLines.Length; i++)
         {
@@ -309,6 +310,7 @@ public class DialogueManager : MonoBehaviour
     {
         SaveDialogueState();
         SceneManager.LoadScene("MainMenu");
+        AudioManager.Instance.StopAll();
     }
 
 

@@ -16,6 +16,8 @@ public class ThreeCupMonty : MonoBehaviour
     [SerializeField] TMP_Text AboveCupsText;
 
     void Start(){
+        AudioManager.Instance.StopAll();
+        AudioManager.Instance.Play("3CMMusic");
         Cups[1].GetComponent<Animator>().StopPlayback();
 
         // Store original positions
@@ -43,7 +45,7 @@ public class ThreeCupMonty : MonoBehaviour
 
     IEnumerator ShuffleAndStart(){
         DisableAllCups();
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5f);
         AboveCupsText.text = "";
         for(int k = 0; k < numMovements; k++){
             // Shuffle target positions
@@ -82,7 +84,7 @@ public class ThreeCupMonty : MonoBehaviour
         EnableAllCups();
     }
 
-    void OnCupSelected(int selectedIndex)
+    private IEnumerator OnCupSelected(int selectedIndex)
     {
         Cups[winningCupIndex].GetComponent<Animator>().Play(0);
         DisableAllCups();
@@ -104,6 +106,8 @@ public class ThreeCupMonty : MonoBehaviour
             data.theodoreAffinity += -5;
         }
         SaveLoadManager.Instance.SaveGame(data);
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene("EndScreen");
     }
 
     void DisableAllCups(){

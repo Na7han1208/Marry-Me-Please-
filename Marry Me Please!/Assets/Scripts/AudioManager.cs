@@ -1,15 +1,26 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-
+    public static AudioManager Instance;
     public Sound[] Sounds;
-
 
     void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+
         //For each unique sound create a gameObject of type audio source and instatiate attributes of the sounds class
         foreach (Sound s in Sounds)
         {
@@ -21,24 +32,59 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    void Start(){
-        Play("In_Game_Music");
-    }
 
-    public void Play(string name){
-        foreach(Sound s in Sounds){
-            if(s.name == name){
-                s.source.Play();
-                try{
-                    s.source.volume = s.volume*PlayerPrefs.GetFloat("MasterVolume", 1f);
+    public void Play(string name)
+    {
+        foreach (Sound s in Sounds)
+        {
+            if (s.name == name)
+            {
+                try
+                {
+                    s.source.volume = s.volume * PlayerPrefs.GetFloat("MasterVolume", 1f);
                 }
-                catch (Exception e){
+                catch (Exception e)
+                {
                     s.source.volume = s.volume;
                     Debug.LogWarning(e);
                 }
                 s.source.pitch = s.pitch;
                 s.source.loop = s.loop;
+                s.source.Play();
             }
+        }
+    }
+
+    public bool isPlaying(string name)
+    {
+        foreach (Sound s in Sounds)
+        {
+            if (s.name == name)
+            {
+                Debug.Log(name + "is playing.");
+                return s.source.isPlaying;
+            }
+        }
+        return false;
+    }
+
+    public void Stop(string name)
+    {
+        foreach (Sound s in Sounds)
+        {
+            if (s.name == name)
+            {
+                s.source.Stop();
+                return;
+            }
+        }
+    }
+
+    public void StopAll()
+    {
+        foreach (Sound s in Sounds)
+        {
+            s.source.Stop();
         }
     }
 }
