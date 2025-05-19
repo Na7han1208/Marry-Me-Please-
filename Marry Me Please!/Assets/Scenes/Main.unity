@@ -312,7 +312,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7830660887890197937, guid: 7d04c39994356454c955e1c8b13ddd95, type: 3}
+  m_Sprite: {fileID: 4096175665967692091, guid: 7e2c5be5b6b3c4847b214b691a424c3d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -538,6 +538,110 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372251045}
   m_CullTransparentMesh: 1
+--- !u!1 &516803402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 516803403}
+  - component: {fileID: 516803406}
+  - component: {fileID: 516803405}
+  - component: {fileID: 516803404}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &516803403
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516803402}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1368407837}
+  - {fileID: 1804622095}
+  - {fileID: 1229442903}
+  m_Father: {fileID: 1651862430}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &516803404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516803402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &516803405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516803402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &516803406
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516803402}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &581103251
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,14 +750,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a835b5747ea4cf34ab00e35735d2aff9, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7882353, g: 0.70980394, b: 0.5647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2913089383398367032, guid: 3519511747e3e0544a3e218601e2b403, type: 3}
+  m_Sprite: {fileID: -3045353498540368547, guid: 1a1a009222cdf034c8f6e06562455abc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -860,6 +964,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1829302937}
+  - {fileID: 1651862430}
   m_Father: {fileID: 1714191796}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &870291843
@@ -928,8 +1033,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4280364887
+  m_fontColor: {r: 0.34117648, g: 0.18431373, b: 0.12941177, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1145,14 +1250,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a835b5747ea4cf34ab00e35735d2aff9, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7882353, g: 0.70980394, b: 0.5647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2913089383398367032, guid: 3519511747e3e0544a3e218601e2b403, type: 3}
+  m_Sprite: {fileID: -3045353498540368547, guid: 1a1a009222cdf034c8f6e06562455abc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1278,14 +1383,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a835b5747ea4cf34ab00e35735d2aff9, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7882353, g: 0.70980394, b: 0.5647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2913089383398367032, guid: 3519511747e3e0544a3e218601e2b403, type: 3}
+  m_Sprite: {fileID: -3045353498540368547, guid: 1a1a009222cdf034c8f6e06562455abc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1411,14 +1516,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a835b5747ea4cf34ab00e35735d2aff9, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7882353, g: 0.70980394, b: 0.5647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2913089383398367032, guid: 3519511747e3e0544a3e218601e2b403, type: 3}
+  m_Sprite: {fileID: -3045353498540368547, guid: 1a1a009222cdf034c8f6e06562455abc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1435,6 +1540,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211490787}
+  m_CullTransparentMesh: 1
+--- !u!1 &1229442902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1229442903}
+  - component: {fileID: 1229442905}
+  - component: {fileID: 1229442904}
+  m_Layer: 5
+  m_Name: MinigameBanner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1229442903
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229442902}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.20000002, y: 0.20000002, z: 0.20000002}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 516803403}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.8, y: -23}
+  m_SizeDelta: {x: 3379, y: 858}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1229442904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229442902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 5930302037936856628, guid: f5737fb3ae7efd64fa98ef4b172decec, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1229442905
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229442902}
   m_CullTransparentMesh: 1
 --- !u!1 &1239127108
 GameObject:
@@ -1718,7 +1898,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -9042028117199634284, guid: bcbf08be4ac4b7d48b5e91edbae63c89, type: 3}
+  m_Sprite: {fileID: 3643419794548232310, guid: 2019493faffa9004b84cb09e05655b1b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1846,6 +2026,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1368407836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1368407837}
+  - component: {fileID: 1368407839}
+  - component: {fileID: 1368407838}
+  m_Layer: 5
+  m_Name: LvL1_Banner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1368407837
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368407836}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.20000002, y: 0.20000002, z: 0.20000002}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 516803403}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.8, y: -23}
+  m_SizeDelta: {x: 3379, y: 858}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1368407838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368407836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 2470622952459386719, guid: cc1c676792f26d8438cf9969e80b6ac4, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1368407839
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368407836}
+  m_CullTransparentMesh: 1
 --- !u!1 &1368570657
 GameObject:
   m_ObjectHideFlags: 0
@@ -7324,203 +7579,14 @@ MonoBehaviour:
   spacebarReminder: {fileID: 870291845}
   dialogueLines:
   - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: Lighting Test
-    choice1: BLush
-    response1: uwu
-    affection1: 10
-    choice2: Angy
-    response2: rawr
-    affection2: -10
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: ChangeSprite
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
     characterName: MC
-    dialogueText: It is me, John China
+    dialogueText: The Chance War
     choice1: 
     response1: 
     affection1: 0
     choice2: 
     response2: 
     affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: ChangeSprite
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Fen
-    dialogueText: Fen Test - 4 Option
-    choice1: 1
-    response1: r1
-    affection1: 5
-    choice2: 2
-    response2: r2
-    affection2: 4
-    choice3: 3
-    response3: r3
-    affection3: 5
-    choice4: 4
-    response4: r4
-    affection4: 10
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Fen
-    dialogueText: Fen Test - 4 Option 2
-    choice1: 1
-    response1: r1
-    affection1: 5
-    choice2: 2
-    response2: r2
-    affection2: 4
-    choice3: 3
-    response3: r3
-    affection3: 5
-    choice4: 4
-    response4: r4
-    affection4: 10
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Fen
-    dialogueText: Fen Test - 4 Option 3
-    choice1: 1
-    response1: r1
-    affection1: 5
-    choice2: 2
-    response2: r2
-    affection2: 4
-    choice3: 3
-    response3: r3
-    affection3: 5
-    choice4: 4
-    response4: r4
-    affection4: 10
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Fen
-    dialogueText: You ready for some 3 cup monty?
-    choice1: Yes
-    response1: Good!
-    affection1: 5
-    choice2: No
-    response2: TOO BAD
-    affection2: 4
     choice3: 
     response3: 
     affection3: 0
@@ -7547,7 +7613,8 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: MC
-    dialogueText: It is me, the dude.
+    dialogueText: A war against France that your people have been tirelessly fighting,
+      decades before you were even born.
     choice1: 
     response1: 
     affection1: 0
@@ -7579,8 +7646,155 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: Fen
-    dialogueText: ' '
+    characterName: MC
+    dialogueText: You have always wanted to end this war, deeming the loss of lives
+      on both sides extremely unnecessary.
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: MC
+    dialogueText: "Now, with your coronation drawing near, you, the heir to the throne
+      of the Northern Region of China, finally have the \u2018chance\u2019 to."
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: MC
+    dialogueText: "You just have to figure out how\u2026"
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: callShowBanner
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - dialogueIndex: 0
+    characterName: MC
+    dialogueText: You are met by a surprisingly relaxed-looking Royal Advisor Wu
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: Wu
+    dialogueText: Your Highness! I am glad you have arrived so promptly! We have
+      much to discuss.
     choice1: 
     response1: 
     affection1: 0
@@ -7610,8 +7824,8 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1649142608}
           m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: load3CupMonty
-          m_Mode: 1
+          m_MethodName: ChangeSprite
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7626,6 +7840,10 @@ MonoBehaviour:
   dialogueSpeed: 0.015
   spriteManager: {fileID: 1649142609}
   lightingManager: {fileID: 216781390}
+  Banners:
+  - {fileID: 1368407838}
+  - {fileID: 1804622096}
+  - {fileID: 1229442904}
 --- !u!114 &1649142609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7701,7 +7919,39 @@ MonoBehaviour:
   zihanIrritated: {fileID: 0}
   zihanTerror: {fileID: 0}
   zihanSmug: {fileID: 0}
-  wu: {fileID: -5535626106447275181, guid: b144f0ca137833346ab1ad9cbe3d43ad, type: 3}
+  wu: {fileID: -8802557877359725616, guid: 8160b0393042dd242bec21f3f5799e8a, type: 3}
+--- !u!1 &1651862429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1651862430}
+  m_Layer: 5
+  m_Name: Banners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1651862430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651862429}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 856.07, y: -649.99, z: -13.825}
+  m_LocalScale: {x: 7.17, y: 7.17, z: 7.17}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 516803403}
+  m_Father: {fileID: 696715180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1658394674
 GameObject:
   m_ObjectHideFlags: 0
@@ -7786,14 +8036,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a835b5747ea4cf34ab00e35735d2aff9, type: 2}
-  m_Color: {r: 0.78113204, g: 0.77671057, b: 0.77671057, a: 1}
+  m_Color: {r: 0.7882353, g: 0.70980394, b: 0.5647059, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5261992394389525642, guid: 96bfee054a3452f49ad24f9aca61b0fe, type: 3}
+  m_Sprite: {fileID: -7872702210837810762, guid: f462bcba601d7354ab88f5c3f49b9fe0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7977,6 +8227,81 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: -69
   m_TargetDisplay: 0
+--- !u!1 &1804622094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1804622095}
+  - component: {fileID: 1804622097}
+  - component: {fileID: 1804622096}
+  m_Layer: 5
+  m_Name: LvLEnd_Banner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1804622095
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804622094}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.20000002, y: 0.20000002, z: 0.20000002}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 516803403}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.8, y: -23}
+  m_SizeDelta: {x: 3379, y: 858}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1804622096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804622094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -4504206082874041097, guid: 4f1ccbd8d2d663d4ba1b426533d09f38, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1804622097
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804622094}
+  m_CullTransparentMesh: 1
 --- !u!1 &1829302936
 GameObject:
   m_ObjectHideFlags: 0

@@ -38,9 +38,16 @@ public class DialogueManager : MonoBehaviour
     private bool isTyping = false;
     [SerializeField] private SpriteManager spriteManager;
     [SerializeField] private LightingManager lightingManager;
+    [SerializeField] private Image[] Banners;
 
     void Start()
     {
+        //Hide all banners
+        foreach (Image b in Banners)
+        {
+            b.enabled = false;
+        }
+
         AudioManager.Instance.Play("InGameMusic");
         //Dialogue index used for referencing dialogue.
         for (int i = 0; i < dialogueLines.Length; i++)
@@ -127,7 +134,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         DialogueLine line = dialogueLines[currentLine];
-        
+
         if (line.methodOnStart != null)
         {
             line.methodOnStart.Invoke();
@@ -135,14 +142,16 @@ public class DialogueManager : MonoBehaviour
 
         if (line.characterName == "MC")
         {
+            characterSprite.enabled = false;
             Debug.Log("Loaded name: " + SaveLoadManager.Instance.LoadGame().playerName);
             characterNameText.text = SaveLoadManager.Instance.LoadGame().playerName;
         }
         else
         {
             characterNameText.text = line.characterName;
+            characterSprite.enabled = true;
         }
-        
+
 
         if (typingCoroutine != null)
         {
@@ -181,8 +190,8 @@ public class DialogueManager : MonoBehaviour
     IEnumerator TypeText(string text, UnityAction onComplete)
     {
         dialogueText.text = "";
-        float adjustedSpeed = dialogueSpeed/PlayerPrefs.GetFloat("DialogueSpeed", 1f);
-        
+        float adjustedSpeed = dialogueSpeed / PlayerPrefs.GetFloat("DialogueSpeed", 1f);
+
         foreach (char c in text)
         {
             dialogueText.text += c;
@@ -194,7 +203,8 @@ public class DialogueManager : MonoBehaviour
     }
 
     //Checks if the choices are empty, if all of them are empty it returns false
-    bool HasChoices(DialogueLine line){
+    bool HasChoices(DialogueLine line)
+    {
         return !string.IsNullOrEmpty(line.choice1) ||
                !string.IsNullOrEmpty(line.choice2) ||
                !string.IsNullOrEmpty(line.choice3) ||
@@ -340,7 +350,7 @@ public class DialogueManager : MonoBehaviour
         {
             saveData.currentLine = currentLine;
         }
-        
+
         saveData.mingAffinity = mingAffinity;
         saveData.jinhuiAffinity = jinhuiAffinity;
         saveData.yilinAffinity = yilinAffinity;
@@ -359,6 +369,17 @@ public class DialogueManager : MonoBehaviour
             SaveDialogueState();
             yield return new WaitForSeconds(delay);
         }
+    }
+
+    public void callShowBanner(int index){
+        StartCoroutine(showBanner(index));
+    }
+
+    public IEnumerator showBanner(int index)
+    {
+        Banners[index].enabled = true;
+        yield return new WaitForSeconds(3f);
+        Banners[index].enabled = false;
     }
 }
 

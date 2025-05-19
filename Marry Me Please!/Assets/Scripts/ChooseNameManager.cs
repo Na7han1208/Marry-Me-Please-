@@ -28,7 +28,8 @@ public class ChooseNameManager : MonoBehaviour
 
     public void pressSubmitButton()
     {
-        if (inputText.text == "") {
+        if (inputText.text == "")
+        {
             inputText.text = "John China";
         }
 
@@ -42,6 +43,8 @@ public class ChooseNameManager : MonoBehaviour
         StartCoroutine(BeginGame());
         AudioManager.Instance.StopAll();
         AudioManager.Instance.Play("ScrollBurn");
+
+        inputText.enabled = false;
     }
 
     IEnumerator BeginGame()
