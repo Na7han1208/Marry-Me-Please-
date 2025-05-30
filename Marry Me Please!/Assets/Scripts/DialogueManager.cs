@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Rendering.Universal;
 using System;
 using NUnit.Framework;
+//using UnityEngine.UIElements;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -40,6 +41,10 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private LightingManager lightingManager;
     [SerializeField] private Image[] Banners;
 
+    [SerializeField] private GameObject NameBox;
+    private Vector2 ogNameLocation;
+    private Vector2 newNameLocation;
+
     void Start()
     {
         //Hide all banners
@@ -47,6 +52,9 @@ public class DialogueManager : MonoBehaviour
         {
             b.enabled = false;
         }
+
+        ogNameLocation = NameBox.transform.position;
+        newNameLocation = new Vector2(466, NameBox.transform.position.y);
 
         AudioManager.Instance.Play("InGameMusic");
         //Dialogue index used for referencing dialogue.
@@ -142,18 +150,36 @@ public class DialogueManager : MonoBehaviour
         Color tempColor = characterSprite.GetComponent<Image>().color;
         if (line.characterName == "MC")
         {
-            tempColor.a = 0f;
-            characterSprite.GetComponent<Image>().color = tempColor;
+            //NameBox.transform.position = newNameLocation;
             Debug.Log("Loaded name: " + SaveLoadManager.Instance.LoadGame().playerName);
             characterNameText.text = SaveLoadManager.Instance.LoadGame().playerName;
         }
         else
         {
+            //NameBox.transform.position = ogNameLocation;
             characterNameText.text = line.characterName;
+        }
+
+        if (line.characterName == "thought")
+        {
+            NameBox.SetActive(false);
+            line.dialogueText = "<I>" + line.dialogueText + "</I>";
+        }
+        else
+        {
+            NameBox.SetActive(true);
+        }
+
+        if (characterSprite.sprite == null)
+        {
+            tempColor.a = 0f;
+            characterSprite.GetComponent<Image>().color = tempColor;
+        }
+        else
+        {
             tempColor.a = 1f;
             characterSprite.GetComponent<Image>().color = tempColor;
         }
-
 
         if (typingCoroutine != null)
         {

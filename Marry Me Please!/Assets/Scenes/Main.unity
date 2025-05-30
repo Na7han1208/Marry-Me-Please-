@@ -498,7 +498,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 561, y: -208}
-  m_SizeDelta: {x: 2892, y: 7664}
+  m_SizeDelta: {x: 2392, y: 7628}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &372251047
 MonoBehaviour:
@@ -520,9 +520,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5535626106447275181, guid: b144f0ca137833346ab1ad9cbe3d43ad, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -888,12 +888,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.29287177, y: 0.13570589, z: 0.23001}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1368570658}
   m_Father: {fileID: 1685131767}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -362, y: 180}
+  m_AnchoredPosition: {x: 466, y: 180}
   m_SizeDelta: {x: 2780.0002, y: 820}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &628304893
@@ -2128,14 +2129,14 @@ RectTransform:
   m_GameObject: {fileID: 1368570657}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.4144633, y: 7.368877, z: 4.347637}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1685131767}
+  m_Father: {fileID: 628304892}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -368, y: 183}
+  m_AnchoredPosition: {x: -20.487213, y: 22.1064}
   m_SizeDelta: {x: 200, y: 62.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1368570659
@@ -7579,7 +7580,7 @@ MonoBehaviour:
   spacebarReminder: {fileID: 870291845}
   dialogueLines:
   - dialogueIndex: 0
-    characterName: MC
+    characterName: thought
     dialogueText: The Chance War
     choice1: 
     response1: 
@@ -9200,7 +9201,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: MC
+    characterName: Ming
     dialogueText: To what exactly do you refer, My Liege?
     choice1: 
     response1: 
@@ -9228,19 +9229,7 @@ MonoBehaviour:
         m_Calls: []
     methodOnStart:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: ChangeSprite
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 5
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
     methodOnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -9312,7 +9301,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: MC
+    characterName: Ming
     dialogueText: "Hmm\u2026 I wonder why anyone thought that he would be a good
       candidate."
     choice1: 
@@ -9346,7 +9335,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: MC
+    characterName: Ming
     dialogueText: Anyways, good luck, My Liege. I shall go prepare the rest of your
       tasks.
     choice1: 
@@ -10306,20 +10295,29 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
+    characterName: Zihan
     dialogueText: "I was arranged to be your fianc\xE9 a few years ago but that arrangement
       was annulled after a while."
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
+    choice1: Oh yes, I remember the arrangement. It was annulled because you went
+      on a spiritual retreat to find yourself right?
+    response1: "Something like that Your Highness\u2026 Though I must say you put
+      that very kindly despite knowing what actually happened."
+    affection1: 3
+    choice2: Now that you have mentioned it, yes. I do remember. You did not actually
+      want to marry me because I am a Northerner
+    response2: 'Close but that was not entirely the reason I did not want to wed
+      you. '
     affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
+    choice3: "Ah yes\u2026 You are the Southern Prince who slept around with most
+      if not all my noble court to get out of our arrangement. That I remember very
+      well."
+    response3: "That sounds so much worse when you put it like that Your Highness\u2026 
+      I know I was not the best fianc\xE9 when we were arranged to each other, but
+      surely I did not treat you so badly. "
+    affection3: -5
+    choice4: ...
+    response4: "Your silence speaks volumes Your Highness\u2026 I apologize greatly
+      for how I acted in my younger years."
     affection4: 0
     choiceMethod1:
       m_PersistentCalls:
@@ -10340,7 +10338,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
+    characterName: Zihan
     dialogueText: I have had time to reflect on my actions during my retreat.
     choice1: 
     response1: 
@@ -11964,7 +11962,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: -1
-    characterName: MC
+    characterName: Wu
     dialogueText: Retirement is more uneventful than I expected.
     choice1: 
     response1: 
@@ -12045,7 +12043,7 @@ MonoBehaviour:
     characterName: MC
     dialogueText: Nevertheless, play a game with me, Your Highness. Humour an old
       man before you take your leave.
-    choice1: 
+    choice1: Alright!
     response1: 
     affection1: 0
     choice2: 
@@ -12094,6 +12092,7 @@ MonoBehaviour:
   - {fileID: 1368407838}
   - {fileID: 1804622096}
   - {fileID: 1229442904}
+  NameBox: {fileID: 628304891}
 --- !u!114 &1649142609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12264,7 +12263,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 628304892}
-  - {fileID: 1368570658}
   - {fileID: 1381315266}
   m_Father: {fileID: 1829302937}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
