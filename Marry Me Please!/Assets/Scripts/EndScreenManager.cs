@@ -14,14 +14,13 @@ public class EndScreenManager : MonoBehaviour
     {
         SaveData data = SaveLoadManager.Instance.LoadGame();
 
-        if (data.mingAffinity > 50) characters[0].SetActive(false);
-        if (data.theodoreAffinity > 50) characters[1].SetActive(false);
-        if (data.zihanAffinity > 50) characters[2].SetActive(false);
-        if (data.fenAffinity > 50) characters[3].SetActive(false);
-        if (data.yilinAffinity > 50) characters[4].SetActive(false);
-        if (data.yukiAffinity > 50) characters[5].SetActive(false);
-        if (data.jinhuiAffinity > 50) characters[6].SetActive(false);
-
+        if (data.mingAffinity > 50)     characters[0].SetActive(true);
+        if (data.theodoreAffinity > 50) characters[1].SetActive(true);
+        if (data.zihanAffinity > 50)    characters[2].SetActive(true);
+        if (data.fenAffinity > 50)      characters[3].SetActive(true);
+        if (data.yilinAffinity > 50)    characters[4].SetActive(true);
+        if (data.yukiAffinity > 50)     characters[5].SetActive(true);
+        if (data.jinhuiAffinity > 50)   characters[6].SetActive(true);
     }
 
     // Update is called once per frame
@@ -76,6 +75,11 @@ public class EndScreenManager : MonoBehaviour
     }
 
     void jinhuiEnding()
+    {
+
+    }
+
+    void noBitchesEnding()
     {
         
     }
