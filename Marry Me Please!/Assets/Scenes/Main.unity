@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 135168482}
   - component: {fileID: 135168484}
   - component: {fileID: 135168483}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -440,7 +440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 245789949}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 1_ThroneRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -812,7 +812,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000755c13c3699e66b6
+  m_ApplyToSortingLayers: 00000000755c13c3699e66b693c7645c
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1763,7 +1763,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1278087814}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 7_Courtyard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1926,7 +1926,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1280439030}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 3_Kitchen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2383,7 +2383,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1417685108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 5_Garden
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2706,7 +2706,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 15, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0.63}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 217618784}
@@ -12210,7 +12210,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1658394675}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 6_Study
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12351,7 +12351,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1717791686}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 2_TrainingGrounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12385,7 +12385,7 @@ GameObject:
   - component: {fileID: 1763751087}
   - component: {fileID: 1763751086}
   - component: {fileID: 1763751085}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12722,7 +12722,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1884777537}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 4_GreatHall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12753,7 +12753,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1914230682}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ROOMS
   m_TagString: Untagged
   m_Icon: {fileID: 0}

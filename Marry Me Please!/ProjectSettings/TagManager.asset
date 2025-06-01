@@ -41,11 +41,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: UI
-    uniqueID: 3060178537
+  - name: Background UI
+    uniqueID: 1550108563
     locked: 0
   - name: Particles
     uniqueID: 3272825973
+    locked: 0
+  - name: UI
+    uniqueID: 3060178537
     locked: 0
   m_RenderingLayers:
   - Default
