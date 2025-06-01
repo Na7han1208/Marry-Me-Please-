@@ -11,6 +11,8 @@ public class MainManager : MonoBehaviour
     [SerializeField] GameObject Garden;
     [SerializeField] GameObject Study;
     [SerializeField] GameObject Courtyard;
+    [SerializeField] GameObject Hallway;
+    [SerializeField] GameObject BedChamber;
 
     void Update(){
         if(Input.GetKeyDown(KeyCode.Escape)){
@@ -32,6 +34,8 @@ public class MainManager : MonoBehaviour
             5 - Garden
             6 - Study
             7 - Courtyard
+            8 - Hallway
+            9 - Bedchamber
         */
 
         //Make sure all other rooms are inactive
@@ -41,7 +45,9 @@ public class MainManager : MonoBehaviour
         GreatHall.SetActive(false);          
         Garden.SetActive(false);             
         Study.SetActive(false);              
-        Courtyard.SetActive(false);   
+        Courtyard.SetActive(false);
+        Hallway.SetActive(false);
+        BedChamber.SetActive(false); 
 
         //Load parsed room
         switch(levelIndex){
@@ -52,6 +58,8 @@ public class MainManager : MonoBehaviour
             case 5: Garden.SetActive(true);             break;
             case 6: Study.SetActive(true);              break;
             case 7: Courtyard.SetActive(true);          break;
+            case 8: Hallway.SetActive(true);            break;
+            case 9: BedChamber.SetActive(true);         break;
         }
     }
 }

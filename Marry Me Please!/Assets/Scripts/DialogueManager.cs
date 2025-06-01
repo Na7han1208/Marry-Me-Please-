@@ -403,6 +403,12 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(showBanner(index));
     }
 
+    public void loadScene(int index)
+    {
+        MainManager mainManager = new MainManager();
+        mainManager.loadBackground(index);
+    }
+
     public IEnumerator showBanner(int index)
     {
         Banners[index].enabled = true;
