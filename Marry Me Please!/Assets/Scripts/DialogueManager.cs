@@ -315,6 +315,18 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadScene("3CupMonty");
     }
 
+    public void loadMahjong()
+    {
+        SaveDialogueState();
+        SceneManager.LoadScene("Mahjong");
+    }
+
+    public void loadArchery()
+    {
+        SaveDialogueState();
+        SceneManager.LoadScene("Archery");
+    }
+
     //This allows me to use the WaitForSeconds method even when not in an IEnumerator
     public void wait(float time)
     {

@@ -367,6 +367,8 @@ MonoBehaviour:
   Garden: {fileID: 1417685107}
   Study: {fileID: 1658394674}
   Courtyard: {fileID: 1278087813}
+  Hallway: {fileID: 0}
+  BedChamber: {fileID: 0}
 --- !u!4 &216781389
 Transform:
   m_ObjectHideFlags: 0
