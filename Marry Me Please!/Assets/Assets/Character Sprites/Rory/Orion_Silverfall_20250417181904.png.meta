@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Orion_Silverfall_20250417181904_0: -5535626106447275181
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

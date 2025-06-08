@@ -210,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dialogue Scroll_0: -7872702210837810762
+      Dialogue Scroll_1: -4305133397036527898
+      Dialogue Scroll_2: -4545249672136867104
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

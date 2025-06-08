@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      3 Cup Monty Table_0: -2223697072893472998
+      3 Cup Monty Table_1: 1645236577875321439
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
