@@ -128,6 +128,7 @@ public class DialogueManager : MonoBehaviour
 
     public void ShowNextDialogue()
     {
+        SaveDialogueState();
         // Kill the method if already typing
         if (isTyping) return;
 
@@ -312,18 +313,21 @@ public class DialogueManager : MonoBehaviour
     public void load3CupMonty()
     {
         SaveDialogueState();
+        PlayerPrefs.SetInt("RouteFromMenu", 0);
         SceneManager.LoadScene("3CupMonty");
     }
 
     public void loadMahjong()
     {
         SaveDialogueState();
+        PlayerPrefs.SetInt("RouteFromMenu", 0);
         SceneManager.LoadScene("Mahjong");
     }
 
     public void loadArchery()
     {
         SaveDialogueState();
+        PlayerPrefs.SetInt("RouteFromMenu", 0);
         SceneManager.LoadScene("Archery");
     }
 

@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Settings.unity
     guid: 9b8be5825de973e4085b8f539e6e7596
   - enabled: 1
+    path: Assets/Scenes/BonusContent.unity
+    guid: 452b85830d57a1b48bc54e11c1356e37
+  - enabled: 1
     path: Assets/Scenes/ChooseName.unity
     guid: 0e47cefd5c42a2b47a5f69151818c519
   - enabled: 1
@@ -23,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigames/3CupMonty.unity
     guid: 32a566887133d1d428cd59932b848f47
+  - enabled: 1
+    path: Assets/Scenes/Minigames/Archery.unity
+    guid: a7534ee3f25315242962da7efc8124f6
+  - enabled: 1
+    path: Assets/Scenes/Minigames/Mahjong.unity
+    guid: 76ae675f721087f409713487cb3775b2
   - enabled: 1
     path: Assets/Scenes/End Screen.unity
     guid: 0f77c852a79f34f44b9991ddeb4850e1

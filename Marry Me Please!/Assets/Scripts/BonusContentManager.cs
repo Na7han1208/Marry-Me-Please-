@@ -174,7 +174,7 @@ public class BonusContentManager : MonoBehaviour
     public void LoadMahjong()
     {
         PlayerPrefs.SetInt("RouteFromMenu", 1);
-        SceneManager.LoadScene("Archery");
+        SceneManager.LoadScene("Mahjong");
     }
 }
 
