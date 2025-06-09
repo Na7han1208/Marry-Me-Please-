@@ -163,7 +163,10 @@ public class MahjongManager : MonoBehaviour
         {
             SaveData existingData = SaveLoadManager.Instance.LoadGame();
             SaveData saveData = new SaveData();
-            
+
+            saveData.currentLine = existingData.currentLine;
+            saveData.playerName = existingData.playerName;
+
             saveData.mingAffinity = existingData.mingAffinity-8;
             saveData.jinhuiAffinity = existingData.jinhuiAffinity-8;
             saveData.yilinAffinity = existingData.yilinAffinity-8;
@@ -192,6 +195,9 @@ public class MahjongManager : MonoBehaviour
             SaveData existingData = SaveLoadManager.Instance.LoadGame();
             SaveData saveData = new SaveData();
             
+            saveData.currentLine = existingData.currentLine;
+            saveData.playerName = existingData.playerName;
+
             saveData.mingAffinity = existingData.mingAffinity+8;
             saveData.jinhuiAffinity = existingData.jinhuiAffinity+8;
             saveData.yilinAffinity = existingData.yilinAffinity+8;

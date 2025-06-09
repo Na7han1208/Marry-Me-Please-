@@ -315,6 +315,7 @@ public class DialogueManager : MonoBehaviour
     {
         SaveDialogueState();
         PlayerPrefs.SetInt("RouteFromMenu", 0);
+        AudioManager.Instance.StopAll();
         SceneManager.LoadScene("3CupMonty");
     }
 
@@ -322,6 +323,7 @@ public class DialogueManager : MonoBehaviour
     {
         SaveDialogueState();
         PlayerPrefs.SetInt("RouteFromMenu", 0);
+        AudioManager.Instance.StopAll();
         SceneManager.LoadScene("Mahjong");
     }
 
@@ -329,6 +331,7 @@ public class DialogueManager : MonoBehaviour
     {
         SaveDialogueState();
         PlayerPrefs.SetInt("RouteFromMenu", 0);
+        AudioManager.Instance.StopAll();
         SceneManager.LoadScene("Archery");
     }
 
@@ -388,11 +391,11 @@ public class DialogueManager : MonoBehaviour
 
         if (currentLine > 0)
         {
-            saveData.currentLine = currentLine + 1;
+            saveData.currentLine = currentLine;
         }
         else
         {
-            saveData.currentLine = currentLine + 1;
+            saveData.currentLine = currentLine;
         }
 
         saveData.mingAffinity = mingAffinity;
