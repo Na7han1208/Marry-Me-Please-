@@ -32,7 +32,7 @@ public class DialogueManager : MonoBehaviour
     [Header("Dialogue Data")]
     public DialogueLine[] dialogueLines;
 
-    private int currentLine = 0;
+    private int currentLine;
     private bool awaitingSpacebar = false;
     public float dialogueSpeed = 0.015f;
     private Coroutine typingCoroutine;
@@ -79,6 +79,7 @@ public class DialogueManager : MonoBehaviour
             theodoreAffinity = data.theodoreAffinity;
             zihanAffinity = data.zihanAffinity;
             ChangeSprite(0); //Load neutral state of current character
+            skipToLine(currentLine);
         }
         else
         {
@@ -385,13 +386,13 @@ public class DialogueManager : MonoBehaviour
         SaveData saveData = new SaveData();
         saveData.playerName = existingData.playerName;
 
-        if (currentLine > 3)
+        if (currentLine > 0)
         {
-            saveData.currentLine = currentLine - 2;
+            saveData.currentLine = currentLine + 1;
         }
         else
         {
-            saveData.currentLine = currentLine;
+            saveData.currentLine = currentLine + 1;
         }
 
         saveData.mingAffinity = mingAffinity;
@@ -403,6 +404,7 @@ public class DialogueManager : MonoBehaviour
         saveData.zihanAffinity = zihanAffinity;
 
         SaveLoadManager.Instance.SaveGame(saveData);
+        Debug.Log(saveData.currentLine + " saved.");
     }
 
     private IEnumerator AutoSave(float delay)
