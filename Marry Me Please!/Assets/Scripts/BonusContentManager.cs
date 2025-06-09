@@ -2,8 +2,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
-public class ManualUICarousel : MonoBehaviour
+public class BonusContentManager : MonoBehaviour
 {
     [Header("Card Setup")]
     public List<Button> cardButtons;
@@ -76,7 +77,6 @@ public class ManualUICarousel : MonoBehaviour
             }
             else
             {
-                // For hidden cards, just keep their current positions/scales (optional)
                 startPositions[i] = rt.anchoredPosition;
                 startScales[i] = rt.localScale;
                 targetPositions[i] = startPositions[i];
@@ -150,13 +150,31 @@ public class ManualUICarousel : MonoBehaviour
         Vector2 cardScreenPos = RectTransformUtility.WorldToScreenPoint(Camera.main, worldPos);
 
         Vector2 mousePos = Input.mousePosition;
-        Vector2 offset = (mousePos - cardScreenPos) / 100f; 
+        Vector2 offset = (mousePos - cardScreenPos) / 100f;
 
         float rotX = Mathf.Clamp(-offset.y * hoverRotationAmount, -hoverRotationAmount, hoverRotationAmount);
         float rotY = Mathf.Clamp(offset.x * hoverRotationAmount, -hoverRotationAmount, hoverRotationAmount);
 
         Quaternion targetRot = Quaternion.Euler(rotX, rotY, 0f);
         rt.localRotation = Quaternion.Slerp(rt.localRotation, targetRot, Time.deltaTime * hoverSmoothing);
+    }
+
+    public void Load3CupMonty()
+    {
+        PlayerPrefs.SetInt("RouteFromMenu", 1);
+        SceneManager.LoadScene("3CupMonty");
+    }
+
+    public void LoadArchery()
+    {
+        PlayerPrefs.SetInt("RouteFromMenu", 1);
+        SceneManager.LoadScene("Archery");
+    }
+
+    public void LoadMahjong()
+    {
+        PlayerPrefs.SetInt("RouteFromMenu", 1);
+        SceneManager.LoadScene("Archery");
     }
 }
 

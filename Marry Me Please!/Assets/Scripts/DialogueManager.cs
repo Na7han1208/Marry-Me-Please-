@@ -378,7 +378,6 @@ public class DialogueManager : MonoBehaviour
     public void SaveDialogueState()
     {
         SaveData existingData = SaveLoadManager.Instance.LoadGame();
-
         SaveData saveData = new SaveData();
         saveData.playerName = existingData.playerName;
 

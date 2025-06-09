@@ -1,7 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class MahjongManager : MonoBehaviour
 {
@@ -17,9 +19,18 @@ public class MahjongManager : MonoBehaviour
         public void Hide(Sprite hidden) { if (!isMatched) image.sprite = hidden; }
     }
 
+    [Header("UI")]
+    public TMP_Text timerText;
+    public TMP_Text winPanel;
+
+    private float timeRemaining = 45f;
+    private bool gameWon = false;
+
+
+
     [Header("Tile Setup")]
-    public Tile[] tiles = new Tile[16]; 
-    public Sprite[] tileSprites; 
+    public Tile[] tiles = new Tile[16];
+    public Sprite[] tileSprites;
     public Sprite hiddenSprite;
 
     private Tile firstTile = null;
@@ -31,9 +42,32 @@ public class MahjongManager : MonoBehaviour
         SetupTiles();
     }
 
+    void Update()
+    {
+        if (!gameWon)
+        {
+            timeRemaining -= Time.deltaTime;
+            if (timerText != null)
+            {
+                timerText.text = FormatTime(timeRemaining);
+            }
+            if (timeRemaining <= 0)
+            {
+                StartCoroutine(LoseGame());
+            }
+        }
+    }
+
+    string FormatTime(float time)
+    {
+        int minutes = Mathf.FloorToInt(time / 60f);
+        int seconds = Mathf.FloorToInt(time % 60f);
+        return $"{minutes:00}:{seconds:00}";
+    }
+
+
     void SetupTiles()
     {
-        // Create shuffled list of paired sprites
         List<Sprite> spritePool = new List<Sprite>();
         foreach (var s in tileSprites)
         {
@@ -54,6 +88,11 @@ public class MahjongManager : MonoBehaviour
         for (int i = 0; i < tiles.Length; i++)
         {
             int index = i;
+            if (tiles[i].button != null && tiles[i].image == null)
+            {
+                tiles[i].image = tiles[i].button.GetComponent<Image>();
+            }
+
             tiles[i].assignedSprite = spritePool[i];
             tiles[i].isMatched = false;
             tiles[i].Hide(hiddenSprite);
@@ -91,6 +130,8 @@ public class MahjongManager : MonoBehaviour
         {
             firstTile.isMatched = true;
             secondTile.isMatched = true;
+
+            CheckWin();
         }
         else
         {
@@ -101,5 +142,72 @@ public class MahjongManager : MonoBehaviour
         firstTile = null;
         secondTile = null;
         inputLocked = false;
+    }
+
+    void CheckWin()
+    {
+        foreach (var tile in tiles)
+        {
+            if (!tile.isMatched)
+                return;
+        }
+        gameWon = true;
+        StartCoroutine(WinGame());
+    }
+
+    IEnumerator LoseGame()
+    {
+        inputLocked = true;
+        winPanel.text = "You lose!";
+        if (PlayerPrefs.GetInt("RouteFromMenu") == 0)
+        {
+            SaveData existingData = SaveLoadManager.Instance.LoadGame();
+            SaveData saveData = new SaveData();
+            
+            saveData.mingAffinity = existingData.mingAffinity-8;
+            saveData.jinhuiAffinity = existingData.jinhuiAffinity-8;
+            saveData.yilinAffinity = existingData.yilinAffinity-8;
+            saveData.fenAffinity = existingData.fenAffinity-8;
+            saveData.yukiAffinity = existingData.yukiAffinity-8;
+            saveData.theodoreAffinity = existingData.theodoreAffinity-8;
+            saveData.zihanAffinity = existingData.zihanAffinity-8;
+            SaveLoadManager.Instance.SaveGame(saveData);
+
+            yield return new WaitForSeconds(3f);
+            SceneManager.LoadScene("Main");
+        }
+        else
+        {
+            yield return new WaitForSeconds(3f);
+            SceneManager.LoadScene("MainMenu");
+        }   
+    }
+
+    IEnumerator WinGame()
+    {
+        inputLocked = true;
+        winPanel.text = "You Win!";
+        if (PlayerPrefs.GetInt("RouteFromMenu") == 0)
+        {
+            SaveData existingData = SaveLoadManager.Instance.LoadGame();
+            SaveData saveData = new SaveData();
+            
+            saveData.mingAffinity = existingData.mingAffinity+8;
+            saveData.jinhuiAffinity = existingData.jinhuiAffinity+8;
+            saveData.yilinAffinity = existingData.yilinAffinity+8;
+            saveData.fenAffinity = existingData.fenAffinity+8;
+            saveData.yukiAffinity = existingData.yukiAffinity+8;
+            saveData.theodoreAffinity = existingData.theodoreAffinity+8;
+            saveData.zihanAffinity = existingData.zihanAffinity+8;
+            SaveLoadManager.Instance.SaveGame(saveData);
+
+            yield return new WaitForSeconds(3f);
+            SceneManager.LoadScene("Main");
+        }
+        else
+        {
+            yield return new WaitForSeconds(3f);
+            SceneManager.LoadScene("MainMenu");
+        }   
     }
 }
