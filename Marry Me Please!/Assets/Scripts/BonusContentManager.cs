@@ -161,7 +161,7 @@ public class BonusContentManager : MonoBehaviour
 
     public void Load3CupMonty()
     {
-        PlayerPrefs.SetInt("RouteFromMenu", 1); //tells the minigame to return to menu instead of back to dialogue when it is done 
+        PlayerPrefs.SetInt("RouteFromMenu", 1); //tells the minigame to return to menu instead of back to dialogue when it is done  
         SceneManager.LoadScene("3CupMonty");
     }
 
