@@ -39,7 +39,7 @@ public class ArcheryManager : MonoBehaviour
             holdTimer = 0f;
             jitterTimer = 0f;
             cursorImage.gameObject.SetActive(true);
-            SetNewJitterTarget(); // Set initial target
+            SetNewJitterTarget();
         }
 
         if (isCharging && Input.GetMouseButton(0))
@@ -57,6 +57,7 @@ public class ArcheryManager : MonoBehaviour
             else
             {
                 Debug.Log("Released too early.");
+                //Some kind of feedback other than console, maybe a sound or something ****************
             }
 
             isCharging = false;
@@ -84,7 +85,7 @@ public class ArcheryManager : MonoBehaviour
             targetJitterPos,
             canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : canvas.worldCamera,
             out localTarget
-        );
+        ); //under no circumstances should anyone touch this code, i works, how? idk, but it does
 
         Vector2 smoothPos = Vector2.Lerp(currentPos, localTarget, Time.deltaTime * cursorSmoothSpeed);
         cursorImage.anchoredPosition = smoothPos;
@@ -96,7 +97,6 @@ public class ArcheryManager : MonoBehaviour
         Vector2 offset = Random.insideUnitCircle * jitterRadius;
         targetJitterPos = basePos + (Vector3)offset;
 
-        // Optional: Clamp to screen bounds
         targetJitterPos.x = Mathf.Clamp(targetJitterPos.x, 0, Screen.width);
         targetJitterPos.y = Mathf.Clamp(targetJitterPos.y, 0, Screen.height);
     }
@@ -120,7 +120,7 @@ public class ArcheryManager : MonoBehaviour
                 Debug.Log("Hit button: " + button.name);
                 return;
             }
-        }
+        } //can change later if multiple parts overlap, but should be okay for now
 
         Debug.Log("Missed all buttons.");
     }

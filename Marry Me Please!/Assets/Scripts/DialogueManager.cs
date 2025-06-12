@@ -57,7 +57,7 @@ public class DialogueManager : MonoBehaviour
         newNameLocation = new Vector2(466, NameBox.transform.position.y);
 
         AudioManager.Instance.Play("InGameMusic");
-        //Dialogue index used for referencing dialogue.
+        //Dialogue index used for referencing dialogue. No backend functionality
         for (int i = 0; i < dialogueLines.Length; i++)
         {
             dialogueLines[i].dialogueIndex = i;
@@ -253,7 +253,7 @@ public class DialogueManager : MonoBehaviour
     //Takes the index of the button, the text on the button, the response it will display, and the method that will run if clicked and initialises all of it
     void SetupButton(int index, string choiceText, string responseText, UnityEvent responseMethod, int affinityChange)
     {
-        //Make sure we don't set a null button... no nullPointerExceptions for us!
+        //Make sure we don't set a null button
         if (string.IsNullOrEmpty(choiceText))
         {
             choiceButtons[index].gameObject.SetActive(false);

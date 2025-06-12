@@ -7,7 +7,7 @@ using UnityEngine.Rendering.Universal;
 public class LightingManager : MonoBehaviour
 {
     Color blush = new(1f, 0.506f, 0.992f);
-    Color angry = new(1f, 0.506f, 0.482f);
+    Color angry = new(1f, 0.106f, 0.182f);
     [SerializeField] private Light2D globalLight;
 
     public void StartLightBlend(Boolean mood){

@@ -15,12 +15,13 @@ public class SaveLoadManager : MonoBehaviour
     private void Awake()
     {
         masterVolume = 1f;
-        dialogueSpeed = 1f;
-        fullscreen = false;
+        dialogueSpeed = 1f; 
+        fullscreen = false; //This should override settings, but it doesnt, dunno what thats about so im just gonna leave it here
+
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject); //So i can access from other scenes
             saveFilePath = Path.Combine(Application.persistentDataPath, "savefile.json");
         }
         else
