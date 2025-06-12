@@ -314,8 +314,8 @@ public class DialogueManager : MonoBehaviour
     public void load3CupMonty()
     {
         SaveDialogueState();
-        PlayerPrefs.SetInt("RouteFromMenu", 0);
-        AudioManager.Instance.StopAll();
+        PlayerPrefs.SetInt("RouteFromMenu", 0); //This tells the minigame we aren't coming from the menu, so after the minigame is done it will continue with dialogue, not return to menu
+        AudioManager.Instance.StopAll();        //Stop all music & sfx
         SceneManager.LoadScene("3CupMonty");
     }
 
@@ -339,7 +339,7 @@ public class DialogueManager : MonoBehaviour
     public void wait(float time)
     {
         StartCoroutine(waitOutsideCoroutine(time));
-    }
+    } //this only works sometimes, do with that what you will
 
     public IEnumerator waitOutsideCoroutine(float time)
     {

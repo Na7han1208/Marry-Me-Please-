@@ -95,7 +95,7 @@ public class BonusContentManager : MonoBehaviour
         }
 
 
-        while (t < moveDuration)
+        while (t < moveDuration) //actually move the cards
         {
             t += Time.deltaTime;
             float norm = Mathf.Clamp01(t / moveDuration);
@@ -114,9 +114,9 @@ public class BonusContentManager : MonoBehaviour
 
         RepositionCardsImmediate();
         isAnimating = false;
-    }
+    } //I am shocked and flabbergasted this method works, so don't touch
 
-    void RepositionCardsImmediate()
+    void RepositionCardsImmediate() 
     {
         for (int i = 0; i < cardButtons.Count; i++)
         {
@@ -131,7 +131,7 @@ public class BonusContentManager : MonoBehaviour
             {
                 rt.anchoredPosition = centerPosition + Vector2.right * spacing * offset;
                 rt.localScale = (i == currentIndex) ? Vector3.one : Vector3.one * sideScale;
-                rt.localRotation = Quaternion.identity;
+                rt.localRotation = Quaternion.identity; //this is not a real word, but apparently it is used in place of pitch, rotation, and yaw
                 cardButtons[i].interactable = (i == currentIndex);
             }
         }
@@ -152,7 +152,7 @@ public class BonusContentManager : MonoBehaviour
         Vector2 mousePos = Input.mousePosition;
         Vector2 offset = (mousePos - cardScreenPos) / 100f;
 
-        float rotX = Mathf.Clamp(-offset.y * hoverRotationAmount, -hoverRotationAmount, hoverRotationAmount);
+        float rotX = Mathf.Clamp(-offset.y * hoverRotationAmount, -hoverRotationAmount, hoverRotationAmount); //prevents cards from flipping and acting fucking weird
         float rotY = Mathf.Clamp(offset.x * hoverRotationAmount, -hoverRotationAmount, hoverRotationAmount);
 
         Quaternion targetRot = Quaternion.Euler(rotX, rotY, 0f);
@@ -161,7 +161,7 @@ public class BonusContentManager : MonoBehaviour
 
     public void Load3CupMonty()
     {
-        PlayerPrefs.SetInt("RouteFromMenu", 1);
+        PlayerPrefs.SetInt("RouteFromMenu", 1); //tells the minigame to return to menu instead of back to dialogue when it is done 
         SceneManager.LoadScene("3CupMonty");
     }
 
