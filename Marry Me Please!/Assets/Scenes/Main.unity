@@ -10778,7 +10778,8 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: After a pause so long you thought they would not respond, they
+      tentatively look at you.
     choice1: 
     response1: 
     affection1: 0
@@ -10811,7 +10812,7 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: "I know that I cannot make up for my actions with words, My Liege\u2026"
     choice1: 
     response1: 
     affection1: 0
@@ -10844,7 +10845,7 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'But I will say that I kept all of your letters. '
     choice1: 
     response1: 
     affection1: 0
@@ -10877,7 +10878,9 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'They offer a small, hesitant smile.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -10910,7 +10913,9 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'It is in a box on the top shelf of my chambers.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -10943,7 +10948,9 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'I must admit, they brought me comfort in the unfamiliar South.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -10976,7 +10983,9 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'They smile to themselves before looking hopefully at you again.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -11009,7 +11018,9 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'I truly am sorry, My Liege.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -11042,7 +11053,9 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'Ming suddenly steps back.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -11075,7 +11088,10 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'As much as I would love to continue our conversation, My Liege,
+      there are other suitors who would like to talk to you.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -11108,7 +11124,8 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: Ming opens their scroll disappointedly, about to read out the next
+      name.
     choice1: 
     response1: 
     affection1: 0
@@ -11141,7 +11158,9 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'Wait.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -11174,7 +11193,9 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'They look up in confusion.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -11207,7 +11228,9 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'Royal Advisor Ming, I seek one piece of advice.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -11240,7 +11263,9 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'Of course, My Liege. That is what I am here for.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -11273,7 +11298,9 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'If you were in my position, what would you choose?
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -11306,7 +11333,9 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'To what exactly do you refer, My Liege?
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -11339,7 +11368,10 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'I think I have taken enough of your time, My Liege. I will go
+      before the next candidate declares war on me.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -11372,7 +11404,7 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: They smile at you cheekily.
     choice1: 
     response1: 
     affection1: 0
@@ -11405,7 +11437,9 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'Get it? Because the next suitor is French?
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -11438,7 +11472,8 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: "Hmm\u2026 I wonder why anyone thought that he would be a good
+      candidate.\r\r\n\r\n"
     choice1: 
     response1: 
     affection1: 0
@@ -11471,7 +11506,8 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: Anyways, good luck, My Liege. I shall go prepare the rest of your
+      tasks.
     choice1: 
     response1: 
     affection1: 0
@@ -11504,7 +11540,10 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'Ming sashays out of the Throne Room and immediately a pale, blonde-haired
+      man struts in.
+
+'
     choice1: 
     response1: 
     affection1: 0
