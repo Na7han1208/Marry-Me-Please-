@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -30,7 +31,7 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text spacebarReminder;
 
     [Header("Dialogue Data")]
-    public DialogueLine[] dialogueLines;
+    public List<DialogueLine> dialogueLines = new List<DialogueLine>();
 
     private int currentLine;
     private bool awaitingSpacebar = false;
@@ -58,7 +59,7 @@ public class DialogueManager : MonoBehaviour
 
         AudioManager.Instance.Play("InGameMusic");
         //Dialogue index used for referencing dialogue. No backend functionality
-        for (int i = 0; i < dialogueLines.Length; i++)
+        for (int i = 0; i < dialogueLines.Count; i++)
         {
             dialogueLines[i].dialogueIndex = i;
         }
@@ -134,7 +135,7 @@ public class DialogueManager : MonoBehaviour
         if (isTyping) return;
 
         // End convo if out of lines
-        if (currentLine >= dialogueLines.Length)
+        if (currentLine >= dialogueLines.Count)
         {
             dialogueText.text = "End of conversation.";
             foreach (var button in choiceButtons) button.gameObject.SetActive(false);
@@ -354,7 +355,7 @@ public class DialogueManager : MonoBehaviour
 
     public void skipToLine(int targetIndex)
     {
-        if (targetIndex >= 0 && targetIndex < dialogueLines.Length)
+        if (targetIndex >= 0 && targetIndex < dialogueLines.Count)
         {
             // Stop any ongoing typing coroutine
             if (typingCoroutine != null)

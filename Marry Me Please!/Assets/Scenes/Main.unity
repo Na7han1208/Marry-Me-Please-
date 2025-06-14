@@ -8664,8 +8664,10 @@ MonoBehaviour:
   spacebarReminder: {fileID: 870291845}
   dialogueLines:
   - dialogueIndex: 0
-    characterName: thought
-    dialogueText: The Chance War
+    characterName: balls
+    dialogueText: 'bazinga
+
+'
     choice1: 
     response1: 
     affection1: 0
