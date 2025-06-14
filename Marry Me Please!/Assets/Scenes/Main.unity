@@ -8692,19 +8692,7 @@ MonoBehaviour:
         m_Calls: []
     methodOnStart:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: 
-          m_Mode: 0
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
     methodOnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -8726,19 +8714,7 @@ MonoBehaviour:
     affection4: 0
     choiceMethod1:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: 
-          m_Mode: 0
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
     choiceMethod2:
       m_PersistentCalls:
         m_Calls: []
@@ -8787,19 +8763,7 @@ MonoBehaviour:
         m_Calls: []
     methodOnEnd:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: loadMahjong
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
   - dialogueIndex: 0
     characterName: thought
     dialogueText: "Now, with your coronation drawing near, you, the heir to the throne
@@ -8866,19 +8830,7 @@ MonoBehaviour:
         m_Calls: []
     methodOnEnd:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: callShowBanner
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
   - dialogueIndex: 0
     characterName: thought
     dialogueText: 'You turn the corner entering into the ornate Throne Room, and
@@ -8960,9 +8912,42 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
+    characterName: thought
+    dialogueText: He unravels a lengthy scroll and starts reading from it.
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
     characterName: Wu
-    dialogueText: 'Your Highness. The Chance war will reach its 100th year of conflict
-      in 7 days. '
+    dialogueText: "Your Highness. The Chance war will reach its 100th year of conflict
+      in 7 days. \r\n\r\n"
     choice1: 
     response1: 
     affection1: 0
@@ -9061,6 +9046,74 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
+    characterName: thought
+    dialogueText: 'He looks at you tentatively from around the side of the scroll.
+
+'
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: Wu
+    dialogueText: "There is only one way, your Highness\u2026"
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: ...
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
     characterName: Wu
     dialogueText: You must marry one of seven potential suitors selected carefully
       for their ability to best end this war.
@@ -9132,17 +9185,17 @@ MonoBehaviour:
     characterName: Wu
     dialogueText: Any questions?
     choice1: No. I understand what I must do.
-    response1: Perfect. Moving on then.
+    response1: 'Perfect. Moving on then. '
     affection1: 0
     choice2: "Yes\u2026 Marriage\u2026 Why?!"
     response2: "It is the only way, Your Highness. It was the old Emperor\u2019s
-      dying wish."
+      dying wish. "
     affection2: 0
     choice3: Can we not just kill the French instead?
     response3: "We have tried, Your Highness. The French scum are too persistent!
       Ah, I mean\u2026 France is too valiant to be defeated. "
     affection3: 0
-    choice4: ...
+    choice4: "\u2026"
     response4: Brilliant!
     affection4: 0
     choiceMethod1:
@@ -9265,8 +9318,75 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
+    characterName: thought
+    dialogueText: He suddenly lowers his voice.
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
     characterName: Wu
-    dialogueText: And do not forget to let love guide your heart too, Your Highness.
+    dialogueText: And do not forget to let love guide your heart too, Your HIghness.
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: You wonder if you imagined the care in his voice as he quickly
+      continues.
     choice1: 
     response1: 
     affection1: 0
@@ -9300,7 +9420,7 @@ MonoBehaviour:
   - dialogueIndex: 0
     characterName: Wu
     dialogueText: "And finally, Your Highness, I must say, it has been an honour
-      serving your family for all these decades\u2026\r\n"
+      serving your family for all these decades\u2026"
     choice1: 
     response1: 
     affection1: 0
@@ -9432,8 +9552,76 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
+    characterName: thought
+    dialogueText: 'He nods at someone behind you.
+
+'
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
     characterName: Wu
     dialogueText: With that, I bid my farewell.
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: Wu rolls up his scroll and skips happily away.
     choice1: 
     response1: 
     affection1: 0
@@ -9498,53 +9686,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: "Greetings My Liege. It has been a while\u2026"
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: ChangeSprite
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 1
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: MC
-    dialogueText: No need for introductions. I remember you, Ming.
+    characterName: thought
+    dialogueText: "Before you can say anything else, he\u2019s already out the door."
     choice1: 
     response1: 
     affection1: 0
@@ -9577,7 +9720,41 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: Ming
-    dialogueText: I know the ins-and-outs of the palace and the people within it.
+    dialogueText: "Greetings My Liege. It has been a while\u2026 "
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: A graceful yet somewhat familiar figure sashays their way over
+      to you.
     choice1: 
     response1: 
     affection1: 0
@@ -9610,242 +9787,8 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: Ming
-    dialogueText: I am here to assist you with whatever you may require.
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: So tell me, my Liege, what would you like from me?
-    choice1: ...
-    response1: Do not be shy My Liege, you were never this quiet when we were children.
-    affection1: 0
-    choice2: "\u2018Whatever\u2019 I may require, Royal Advisor Ming?"
-    response2: There shall be a time and place, My Liege.
-    affection2: 4
-    choice3: Why are you an option, Royal Advisor Ming?
-    response3: As I have said, I know everyone and everything in this palace. I also
-      know you better than the rest of these people. Together, we are sure to find
-      a solution to this war.
-    affection3: -3
-    choice4: Nothing about you interests me any longer, Advisor Ming.
-    response4: Ah, I see, My Liege.
-    affection4: -8
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: My Liege, if it is alright, might I ask you a question?
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: MC
-    dialogueText: Go ahead.
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: "I am sure that everything feels very sudden, and you might not
-      quite see the point of this. \r\n"
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: "But I can assure you, everything has been planned out with our
-      country\u2019s and your best interests in mind."
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: "But I would still like to ask\u2026"
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: Ming
-    dialogueText: How do you feel about this entire situation?
+    dialogueText: I am Ming, your new Royal Advisor. My father, Royal Advisor Wu
+      has mentioned me.
     choice1: Why even ask me this question? It is not as if it changes anything.
     response1: You have more control over this than you think, My Liege.
     affection1: -7
@@ -9875,26 +9818,13 @@ MonoBehaviour:
         m_Calls: []
     methodOnStart:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: ChangeSprite
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 8
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
     methodOnEnd:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
     characterName: Ming
-    dialogueText: "My Liege, I might be overstepping my boundaries, but I am quite
-      curious\u2026\r\nHow well do you remember our childhood?\r\n"
+    dialogueText: Ming smiles earnestly at you.
     choice1: I remember everything, Ming. Every moment we spent together.
     response1: "Me too, My Liege, me too. Remember when we replaced all my father\u2019s
       scrolls with the ones in the kitchen?"
@@ -9922,30 +9852,13 @@ MonoBehaviour:
         m_Calls: []
     methodOnStart:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1649142608}
-          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: ChangeSprite
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 4
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
     methodOnEnd:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
     characterName: Ming
-    dialogueText: 'So, is there anything in particular you would like to know, My
-      Liege?
-
-      About our country, the palace, the people?
-
-'
+    dialogueText: Something about their smile seems controlled, practiced even.
     choice1: 
     response1: 
     affection1: 0
