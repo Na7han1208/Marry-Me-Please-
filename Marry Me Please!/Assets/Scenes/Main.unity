@@ -9404,8 +9404,111 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
+    characterName: Wu
+    dialogueText: "And finally, Your Highness, I must say, it has been an honour
+      serving your family for all these decades\u2026"
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: Wu
+    dialogueText: 'However, our time together now draws to a close.
+
+'
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: Wu
+    dialogueText: I have grown old and weary and thus must announce my retirement.
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: But do not fret! You have a worthy replacement that is more than
+      capable of filling this absence.
     choice1: 
     response1: 
     affection1: 0
@@ -9471,7 +9574,7 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: With that, I bid my farewell.
     choice1: 
     response1: 
     affection1: 0
@@ -9504,7 +9607,240 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: Wu rolls up his scroll and skips happily away.
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: MC
+    dialogueText: Royal Advisor Wu! Wait!
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: "Before you can say anything else, he\u2019s already out the door."
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: Ming
+    dialogueText: "Greetings My Liege. It has been a while\u2026"
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: A graceful yet somewhat familiar figure sashays their way over
+      to you.
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: Ming
+    dialogueText: I am Ming, your new Royal Advisor. My father, Royal Advisor Wu
+      has mentioned me.
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: "Ming smiles at you.\r\r\n"
+    choice1: 
+    response1: 
+    affection1: 0
+    choice2: 
+    response2: 
+    affection2: 0
+    choice3: 
+    response3: 
+    affection3: 0
+    choice4: 
+    response4: 
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: Something about their smile seems controlled, practiced even.
     choice1: 
     response1: 
     affection1: 0
@@ -9537,7 +9873,7 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: No need for introductions. I remember you, Ming.
     choice1: 
     response1: 
     affection1: 0
@@ -9570,7 +9906,7 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: 'You think back to your childhood. '
     choice1: 
     response1: 
     affection1: 0
@@ -9603,7 +9939,9 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: Rarely a day was spent without Ming. Watching the soldiers train,
+      flipping through books in the study, stealing dumplings from the kitchen. You
+      two spoke about anything and everything.
     choice1: 
     response1: 
     affection1: 0
@@ -9636,7 +9974,8 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
+    dialogueText: That is until the day Ming left for the South to continue their
+      studies. You have not heard from them in years.
     choice1: 
     response1: 
     affection1: 0
@@ -9669,337 +10008,7 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    dialogueText: Ming looks surprised at your recognition.
     choice1: 
     response1: 
     affection1: 0
