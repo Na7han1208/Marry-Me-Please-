@@ -24,6 +24,8 @@ public class ArcheryManager : MonoBehaviour
 
     void Start()
     {
+        AudioManager.Instance.StopAll();
+        AudioManager.Instance.Play("3CMMusic");
         canvas = FindFirstObjectByType<Canvas>();
         raycaster = canvas.GetComponent<GraphicRaycaster>();
         eventSystem = EventSystem.current;

@@ -1352,6 +1352,24 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: CupMove
+    clip: {fileID: 8300000, guid: 72a6abc5e5608774f8134addb9c2e083, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: TileFlip
+    clip: {fileID: 8300000, guid: aa8a47d607445d642a7fd10e32d100e2, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Correct
+    clip: {fileID: 8300000, guid: 05efa53d356df904f94540561c31e2ed, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1371142691
 Transform:
   m_ObjectHideFlags: 0

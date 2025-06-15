@@ -39,6 +39,8 @@ public class MahjongManager : MonoBehaviour
 
     void Start()
     {
+        AudioManager.Instance.StopAll();
+        AudioManager.Instance.Play("3CMMusic");
         SetupTiles();
     }
 
@@ -104,6 +106,7 @@ public class MahjongManager : MonoBehaviour
 
     void OnTileClicked(int index)
     {
+        AudioManager.Instance.Play("TileFlip");
         if (inputLocked || tiles[index].isMatched)
             return;
 
@@ -130,7 +133,7 @@ public class MahjongManager : MonoBehaviour
         {
             firstTile.isMatched = true;
             secondTile.isMatched = true;
-
+            AudioManager.Instance.Play("Correct");
             CheckWin();
         }
         else
@@ -190,29 +193,32 @@ public class MahjongManager : MonoBehaviour
     {
         inputLocked = true;
         winPanel.text = "You Win!";
+        AudioManager.Instance.Play("Correct");
         if (PlayerPrefs.GetInt("RouteFromMenu") == 0)
         {
             SaveData existingData = SaveLoadManager.Instance.LoadGame();
             SaveData saveData = new SaveData();
-            
+
             saveData.currentLine = existingData.currentLine;
             saveData.playerName = existingData.playerName;
 
-            saveData.mingAffinity = existingData.mingAffinity+8;
-            saveData.jinhuiAffinity = existingData.jinhuiAffinity+8;
-            saveData.yilinAffinity = existingData.yilinAffinity+8;
-            saveData.fenAffinity = existingData.fenAffinity+8;
-            saveData.yukiAffinity = existingData.yukiAffinity+8;
-            saveData.theodoreAffinity = existingData.theodoreAffinity+8;
-            saveData.zihanAffinity = existingData.zihanAffinity+8;
+            saveData.mingAffinity = existingData.mingAffinity + 8;
+            saveData.jinhuiAffinity = existingData.jinhuiAffinity + 8;
+            saveData.yilinAffinity = existingData.yilinAffinity + 8;
+            saveData.fenAffinity = existingData.fenAffinity + 8;
+            saveData.yukiAffinity = existingData.yukiAffinity + 8;
+            saveData.theodoreAffinity = existingData.theodoreAffinity + 8;
+            saveData.zihanAffinity = existingData.zihanAffinity + 8;
             SaveLoadManager.Instance.SaveGame(saveData);
 
             yield return new WaitForSeconds(3f);
+            AudioManager.Instance.StopAll();
             SceneManager.LoadScene("Main");
         }
         else
         {
             yield return new WaitForSeconds(3f);
+            AudioManager.Instance.StopAll();
             SceneManager.LoadScene("MainMenu");
         }   
     }

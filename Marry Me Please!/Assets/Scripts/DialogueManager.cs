@@ -57,6 +57,7 @@ public class DialogueManager : MonoBehaviour
         ogNameLocation = NameBox.transform.position;
         newNameLocation = new Vector2(466, NameBox.transform.position.y);
 
+        AudioManager.Instance.StopAll();
         AudioManager.Instance.Play("InGameMusic");
         //Dialogue index used for referencing dialogue. No backend functionality
         for (int i = 0; i < dialogueLines.Count; i++)

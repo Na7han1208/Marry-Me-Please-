@@ -49,6 +49,7 @@ public class ThreeCupMonty : MonoBehaviour
         AboveCupsText.text = "";
         for(int k = 0; k < numMovements; k++){
             // Shuffle target positions
+            AudioManager.Instance.Play("CupMove");
             List<Vector3> positions = new List<Vector3>(originalPositions);
             System.Random rng = new System.Random();
             for (int i = positions.Count - 1; i > 0; i--){
@@ -108,7 +109,7 @@ public class ThreeCupMonty : MonoBehaviour
         SaveLoadManager.Instance.SaveGame(data);
         yield return new WaitForSeconds(3f);
         AudioManager.Instance.StopAll();
-        SceneManager.LoadScene("End Screen");
+        SceneManager.LoadScene("Main");
     }
 
     void DisableAllCups(){
