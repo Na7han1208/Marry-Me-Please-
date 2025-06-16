@@ -20908,8 +20908,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: You turn around and see Jinhui standing there holding a rolled
+      up scroll in his hand.
     choice1: 
     response1: 
     affection1: 0
@@ -20941,8 +20942,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: "You were surprised that he had approached you and not the other
+      way around, as was the norm in the last few conversations you have had. \r"
     choice1: 
     response1: 
     affection1: 0
@@ -20974,8 +20976,44 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Jinhui
+    dialogueText: "Your Grace\u2026"
+    choice1: Still playing hard to get?
+    response1: I was never playing anything to begin with, Your Grace. I am a painter
+      not a musician.
+    affection1: 0
+    choice2: Are you here to finally make a painting of me?
+    response2: 'I have made many paintings of you, Your Grace.
+
+'
+    affection2: 0
+    choice3: Please continue, Jinhui. I unfortunately do not have much time today.
+    response3: Of course, My Grace.
+    affection3: 0
+    choice4: "\u2026"
+    response4: Here...
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: Jinhui hands you the scroll in his hand.
     choice1: 
     response1: 
     affection1: 0
@@ -21007,8 +21045,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He does not say anything as you unravel it.
     choice1: 
     response1: 
     affection1: 0
@@ -21040,8 +21078,14 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: 'On the scroll is the painting that he was working on the first
+      day you met.
+
+      It is the same as it was that day apart from a single
+      change.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -21073,8 +21117,11 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: 'Two figures were now standing at the foot of the mountains, hands
+      interlocked.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -21106,8 +21153,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: Surprisingly Jinhui speaks without you prompting him.
     choice1: 
     response1: 
     affection1: 0
@@ -21139,8 +21186,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Jinhui
+    dialogueText: People are like mountains. For better or for worse.
     choice1: 
     response1: 
     affection1: 0
@@ -21172,8 +21219,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Jinhui
+    dialogueText: "They can be obstacles that stand in one's way\u2026"
     choice1: 
     response1: 
     affection1: 0
@@ -21205,8 +21252,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Jinhui
+    dialogueText: Or they can be grounded pillars seen in the distance, no matter
+      how far one goes.
     choice1: 
     response1: 
     affection1: 0
@@ -21238,8 +21286,13 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Jinhui
+    dialogueText: 'Either way one can never see all sides of a mountain at once.
+
+      I
+      thought I had seen all sides of people.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -21271,8 +21324,13 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: JInhui
+    dialogueText: 'The honourable side through my mentor.
+
+      A noble scholar
+      who took a child from a brothel with no future.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -21304,8 +21362,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Jinhui
+    dialogueText: And gave him one.
     choice1: 
     response1: 
     affection1: 0
@@ -21337,8 +21395,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: JInhui
+    dialogueText: Teaching him how to read, write and paint.
     choice1: 
     response1: 
     affection1: 0
@@ -21370,8 +21428,13 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Jinhui
+    dialogueText: 'The dishonourable side through the people that killed him.
+
+      For
+      teaching this child who had no power.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -21403,8 +21466,10 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Jinhui
+    dialogueText: 'But I have never seen someone like you.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -21436,8 +21501,45 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Jinhui
+    dialogueText: Your mind holds intrigue that cannot be painted with words.
+    choice1: I would like to paint out my intentions for you as beautifully as you
+      have painted yours.
+    response1: Then go ahead, Your Grace. Solitude seems a dire choice when you are
+      one of the options.
+    affection1: 0
+    choice2: I apologise for what you have gone through, Jinhui.
+    response2: "You owe me no apology, Your Grace. If only I could forgive myself\u2026"
+    affection2: 0
+    choice3: I never understand what you say, Jinhui.
+    response3: Then I shall clarify my intentions, Your Grace.
+    affection3: 0
+    choice4: "\u2026"
+    response4: "Your Grace\u2026"
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: Jinhui takes a step closer to you, not caring if his competitors
+      were watching. His usually soft voice drops to a volume you can barely hear
+      as he whispers to you.
     choice1: 
     response1: 
     affection1: 0
@@ -21469,8 +21571,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Jinhui
+    dialogueText: I may not be as vocal or charismatic as everyone else, but my art
+      speaks the words I cannot.
     choice1: 
     response1: 
     affection1: 0
@@ -21502,8 +21605,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Jinhui
+    dialogueText: I only paint that which is truly beautiful, inside and out.
     choice1: 
     response1: 
     affection1: 0
@@ -21535,8 +21638,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Jinhui
+    dialogueText: 'Yet I had never once found a person beautiful enough to paint. '
     choice1: 
     response1: 
     affection1: 0
@@ -21568,8 +21671,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Jinhui
+    dialogueText: But now, if you come to my chambers I think you shall see an all
+      too familiar face lining not only this canvas, but the vast majority of them.
     choice1: 
     response1: 
     affection1: 0
@@ -21601,19 +21705,22 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
+    characterName: Jinhui
+    dialogueText: Just as with my art, I shall leave my words up to your interpretation.
+    choice1: If this is an invitation to your chambers, I will gladly accept it,
+      after our wedding.
+    response1: "I\u2019ll hold you to that, Your Grace."
     affection1: 0
-    choice2: 
-    response2: 
+    choice2: Well, I will be clear with my words. I am not interested in being the
+      subject of your affections.
+    response2: I shall take my leave then, Your Grace.
     affection2: 0
-    choice3: 
-    response3: 
+    choice3: I appreciate your admiration for me, Jinhui. But I am unsure of whether
+      I reciprocate these feelings.
+    response3: I understand, Your Grace. Do not feel pressured.
     affection3: 0
-    choice4: 
-    response4: 
+    choice4: "\u2026"
+    response4: I shall take my leave then, Your Grace.
     affection4: 0
     choiceMethod1:
       m_PersistentCalls:
@@ -21634,74 +21741,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: 'With a quiet grace, Jinhui bows and walks back to his chambers
+      leaving you to talk to your next suitor. '
     choice1: 
     response1: 
     affection1: 0
