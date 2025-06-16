@@ -19212,8 +19212,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: It has been a few days since you were first informed of your marriage
+      predicament.
     choice1: 
     response1: 
     affection1: 0
@@ -19245,8 +19246,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: 'Since then, you have met with all your suitors a multitude of
+      times, and have gotten to know each of them on a personal and political level. '
     choice1: 
     response1: 
     affection1: 0
@@ -19278,8 +19280,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: There are certainly some you like more than others...
     choice1: 
     response1: 
     affection1: 0
@@ -19311,8 +19313,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: 'However, today is different. '
     choice1: 
     response1: 
     affection1: 0
@@ -19344,8 +19346,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: It is the last time you shall speak to them before you choose someone
+      to wed.
     choice1: 
     response1: 
     affection1: 0
@@ -19377,8 +19380,10 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: 'Your heart beats in your chest as you enter the tranquil garden.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -19410,8 +19415,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: 'As soon as you enter, you see all seven of your suitors. '
     choice1: 
     response1: 
     affection1: 0
@@ -19443,8 +19448,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: Some are trying to keep themselves occupied, some are idly waiting.
     choice1: 
     response1: 
     affection1: 0
@@ -19476,8 +19481,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: They all know your decision today could also change their fate.
     choice1: 
     response1: 
     affection1: 0
@@ -19509,8 +19514,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: Not wanting to be obvious in your intentions you decide to approach
+      the person closest to you first. That happens to be Emissary Theodore.
     choice1: 
     response1: 
     affection1: 0
@@ -19542,8 +19548,11 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: 'Birdsong fills the garden as you walk up to Theo close to the
+      pavilion.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -19575,8 +19584,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He turns to look at you after hearing your footsteps and smirks.
     choice1: 
     response1: 
     affection1: 0
