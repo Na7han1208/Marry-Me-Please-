@@ -18977,8 +18977,44 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Jinhui
+    dialogueText: Yes?
+    choice1: 'I hope to see you again soon. Maybe you could paint a particular person
+      next time. '
+    response1: I will gladly take you up on that offer, Your Grace.
+    affection1: 0
+    choice2: You have not finished your painting, why are you leaving?
+    response2: What is unfinished to some, is completed to others, Your Grace.
+    affection2: 0
+    choice3: I am not done speaking to you.
+    response3: But I have said all that I find myself being able to say today, Your
+      Grace.
+    affection3: 0
+    choice4: "\u2026"
+    response4: Okay.
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: With that, Jinhui walks calmly out of the room, leaving you, the
+      silence, and Royal Advisor Wu, behind.
     choice1: 
     response1: 
     affection1: 0
@@ -19010,8 +19046,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: Wait...
     choice1: 
     response1: 
     affection1: 0
@@ -19043,8 +19079,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: Royal Advisor Wu???
     choice1: 
     response1: 
     affection1: 0
@@ -19076,8 +19112,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Wu
+    dialogueText: Ah hello, Your Highness. I see you are done meeting with your candidates.
     choice1: 
     response1: 
     affection1: 0
@@ -19109,8 +19145,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Wu
+    dialogueText: Take a much needed break and play a game with me.
     choice1: 
     response1: 
     affection1: 0
@@ -19142,41 +19178,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: You sit at the table across from Wu and let yourself relax after
+      a long, exhausting day.
     choice1: 
     response1: 
     affection1: 0
