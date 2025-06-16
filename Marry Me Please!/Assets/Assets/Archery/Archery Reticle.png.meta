@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Archery Reticle_0: -3265532420445352105
+      Archery Reticle_1: -6047312119737528819
+      Archery Reticle_2: -4854187835135778016
+      Archery Reticle_3: -2632434718062864385
+      Archery Reticle_4: -7182310599949729297
+      Archery Reticle_5: 4999517159932359074
+      Archery Reticle_6: -8583622027376834476
+      Archery Reticle_7: -1777924506822150991
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

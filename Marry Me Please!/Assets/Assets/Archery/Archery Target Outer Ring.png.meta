@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Archery Target Outer Ring_0: 8996730870578737607
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
