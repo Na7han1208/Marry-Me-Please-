@@ -15537,8 +15537,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: She tucks a strand of hair behind her ear, still kneeling, the
+      floor dusted with broken glass.
     choice1: 
     response1: 
     affection1: 0
@@ -15570,8 +15571,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yilin
+    dialogueText: Your Excellency... would it be terribly forward if I asked to prepare
+      you a private supper sometime?
     choice1: 
     response1: 
     affection1: 0
@@ -15603,8 +15605,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yilin
+    dialogueText: Just you...and... me.
     choice1: 
     response1: 
     affection1: 0
@@ -15636,8 +15638,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: "She quickly adds\u2014"
     choice1: 
     response1: 
     affection1: 0
@@ -15669,8 +15671,42 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yilin
+    dialogueText: I promise no dropped trays this time.
+    choice1: That sounds delightful.
+    response1: "Then I\u2019ll make something simple and safe... and warm."
+    affection1: 0
+    choice2: Is this how you court your liege?
+    response2: "W-What?! I-I wouldn\u2019t... unless... no never mind."
+    affection2: 0
+    choice3: I would prefer you just made the food.
+    response3: I-I apologize.
+    affection3: 0
+    choice4: ...
+    response4: "Y-You make it so hard to know if I\u2019ve said something wrong."
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: "She rises slowly, dusting off her skirt. There\u2019s a slight
+      wince, her ankle must have hit the tray."
     choice1: 
     response1: 
     affection1: 0
@@ -15702,8 +15738,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yilin
+    dialogueText: I used to think tea was just hot water. But it is not, is it? It
+      holds weight. Status. Grace.
     choice1: 
     response1: 
     affection1: 0
@@ -15735,8 +15772,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: She stays silent for a second, introspective.
     choice1: 
     response1: 
     affection1: 0
@@ -15768,8 +15805,45 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: 'Yilin
+
+'
+    dialogueText: And if it is brewed wrong... it can taste like guilt.
+    choice1: Guilt?
+    response1: 'There was once a night when I prepared something wrong. And now I
+      will never forget it. '
+    affection1: 0
+    choice2: I can taste the guilt Yilin.
+    response2: I am sorry, someone must remember. Or else the lesson disappears.
+    affection2: 0
+    choice3: 'I am sure that whatever it was, was not your fault. '
+    response3: Why... why do you say that like, you are sure?
+    affection3: 0
+    choice4: ...
+    response4: Silence feels heavier than blame.
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: She leans slightly forward, then stops herself. Her breath catches
+      in her throat.
     choice1: 
     response1: 
     affection1: 0
@@ -15801,8 +15875,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yilin
+    dialogueText: You helped me without hesitation. Even though I fumbled, even though
+      I embarrassed myself...
     choice1: 
     response1: 
     affection1: 0
@@ -15834,8 +15909,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: She smiles, a small one, but it reaches her eyes this time.
     choice1: 
     response1: 
     affection1: 0
@@ -15867,8 +15942,42 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yilin
+    dialogueText: "I don\u2019t want to just serve tea. I want to stay near you.
+      If you\u2019ll allow it."
+    choice1: "Then stay. I\u2019ll make room."
+    response1: "Then I will, Your Excellency... and I won\u2019t spill a thing."
+    affection1: 0
+    choice2: "Don\u2019t ask for permission."
+    response2: S-Sorry, but thank you... Your Excellency.
+    affection2: 0
+    choice3: You never needed permission.
+    response3: "Then I suppose I\u2019ll start acting like I belong."
+    affection3: 0
+    choice4: ...
+    response4: "Then I\u2019ll wait. Even if your silence means no."
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: She gathers herself.
     choice1: 
     response1: 
     affection1: 0
@@ -15900,8 +16009,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yilin
+    dialogueText: I apologize, Your Excellency, I must leave. My work calls me.
     choice1: 
     response1: 
     affection1: 0
@@ -15933,8 +16042,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: She bows gently then turns and leaves towards the kitchen, her
+      head stays down watching her feet take each step.
     choice1: 
     response1: 
     affection1: 0
@@ -15966,8 +16076,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: "Yilin\u2019s abrupt departure left you wanting to know more about
+      the timid young woman. "
     choice1: 
     response1: 
     affection1: 0
@@ -15999,107 +16110,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: 'But before you could do anything else your next suitor entered
+      the room holding a new tray of tea. '
     choice1: 
     response1: 
     affection1: 0
