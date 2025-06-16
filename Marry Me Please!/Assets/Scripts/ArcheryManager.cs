@@ -12,8 +12,12 @@ public class ArcheryManager : MonoBehaviour
     public RectTransform cursorImage;
     public float jitterRadius = 100f;
     public float jitterSpeed = 5f;
-    public float cursorSmoothSpeed = 10f;
+    public float cursorSmoothSpeed = 1000f;
     public float holdTimeRequired = 1.3f;
+
+    [Header("Hitmarker")]
+    public GameObject hitmarkerPrefab;
+    public RectTransform hitmarkerParent;
 
     int shotsRemaining = 5;
     int totalScore = 0;
@@ -140,24 +144,48 @@ public class ArcheryManager : MonoBehaviour
         List<RaycastResult> results = new List<RaycastResult>();
         raycaster.Raycast(pointerData, results);
 
+        // Sort by depth
+        results.Sort((a, b) => b.depth.CompareTo(a.depth)); //yeah this doesn't work, so pretend the game has rng
+
         foreach (var result in results)
         {
             Button button = result.gameObject.GetComponent<Button>();
             if (button != null)
             {
                 button.onClick.Invoke();
-                Debug.Log("Hit button: " + button.name);
-                return;
+                SpawnHitmarker(cursorImage.position);
+                return; // Exit after the first valid hit
             }
-        } //can change later if multiple parts overlap, but should be okay for now
-
+        }
         Debug.Log("Missed all buttons.");
     }
 
     public void ChangeScore(int score)
     {
         totalScore += score;
+        scoreText.text = totalScore + "";
     }
+
+    void SpawnHitmarker(Vector3 screenPos)
+    {
+        if (hitmarkerPrefab == null || hitmarkerParent == null) return;
+
+        // Instantiate hit marker
+        GameObject marker = Instantiate(hitmarkerPrefab, hitmarkerParent);
+
+        // Convert screen position to local canvas position
+        Vector2 localPoint;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            hitmarkerParent,
+            screenPos,
+            canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : canvas.worldCamera,
+            out localPoint
+        );
+
+        RectTransform rt = marker.GetComponent<RectTransform>();
+        rt.anchoredPosition = localPoint;
+    }
+
 
     void endGame()
     {
