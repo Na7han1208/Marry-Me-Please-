@@ -19617,8 +19617,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: "Well well. Look who it is; Your Majest\xE9, bonjour Darling!"
     choice1: 
     response1: 
     affection1: 0
@@ -19650,8 +19650,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He takes your hand and kisses it.
     choice1: 
     response1: 
     affection1: 0
@@ -19683,8 +19683,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: 'I noticed that you have come to seek me out willingly this time.  '
     choice1: 
     response1: 
     affection1: 0
@@ -19716,8 +19716,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He looks around at the other suitors.
     choice1: 
     response1: 
     affection1: 0
@@ -19749,8 +19749,45 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: "And first out of the others no less, I am honoured Your  Majest\xE9. "
+    choice1: Out of courtesy, I am to speak to the emissary of a foreign  nation
+      first.
+    response1: 'Ah yes, how very noble of you Darling. '
+    affection1: 0
+    choice2: As you should be Theo, one can say I missed our friendly  banter.
+    response2: 'Oh? What a way to make a man blush Sweetheart! '
+    affection2: 0
+    choice3: Do not flatter yourself too much Emissary. I came to you first because
+      you were the closest in distance.
+    response3: "Straight to the point as always, Your Majest\xE9. At least let  me
+      wish. "
+    affection3: 0
+    choice4: "\u2026 "
+    response4: "Still as shy as ever Your Majest\xE9. Surely I am not scary  enough
+      to still warrant your silence after all this time. "
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: He composes himself.
     choice1: 
     response1: 
     affection1: 0
@@ -19782,8 +19819,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: "I am taking a gamble here, is that how you say it\u2026, but am
+      I correct in saying that you have decided on who you will marry?"
     choice1: 
     response1: 
     affection1: 0
@@ -19815,8 +19853,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: "Perhaps\u2026 why? Are you nervous? "
     choice1: 
     response1: 
     affection1: 0
@@ -19848,8 +19886,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He chuckles nervously and looks at you.
     choice1: 
     response1: 
     affection1: 0
@@ -19881,8 +19919,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: "Something of the sorts Darling. It is just\u2026 securing peace
+      and ending the war with China weighs heavy on me. "
     choice1: 
     response1: 
     affection1: 0
@@ -19914,8 +19953,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: "As I am sure it weighs heavy on you too, Your Majest\xE9."
     choice1: 
     response1: 
     affection1: 0
@@ -19947,8 +19986,47 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: 'As someone representing their people, you want what is  best for
+      them, no? You and I Darling, we are not so different after all. '
+    choice1: I guess not Theo. Let us put an end to this bloodshed once  and for
+      all, together.
+    response1: When you say it like that it is hard to say no Sweetheart.
+    affection1: 0
+    choice2: I suppose we are quite similar in certain aspects.
+    response2: 'More than you would think, Darling. '
+    affection2: 0
+    choice3: "I am not sure what you are alluding to, but we are Theo, like  night
+      and day\u2026 You are French, I am Chinese. We do not get  any more different
+      than that."
+    response3: "I apologize, Your Majest\xE9, you are right. Triste, for I have spoken
+      out of turn."
+    affection3: 0
+    choice4: "\u2026"
+    response4: "It seems I have spoken too much once again. Je suis  d\xE9sol\xE9
+      Your Majest\xE9. "
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: He turns to look at the others in the garden.
     choice1: 
     response1: 
     affection1: 0
@@ -19980,8 +20058,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: 'Speaking honestly, I am the best candidate to marry to  end the
+      war peacefully. '
     choice1: 
     response1: 
     affection1: 0
@@ -20013,8 +20092,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: "There will be no more losses on either side, and we will  unify
+      our nations\u2026 "
     choice1: 
     response1: 
     affection1: 0
@@ -20046,8 +20126,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He turns back to you with a look you cannot place.
     choice1: 
     response1: 
     affection1: 0
@@ -20079,8 +20159,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: 'But I will not hold you back from choosing the one that  you love.
+      That would be cruel of me. '
     choice1: 
     response1: 
     affection1: 0
@@ -20112,8 +20193,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He smiles at you.
     choice1: 
     response1: 
     affection1: 0
@@ -20145,8 +20226,49 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: 'I would rather you choose someone from the heart than  someone
+      out of obligation Darling. '
+    choice1: "Whether I choose someone for love or obligation does not matter Theod\xF3re.
+      But thank you for your kind words. "
+    response1: "Of course Darling. Just being a good friend in these trying times\u2026 "
+    affection1: 0
+    choice2: 'I do not have the luxury of choosing marriage for love. I have a  duty
+      to uphold to my kingdom, and I will do just that.  '
+    response2: "Righteous as ever Your Majest\xE9 but I understand. I am still a
+      foreign \u2018emissary\u2019 after all\u2026 "
+    affection2: 0
+    choice3: 'That is very sweet of you Theo. And who is to say that I have  not
+      chosen for love already. '
+    response3: 'My my, bold as ever Sweetheart. Well then, I look  forward to your
+      choice. '
+    affection3: 0
+    choice4: "\u2026"
+    response4: "I never know what you are thinking Your Majest\xE9, but for  the
+      sake of our nations I hope you make the right choice.  "
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: Theodore
+    dialogueText: "I shall not take any more of your time Your Majest\xE9 or else
+      your other suitors might grow antsy. "
     choice1: 
     response1: 
     affection1: 0
@@ -20178,8 +20300,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: The next time we speak, I hope it is after the war has  ended.
     choice1: 
     response1: 
     affection1: 0
@@ -20211,8 +20333,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: After Theodore walks off, all you are given is a second to breathe
+      before you see your next suitor.
     choice1: 
     response1: 
     affection1: 0
@@ -20244,8 +20367,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: 'Zihan approaches once more, seeming far more introspective than
+      usual. '
     choice1: 
     response1: 
     affection1: 0
@@ -20277,107 +20401,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: There is a certain sadness behind his eyes that you have never
+      seen before.
     choice1: 
     response1: 
     affection1: 0
