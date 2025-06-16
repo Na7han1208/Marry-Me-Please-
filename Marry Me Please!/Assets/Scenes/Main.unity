@@ -15001,8 +15001,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: "After Royal Advisor Wu\u2019s game, you head to the study to meet
+      the rest of your suitors. "
     choice1: 
     response1: 
     affection1: 0
@@ -15034,8 +15035,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: You were told by Wu that they would be waiting there.
     choice1: 
     response1: 
     affection1: 0
@@ -15067,8 +15068,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: 'For a retired man, he was working suspiciously hard. '
     choice1: 
     response1: 
     affection1: 0
@@ -15100,8 +15101,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: As you walk to the study, you are not sure if the situation has
+      fully sunk in, but you feel awfully relaxed.
     choice1: 
     response1: 
     affection1: 0
@@ -15133,8 +15135,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: "Too relaxed maybe\u2026"
     choice1: 
     response1: 
     affection1: 0
@@ -15166,8 +15168,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: You arrive at the study and just as you are about to slide the
+      door open you hear a crash and the shattering of ceramics.
     choice1: 
     response1: 
     affection1: 0
@@ -15199,8 +15202,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: You shove the door to the study open and on the floor are broken
+      teacups and a teapot.
     choice1: 
     response1: 
     affection1: 0
@@ -15232,8 +15236,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: You see a liquid pooled around the mess and next to it stands Head
+      Chef Yilin.
     choice1: 
     response1: 
     affection1: 0
@@ -15265,8 +15270,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: 'She suddenly looks up at you and then it dawns upon her. '
     choice1: 
     response1: 
     affection1: 0
@@ -15298,8 +15303,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: She immediately kneels, face pale and hands trembling.
     choice1: 
     response1: 
     affection1: 0
@@ -15331,8 +15336,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: She startles as your hand reaches out to help gather the scattered
+      cups. Her eyes widen.
     choice1: 
     response1: 
     affection1: 0
@@ -15364,8 +15370,42 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yilin
+    dialogueText: I-I am so sorry, Your Excellency! Please do not...
+    choice1: Do not apologize. Accidents happen.
+    response1: But when I make them, people disappear. I... I cannot afford accidents.
+    affection1: 0
+    choice2: Are you alright? You are shaking.
+    response2: "I didn\u2019t expect you to... kneel beside me."
+    affection2: 0
+    choice3: I trust you will do better next time.
+    response3: I-I will, I apologize Your Excellency.
+    affection3: 0
+    choice4: ...
+    response4: It is alright. You need not pretend to care.
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: 'She carefully lifts one of the teacups, inspecting the chipped
+      rim. Her expression is unreadable. '
     choice1: 
     response1: 
     affection1: 0
@@ -15397,8 +15437,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yilin
+    dialogueText: This one was my favourite. The glaze reminded me of clouds. I...
+      used to count clouds when I worked in the fields. It made the hours shorter.
     choice1: 
     response1: 
     affection1: 0
@@ -15430,8 +15471,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: Her voice softens.
     choice1: 
     response1: 
     affection1: 0
@@ -15463,52 +15504,19 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
+    characterName: Yilin
+    dialogueText: I thought things would break less, once I got here.
+    choice1: Do you miss the fields?
+    response1: Sometimes. Things grew without asking questions.
     affection1: 0
-    choice2: 
-    response2: 
+    choice2: Things break no matter where you are.
+    response2: Even royalty says such things?
     affection2: 0
-    choice3: 
-    response3: 
+    choice3: I thought so too.
+    response3: I-I am so sorry Your Excellency.
     affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
+    choice4: ...
+    response4: You seem to go quiet when I wish you would not.
     affection4: 0
     choiceMethod1:
       m_PersistentCalls:
