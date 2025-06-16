@@ -20435,8 +20435,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He kneels, setting a delicate lacquered box between you, fingers
+      trembling faintly before he opens it.
     choice1: 
     response1: 
     affection1: 0
@@ -20468,8 +20469,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: Inside rests a folded letter, yellowed with age and sealed with
+      the Southern crest.
     choice1: 
     response1: 
     affection1: 0
@@ -20501,8 +20503,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Zihan
+    dialogueText: I was meant to burn this. The day I was recalled. But I could not.
     choice1: 
     response1: 
     affection1: 0
@@ -20534,8 +20536,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He looks up at you, unsure.
     choice1: 
     response1: 
     affection1: 0
@@ -20567,8 +20569,44 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Zihan
+    dialogueText: It is the letter I wrote. Not the one that reached you. The one
+      I meant to send.
+    choice1: Then why did you not send this?
+    response1: "I feared it was too little\u2026 too late. But maybe, now, it is
+      not."
+    affection1: 0
+    choice2: Another trick sealed in wax? I have had enough.
+    response2: "I deserve that\u2026 But no, this is not a game."
+    affection2: 0
+    choice3: So you can write when it suits your cause.
+    response3: I deserve your scorn, but I offer this not as a Prince, just as Zihan.
+    affection3: 0
+    choice4: "\u2026"
+    response4: Even your silence is heavier than any scolding.
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: He picks up the letter again, fingers brushing the seal before
+      pausing.
     choice1: 
     response1: 
     affection1: 0
@@ -20600,8 +20638,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Zihan
+    dialogueText: "There are lines in there I cannot recite aloud. Not yet. But\u2026
+      if you ever read it,  you will know everything."
     choice1: 
     response1: 
     affection1: 0
@@ -20633,8 +20672,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He lowers his gaze.
     choice1: 
     response1: 
     affection1: 0
@@ -20666,8 +20705,43 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Zihan
+    dialogueText: "Why I acted so recklessly. Why I fled from duty\u2026 and why
+      I have come back to  kneel before it now."
+    choice1: Duty alone did not bring you back. Did it?
+    response1: "No. Not just duty. You\u2026 you are the other reason."
+    affection1: 0
+    choice2: You only return when power slips beyond your grasp.
+    response2: "Perhaps I did\u2026 but I hope I can stay for better reasons."
+    affection2: 0
+    choice3: If you are seeking forgiveness, you will not find it easily.
+    response3: "Then I will earn it slowly\u2026 or not at all."
+    affection3: 0
+    choice4: "\u2026"
+    response4: I deserve the weight of that silence.
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: He closes the box slowly, not pushing it toward you, not taking
+      it back.
     choice1: 
     response1: 
     affection1: 0
@@ -20699,8 +20773,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Zihan
+    dialogueText: I know what they call me. Scandalous. Illegitimate. A stray dog
+      in silk
     choice1: 
     response1: 
     affection1: 0
@@ -20732,8 +20807,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He meets your gaze, and takes a second to gather himself.
     choice1: 
     response1: 
     affection1: 0
@@ -20765,19 +20840,20 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
+    characterName: Zihan
+    dialogueText: "But I will call myself anything\u2026 if it means I may stand
+      beside you once more."
+    choice1: Then rise. You are no longer that boy.
+    response1: Then let me prove I am a man worthy of you.
     affection1: 0
-    choice2: 
-    response2: 
+    choice2: Even a stray dog remembers how to bite.
+    response2: Then I will bite only at the heels of those who threaten you.
     affection2: 0
-    choice3: 
-    response3: 
+    choice3: "You are not unworthy, Zihan. Just\u2026 unfinished."
+    response3: Then let me finish this story beside you.
     affection3: 0
-    choice4: 
-    response4: 
+    choice4: "\u2026"
+    response4: Perhaps I have said too much. But I meant every word.
     affection4: 0
     choiceMethod1:
       m_PersistentCalls:
@@ -20798,74 +20874,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: Zihan bows, then walks away and before you can fully internalise
+      what he has said you feel a light tap on your shoulder.
     choice1: 
     response1: 
     affection1: 0
