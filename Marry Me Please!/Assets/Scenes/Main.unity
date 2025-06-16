@@ -9774,8 +9774,11 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: 'A graceful yet somewhat familiar figure sashays their way over
+      to you.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -10624,8 +10627,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: They seem like they are going to say more but you interrupt them.
     choice1: 
     response1: 
     affection1: 0
@@ -11472,8 +11475,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Ming
+    dialogueText: Get it? Because the next suitor is French?
     choice1: 
     response1: 
     affection1: 0
@@ -11781,8 +11784,10 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: 'Theodore
+
+'
+    dialogueText: The war aside, let us talk about you Darling.
     choice1: 
     response1: 
     affection1: 0
@@ -11814,8 +11819,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He does finger guns at you.
     choice1: 
     response1: 
     affection1: 0
@@ -11847,8 +11852,53 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: With your marriage around the corner, what kind of traits and personality
+      are you looking for in the one who will rule by your side?
+    choice1: "That is a bold question to ask someone you just met, do you not think,
+      Emissary Theod\xF3re."
+    response1: I have been told I am a bold, audacieux, person Sweetheart. And please,
+      call me Theo. It is such a mouthful to call me by my full title.
+    affection1: 0
+    choice2: I am not actively looking for someone per say, I just need someone who
+      can rule with me by my side Emissary.
+    response2: "You will be a great leader Your Majest\xE9, and whoever you choose
+      will surely be happy to rule beside someone as merveilleux\u2026 wonderful
+      as you. And please, call me Theo."
+    affection2: 0
+    choice3: 'I could care less about who I am to wed, Emissary. With or without
+      someone by my side, I will be the Ruler of Northern China, and my name will
+      be known throughout the Dynasty. '
+    response3: "Ruling alone is difficult, but you are headstrong Your Majest\xE9,
+      so I can see you achieving what you speak of. And calling me my title feels
+      stiff, call me Theo, Darling."
+    affection3: 0
+    choice4: "\u2026"
+    response4: "Not one for jokes either I see but speak not for your silence speaks
+      volumes Your Majest\xE9. I, Theo, understand completely."
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: "Theod\xF3re moves so that he is leaning comfortably against a
+      pillar."
     choice1: 
     response1: 
     affection1: 0
@@ -11880,8 +11930,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: Growing up I was taught that the Chinese were evil people, wanting
+      nothing other than to cause chaos and wreak havoc upon others.
     choice1: 
     response1: 
     affection1: 0
@@ -11913,8 +11964,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: But during the time I have been here, it is nothing like what I
+      was raised to believe.
     choice1: 
     response1: 
     affection1: 0
@@ -11946,8 +11998,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: Pas du tout. Not at all
     choice1: 
     response1: 
     affection1: 0
@@ -11979,8 +12031,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: "So, how are you enjoying your time here then\u2026Theo?"
     choice1: 
     response1: 
     affection1: 0
@@ -12012,8 +12064,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: Theo is surprised you actually used his nickname.
     choice1: 
     response1: 
     affection1: 0
@@ -12045,8 +12097,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: "\u2026 Theod\xF3re?"
     choice1: 
     response1: 
     affection1: 0
@@ -12078,8 +12130,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: Je m'excuse; I apologize Darling, you seem to have caught me off
+      guard.
     choice1: 
     response1: 
     affection1: 0
@@ -12111,8 +12164,43 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: I did not think you would use my nickname so quickly.
+    choice1: "Was that too soon? I can refer to you as Theod\xF3re if you prefer\u2026 "
+    response1: No, it was not too soon at all Darling.
+    affection1: 0
+    choice2: 'Well, you did say I could call you Theo. Do not look so surprised now. '
+    response2: "I did indeed Your Majest\xE9. I just did not envision you as someone
+      so bold."
+    affection2: 0
+    choice3: 'You are not the only bold one here, Theo. '
+    response3: I see that I have met my match in wits with you Sweetheart, plein
+      d'esprit.
+    affection3: 0
+    choice4: "\u2026"
+    response4: "Do not get shy on me now Your Majest\xE9."
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: Theo smirks at you.
     choice1: 
     response1: 
     affection1: 0
@@ -12144,8 +12232,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: "To answer your question, it is tranquil here in China\u2026 despite
+      the war."
     choice1: 
     response1: 
     affection1: 0
@@ -12177,8 +12266,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: Theo perks up very excitedly
     choice1: 
     response1: 
     affection1: 0
@@ -12210,8 +12299,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: And the food here is to die for! The way everything is spiced so
+      well! Le baiser du chef!
     choice1: 
     response1: 
     affection1: 0
@@ -12243,8 +12333,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: His expression falls into a gloom.
     choice1: 
     response1: 
     affection1: 0
@@ -12276,8 +12366,49 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: Unlike back at home where the food is barely salted or when it
+      is, the flavours are too extreme.
+    choice1: Hopefully when this war ends, I will get a chance to try out French
+      cuisine myself. See if it is truly as terrible as you say it is.
+    response1: "Do not take my word for it Sweetheart, but it would be an honour
+      if you came to visit France. And not just for the food\u2026"
+    affection1: 0
+    choice2: Glad to know that you have taste. I am sure that if I had to eat food
+      as bland as you say it is, I would be miserable every day.
+    response2: "Trust me Your Majest\xE9, you have no idea how right you are there."
+    affection2: 0
+    choice3: Thank you, I will make sure to pass your compliments on to the chefs.
+      And surely French cuisine cannot be that bad.
+    response3: That will be much appreciated Darling, and I am sure I can whip something
+      up for you if you allow me.
+    affection3: 0
+    choice4: "\u2026"
+    response4: "Ah\u2026 I forget. I speak for the both of us since you are as quiet
+      as a mouse Your Majest\xE9."
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: MC
+    dialogueText: Seeing that you like our food so much, what would you say is your
+      favourite dish so far?
     choice1: 
     response1: 
     affection1: 0
@@ -12309,8 +12440,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: "Mmm\u2026 J'aime les boulettes. The dumplings are simply superb,
+      especially when they are paired with noodles!"
     choice1: 
     response1: 
     affection1: 0
@@ -12342,8 +12474,48 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: What is your favourite dish, Darling?
+    choice1: 'I do not particularly care for having a favourite dish. Food is food
+      as long as it is not poisoned. '
+    response1: "I see\u2026 and it seems you speak from experience regarding the
+      poison. Though I cannot fault you for it because I can agree with you on that
+      part Your Majest\xE9."
+    affection1: 0
+    choice2: I quite enjoy all the food that I am served, for which I am eternally
+      grateful to the chefs.
+    response2: Yes, having good chefs leads to good hearty meals. I am grateful that
+      I can try out their cooking while I am here. I have you to thank for that Darling.
+    affection2: 0
+    choice3: 'You and I are one of the same then Theo! My favourite dish also happens
+      to be noodles and dumplings. '
+    response3: Well well Sweetheart, looks like we really do have a lot in common.
+    affection3: 0
+    choice4: "\u2026"
+    response4: "I will take your silence as you do not have a particular dish that
+      you favour Your Majest\xE9. Which is fine if you simply enjoy eating as a whole."
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: His stomach rumbles.
     choice1: 
     response1: 
     affection1: 0
@@ -12375,8 +12547,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: Pardon me Darling. All this talk of food has made me hungry.
     choice1: 
     response1: 
     affection1: 0
@@ -12408,8 +12580,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: "I have taken more than enough of your time with this wonderful
+      conversation, so if you do not mind Your Majest\xE9\u2026"
     choice1: 
     response1: 
     affection1: 0
@@ -12441,140 +12614,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He bows dramatically.
     choice1: 
     response1: 
     affection1: 0
