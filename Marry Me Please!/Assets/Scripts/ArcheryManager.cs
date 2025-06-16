@@ -38,8 +38,8 @@ public class ArcheryManager : MonoBehaviour
 
     void Start()
     {
-        //AudioManager.Instance.StopAll();
-        //AudioManager.Instance.Play("3CMMusic");
+        AudioManager.Instance.StopAll();
+        AudioManager.Instance.Play("3CMMusic");
 
         chargeSlider.maxValue = holdTimeRequired;
         scoreText.text = "0";
@@ -74,6 +74,7 @@ public class ArcheryManager : MonoBehaviour
         {
             if (holdTimer >= holdTimeRequired)
             {
+                AudioManager.Instance.Play("BowLoad");
                 TryShootAtButton();
             }
             else
@@ -154,6 +155,7 @@ public class ArcheryManager : MonoBehaviour
             {
                 button.onClick.Invoke();
                 SpawnHitmarker(cursorImage.position);
+                AudioManager.Instance.Play("ArrowHit");
                 return; // Exit after the first valid hit
             }
         }
