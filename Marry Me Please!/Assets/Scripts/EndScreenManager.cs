@@ -84,6 +84,7 @@ public class EndScreenManager : MonoBehaviour
 
     public void MingEnding()
     {
+        PlayerPrefs.SetInt("MingUnlocked", 1);
         background.GetComponent<UnityEngine.UI.Image>().sprite = mingEndingBG;
         endingText.GetComponent<TMP_Text>().text = mingEndingTxt;
         StartCoroutine(PlayEnding());
@@ -91,6 +92,7 @@ public class EndScreenManager : MonoBehaviour
 
     public void TheoEnding()
     {
+        PlayerPrefs.SetInt("TheoUnlocked", 1);
         background.GetComponent<UnityEngine.UI.Image>().sprite = theoEndingBG;
         endingText.GetComponent<TMP_Text>().text = theoEndingTxt;
         StartCoroutine(PlayEnding());
@@ -98,6 +100,7 @@ public class EndScreenManager : MonoBehaviour
 
     public void ZihanEnding()
     {
+        PlayerPrefs.SetInt("ZihanUnlocked", 1);
         background.GetComponent<UnityEngine.UI.Image>().sprite = zihanEndingBG;
         endingText.GetComponent<TMP_Text>().text = zihanEndingTxt;
         StartCoroutine(PlayEnding());
@@ -105,6 +108,7 @@ public class EndScreenManager : MonoBehaviour
 
     public void FenEnding()
     {
+        PlayerPrefs.SetInt("FenUnlocked", 1);
         background.GetComponent<UnityEngine.UI.Image>().sprite = fenEndingBG;
         endingText.GetComponent<TMP_Text>().text = fenEndingTxt;
         StartCoroutine(PlayEnding());
@@ -112,6 +116,7 @@ public class EndScreenManager : MonoBehaviour
 
     public void YilinEnding()
     {
+        PlayerPrefs.SetInt("YilinUnlocked", 1);
         background.GetComponent<UnityEngine.UI.Image>().sprite = yilinEndingBG;
         endingText.GetComponent<TMP_Text>().text = yilinEndingTxt;
         StartCoroutine(PlayEnding());
@@ -119,6 +124,7 @@ public class EndScreenManager : MonoBehaviour
 
     public void YukiEnding()
     {
+        PlayerPrefs.SetInt("YukiUnlocked", 1);
         background.GetComponent<UnityEngine.UI.Image>().sprite = yukiEndingBG;
         endingText.GetComponent<TMP_Text>().text = yukiEndingTxt;
         StartCoroutine(PlayEnding());
@@ -126,6 +132,7 @@ public class EndScreenManager : MonoBehaviour
 
     public void JinhuiEnding()
     {
+        PlayerPrefs.SetInt("MingUnlocked", 1);
         background.GetComponent<UnityEngine.UI.Image>().sprite = jinhuiEndingBG;
         endingText.GetComponent<TMP_Text>().text = jinhuiEndingTxt;
         StartCoroutine(PlayEnding());
@@ -133,6 +140,7 @@ public class EndScreenManager : MonoBehaviour
 
     public void NoBitchesEnding()
     {
+        PlayerPrefs.SetInt("JinhuiUnlocked", 1);
         background.GetComponent<UnityEngine.UI.Image>().sprite = noBitchesEndingBG;
         endingText.GetComponent<TMP_Text>().text = noBitchesEndingTxt;
         StartCoroutine(PlayEnding());
@@ -148,7 +156,6 @@ public class EndScreenManager : MonoBehaviour
         returnButton.SetActive(true);
         float scrollSpeed = 60f;
         float endOffset = 100f;
-        bool destroyAfter = false;
 
         RectTransform rt = GetComponent<RectTransform>();
 
@@ -163,12 +170,6 @@ public class EndScreenManager : MonoBehaviour
         {
             rt.anchoredPosition += Vector2.up * scrollSpeed * Time.deltaTime;
             yield return null;
-        }
-
-        // Optional cleanup
-        if (destroyAfter)
-        {
-            Destroy(gameObject);
         }
     }
 }

@@ -3,6 +3,8 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using System.Runtime.ExceptionServices;
+using Unity.VisualScripting;
 
 public class BonusContentManager : MonoBehaviour
 {
@@ -14,6 +16,10 @@ public class BonusContentManager : MonoBehaviour
     public float moveDuration = 0.3f;
     public float sideScale = 0.7f;
 
+    [Header("Card Art")]
+    public Image[] unlockedArt;
+    public Image lockedArt;
+
     [Header("Mouse Hover Effect")]
     public float hoverRotationAmount = 10f;
     public float hoverSmoothing = 5f;
@@ -23,6 +29,21 @@ public class BonusContentManager : MonoBehaviour
 
     void Start()
     {
+        //Make art locked or unlocked
+        foreach (Button button in cardButtons) button.image = lockedArt;
+
+        if (PlayerPrefs.GetInt("MingUnlocked") == 1) cardButtons[0].image = unlockedArt[0];
+        if (PlayerPrefs.GetInt("TheoUnlocked") == 1) cardButtons[1].image = unlockedArt[1];
+        if (PlayerPrefs.GetInt("ZihanUnlocked") == 1) cardButtons[2].image = unlockedArt[2];
+        if (PlayerPrefs.GetInt("FenUnlocked") == 1) cardButtons[3].image = unlockedArt[3];
+        if (PlayerPrefs.GetInt("YukiUnlocked") == 1) cardButtons[4].image = unlockedArt[4];
+        if (PlayerPrefs.GetInt("JinhuiUnlocked") == 1) cardButtons[5].image = unlockedArt[5];
+        if (PlayerPrefs.GetInt("YilinUnlocked") == 1) cardButtons[6].image = unlockedArt[6];
+
+        if (PlayerPrefs.GetInt("3CMUnlocked") == 1) cardButtons[7].image = unlockedArt[7];
+        if (PlayerPrefs.GetInt("ArcheryUnlocked") == 1) cardButtons[8].image = unlockedArt[8];
+        if (PlayerPrefs.GetInt("MahjongUnlocked") == 1) cardButtons[9].image = unlockedArt[9];
+
         RepositionCardsImmediate();
     }
 

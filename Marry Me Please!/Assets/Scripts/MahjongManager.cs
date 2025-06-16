@@ -160,6 +160,7 @@ public class MahjongManager : MonoBehaviour
 
     IEnumerator LoseGame()
     {
+        PlayerPrefs.SetInt("MahjongUnlocked", 1);
         inputLocked = true;
         winPanel.text = "You lose!";
         if (PlayerPrefs.GetInt("RouteFromMenu") == 0)
@@ -191,6 +192,7 @@ public class MahjongManager : MonoBehaviour
 
     IEnumerator WinGame()
     {
+        PlayerPrefs.SetInt("MahjongUnlocked", 1);
         inputLocked = true;
         winPanel.text = "You Win!";
         AudioManager.Instance.Play("Correct");

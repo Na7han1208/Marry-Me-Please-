@@ -2,15 +2,25 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+using TMPro;
+using System;
 
 public class ArcheryManager : MonoBehaviour
 {
     [Header("Cursor Settings")]
-    public RectTransform cursorImage;     
-    public float jitterRadius = 100f;       
-    public float jitterSpeed = 5f;         
-    public float cursorSmoothSpeed = 10f;   
-    public float holdTimeRequired = 2f;     
+    public RectTransform cursorImage;
+    public float jitterRadius = 100f;
+    public float jitterSpeed = 5f;
+    public float cursorSmoothSpeed = 10f;
+    public float holdTimeRequired = 1.3f;
+
+    int shotsRemaining = 5;
+    int totalScore = 0;
+
+    public Slider chargeSlider;
+    public TMP_Text scoreText;
+    public TMP_Text shotsRemainingText;
 
     private GraphicRaycaster raycaster;
     private EventSystem eventSystem;
@@ -24,8 +34,13 @@ public class ArcheryManager : MonoBehaviour
 
     void Start()
     {
-        AudioManager.Instance.StopAll();
-        AudioManager.Instance.Play("3CMMusic");
+        //AudioManager.Instance.StopAll();
+        //AudioManager.Instance.Play("3CMMusic");
+
+        chargeSlider.maxValue = holdTimeRequired;
+        scoreText.text = "0";
+        shotsRemainingText.text = "IIIII";
+
         canvas = FindFirstObjectByType<Canvas>();
         raycaster = canvas.GetComponent<GraphicRaycaster>();
         eventSystem = EventSystem.current;
@@ -47,6 +62,7 @@ public class ArcheryManager : MonoBehaviour
         if (isCharging && Input.GetMouseButton(0))
         {
             holdTimer += Time.deltaTime;
+            chargeSlider.value = holdTimer;
             HandleJitterSmooth();
         }
 
@@ -96,7 +112,7 @@ public class ArcheryManager : MonoBehaviour
     void SetNewJitterTarget()
     {
         Vector3 basePos = Input.mousePosition;
-        Vector2 offset = Random.insideUnitCircle * jitterRadius;
+        Vector2 offset = UnityEngine.Random.insideUnitCircle * jitterRadius;
         targetJitterPos = basePos + (Vector3)offset;
 
         targetJitterPos.x = Mathf.Clamp(targetJitterPos.x, 0, Screen.width);
@@ -105,6 +121,17 @@ public class ArcheryManager : MonoBehaviour
 
     void TryShootAtButton()
     {
+        shotsRemaining--;
+        String text = "";
+        for (int i = 0; i < shotsRemaining; i++)
+        {
+            text += "I";
+        } shotsRemainingText.text = text;
+        if (shotsRemaining <= 0)
+        {
+            endGame();
+            return;
+        }
         PointerEventData pointerData = new PointerEventData(eventSystem)
         {
             position = cursorImage.position
@@ -125,5 +152,59 @@ public class ArcheryManager : MonoBehaviour
         } //can change later if multiple parts overlap, but should be okay for now
 
         Debug.Log("Missed all buttons.");
+    }
+
+    public void ChangeScore(int score)
+    {
+        totalScore += score;
+    }
+
+    void endGame()
+    {
+        //add affinity
+        if (totalScore >= 400)
+        {
+            SaveData existingData = SaveLoadManager.Instance.LoadGame();
+            SaveData saveData = new SaveData();
+
+            saveData.currentLine = existingData.currentLine;
+            saveData.playerName = existingData.playerName;
+
+            saveData.mingAffinity = existingData.mingAffinity + 8;
+            saveData.jinhuiAffinity = existingData.jinhuiAffinity + 8;
+            saveData.yilinAffinity = existingData.yilinAffinity + 8;
+            saveData.fenAffinity = existingData.fenAffinity + 8;
+            saveData.yukiAffinity = existingData.yukiAffinity + 8;
+            saveData.theodoreAffinity = existingData.theodoreAffinity + 8;
+            saveData.zihanAffinity = existingData.zihanAffinity + 8;
+            SaveLoadManager.Instance.SaveGame(saveData);
+        }
+        else
+        {
+            SaveData existingData = SaveLoadManager.Instance.LoadGame();
+            SaveData saveData = new SaveData();
+
+            saveData.currentLine = existingData.currentLine;
+            saveData.playerName = existingData.playerName;
+
+            saveData.mingAffinity = existingData.mingAffinity - 8;
+            saveData.jinhuiAffinity = existingData.jinhuiAffinity - 8;
+            saveData.yilinAffinity = existingData.yilinAffinity - 8;
+            saveData.fenAffinity = existingData.fenAffinity - 8;
+            saveData.yukiAffinity = existingData.yukiAffinity - 8;
+            saveData.theodoreAffinity = existingData.theodoreAffinity - 8;
+            saveData.zihanAffinity = existingData.zihanAffinity - 8;
+            SaveLoadManager.Instance.SaveGame(saveData);
+        }
+
+        //return or continue
+        if (PlayerPrefs.GetInt("RouteFromMenu") == 1)
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+        else
+        {
+            SceneManager.LoadScene("Main");
+        }
     }
 }

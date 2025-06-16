@@ -89,6 +89,7 @@ public class ThreeCupMonty : MonoBehaviour
     {
         Cups[winningCupIndex].GetComponent<Animator>().Play(0);
         DisableAllCups();
+        PlayerPrefs.SetInt("3CMUnlocked", 1);
         SaveData data = SaveLoadManager.Instance.LoadGame();
         if (selectedIndex == winningCupIndex)
         {
