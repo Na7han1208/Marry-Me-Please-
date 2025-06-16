@@ -14635,8 +14635,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: As Fen marches out the room, you let out a sigh.
     choice1: 
     response1: 
     affection1: 0
@@ -14668,8 +14668,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: 'The overdose of information in the last hour had overwhelmed you
+      but you could not rest just yet. '
     choice1: 
     response1: 
     affection1: 0
@@ -14701,8 +14702,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: You still had to meet the rest of your suitors.
     choice1: 
     response1: 
     affection1: 0
@@ -14734,8 +14735,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: "As you get up to leave, an unexpected figure appears\u2026"
     choice1: 
     response1: 
     affection1: 0
@@ -14767,8 +14768,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: Royal Advisor Wu?!
     choice1: 
     response1: 
     affection1: 0
@@ -14800,8 +14801,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: I thought you were retiring?
     choice1: 
     response1: 
     affection1: 0
@@ -14833,8 +14834,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Wu
+    dialogueText: Retirement is more uneventful than I expected.
     choice1: 
     response1: 
     affection1: 0
@@ -14866,8 +14867,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: "It\u2019s only been an hour\u2026"
     choice1: 
     response1: 
     affection1: 0
@@ -14899,8 +14900,10 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Wu
+    dialogueText: 'Nevertheless, play a game with me, Your Highness. Humour an old
+      man before you take your leave. And besides, it is a welcome break from your
+      tiresome duties. '
     choice1: 
     response1: 
     affection1: 0
@@ -14932,8 +14935,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: You do not have time to respond before Wu starts his game.
     choice1: 
     response1: 
     affection1: 0
@@ -14965,8 +14968,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: Good Luck!
     choice1: 
     response1: 
     affection1: 0
