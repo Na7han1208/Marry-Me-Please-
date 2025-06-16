@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Archery Backdrop_0: -6187081162088941133
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
