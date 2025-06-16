@@ -12647,8 +12647,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: I would like to excuse myself.
     choice1: 
     response1: 
     affection1: 0
@@ -12680,8 +12680,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He glances behind you.
     choice1: 
     response1: 
     affection1: 0
@@ -12713,8 +12713,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: "And I am just in time to leave. Looks like someone else is waiting
+      to speak to you Your Majest\xE9."
     choice1: 
     response1: 
     affection1: 0
@@ -12746,8 +12747,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He winks at you.
     choice1: 
     response1: 
     affection1: 0
@@ -12779,8 +12780,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Theodore
+    dialogueText: Until we meet again Darling, farewell.
     choice1: 
     response1: 
     affection1: 0
@@ -12812,8 +12813,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: Until we meet again Theo, enjoy your food and farewell.
     choice1: 
     response1: 
     affection1: 0
@@ -12845,8 +12846,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He waves one hand at you and leaves the Throne Room.
     choice1: 
     response1: 
     affection1: 0
@@ -12878,8 +12879,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: You turn around to see a familiar face walking towards you.
     choice1: 
     response1: 
     affection1: 0
@@ -12911,8 +12912,51 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Zihan
+    dialogueText: 'It has been a while since we last met Your Highness. How are you?
+
+'
+    choice1: 'Remind me, have met before now? My memory is not serving me the best
+      as we speak. '
+    response1: Ah right. Where are my manners. Apologies Your Highness. I am Zihan,
+      the Second Prince of the South.
+    affection1: 0
+    choice2: 'Your name seems to have escaped my thoughts. If you would be so kind
+      to help me remember it would be nice. '
+    response2: Of course, Your Highness, since you asked so nicely. I am Zihan, the
+      Second Prince of the South.
+    affection2: 0
+    choice3: 'I do not remember you, though you do seem awfully familiar. Who are
+      you again? '
+    response3: You are quite straight forward about that, Your Highness. Although
+      it has been a few years so I cannot fault you for your forgetfulness. I am
+      Zihan, the Second Prince of the South.
+    affection3: 0
+    choice4: "\u2026"
+    response4: I see you do not remember me Your Highness. Allow me to reintroduce
+      myself; I am Zihan, the Second Prince of the South.
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: Zihan
+    dialogueText: "But you might remember me as the \u2018Scandalous Prince.\u2019"
     choice1: 
     response1: 
     affection1: 0
@@ -12944,8 +12988,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He looks away embarrassed.
     choice1: 
     response1: 
     affection1: 0
@@ -12977,8 +13021,50 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Zihan
+    dialogueText: "I was arranged to be your fianc\xE9 a few years ago but that arrangement
+      was annulled after a while."
+    choice1: Oh yes, I remember the arrangement. It was annulled because you went
+      on a spiritual retreat to find yourself right?
+    response1: "Something like that Your Highness\u2026\nThough I must say you put
+      that very kindly despite knowing what actually happened."
+    affection1: 0
+    choice2: Now that you have mentioned it, yes. I do remember. You did not actually
+      want to marry me because I am a Northerner.
+    response2: Close but that was not entirely the reason I did not want to wed you.
+    affection2: 0
+    choice3: "Ah yes\u2026 You are the Southern Prince who slept around with most
+      if not all my noble court to get out of our arrangement. That I remember very
+      well."
+    response3: "That sounds so much worse when you put it like that Your Highness\u2026\nI
+      know I was not the best fianc\xE9 when we were arranged to each other, but
+      surely I did not treat you so badly."
+    affection3: 0
+    choice4: "\u2026"
+    response4: "Your silence speaks volumes, Your Highness\u2026 I apologize greatly
+      for how I acted in my younger years."
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: 'He looks at the floor. '
     choice1: 
     response1: 
     affection1: 0
@@ -13010,8 +13096,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Zihan
+    dialogueText: I have had time to reflect on my actions during my retreat.
     choice1: 
     response1: 
     affection1: 0
@@ -13043,8 +13129,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Zihan
+    dialogueText: The reason I was upset with our arrangement was because I thought
+      I had a chance to rise to my own throne in the South.
     choice1: 
     response1: 
     affection1: 0
@@ -13076,8 +13163,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: "But because your father, the King, already named your older brother;
+      Ziyang his heir\u2026"
     choice1: 
     response1: 
     affection1: 0
@@ -13109,8 +13197,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Zihan
+    dialogueText: "Yes\u2026 I stood no chance for the Southern throne. But being
+      young and na\xEFve I did not realize."
     choice1: 
     response1: 
     affection1: 0
@@ -13142,8 +13231,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: So that letter I received back then, after the annulment of our
+      arrangement, did you write that before your retreat?
     choice1: 
     response1: 
     affection1: 0
@@ -13175,8 +13265,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He looks confused.
     choice1: 
     response1: 
     affection1: 0
@@ -13208,74 +13298,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: I will assume that you did not based on your reaction.
     choice1: 
     response1: 
     affection1: 0
