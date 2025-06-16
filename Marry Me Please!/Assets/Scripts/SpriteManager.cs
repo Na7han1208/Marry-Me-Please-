@@ -87,15 +87,15 @@ public class SpriteManager : MonoBehaviour
     public Sprite changeSprite(int mood, String characterName){
         /*
             Character Mood Indexes
-            1:  Neutral
-            2:  Happy
-            3:  Sad
-            4:  Angry
-            5:  Blushing
-            6:  Surprised
-            7:  Irritated
-            8:  Terror/Panik
-            9:  Smug
+            0:  Neutral
+            1:  Happy
+            2:  Sad
+            3:  Angry
+            4:  Blushing
+            5:  Surprised
+            6:  Irritated
+            7:  Terror/Panik
+            8:  Smug
         */
         Debug.Log("SpriteManager Class" + mood + "\t" + characterName);
         try{
