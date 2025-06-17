@@ -24446,6 +24446,40 @@ MonoBehaviour:
   - dialogueIndex: 0
     characterName: thought
     dialogueText: You walk over to them quietly.
+    choice1: Royal Advisor Ming, I spoke to you first days ago and now this ends
+      with you as well.
+    response1: Ming looks shyly at you, clearly lost in thought.
+    affection1: 0
+    choice2: So you could not walk over to where I was sitting?
+    response2: Ming looks at you apologetically.
+    affection2: 0
+    choice3: Royal Advisor Ming, are you okay?
+    response3: Ming looks at you with guilt on their face.
+    affection3: 0
+    choice4: "\u2026"
+    response4: Ming appears to be lost in thought.
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: Ming
+    dialogueText: My Liege, I must tell you something...
     choice1: 
     response1: 
     affection1: 0
@@ -24477,8 +24511,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Ming
+    dialogueText: If this changes how you feel about me, so be it, but I respect
+      you too much to not tell you.
     choice1: 
     response1: 
     affection1: 0
@@ -24510,8 +24545,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: You look at Ming in confusion.
     choice1: 
     response1: 
     affection1: 0
@@ -24543,8 +24578,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: What is it, Ming?
     choice1: 
     response1: 
     affection1: 0
@@ -24576,8 +24611,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Ming
+    dialogueText: I know we have already recounted the tales of our childhood but
+      I would like to tell you a secret pertaining to it.
     choice1: 
     response1: 
     affection1: 0
@@ -24609,8 +24645,11 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Ming
+    dialogueText: "When we were children, the only reason I initially befriended
+      you was because I thought that my father\u2019s job would benefit from it.
+      When I eventually told him of this, he was deeply disappointed and told me
+      to tell you the truth."
     choice1: 
     response1: 
     affection1: 0
@@ -24642,8 +24681,10 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Ming
+    dialogueText: "But by that time, I truly enjoyed being your friend and I was
+      afraid of the consequences of the truth, so I left for the South under the
+      pretense of \u2018studies\u2019 to hide my guilt."
     choice1: 
     response1: 
     affection1: 0
@@ -24675,8 +24716,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Ming
+    dialogueText: "However, whilst in the South, I realised my feelings for you were
+      beyond that of friendship\u2026"
     choice1: 
     response1: 
     affection1: 0
@@ -24708,8 +24750,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: They look at you sadly.
     choice1: 
     response1: 
     affection1: 0
@@ -24741,8 +24783,43 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Ming
+    dialogueText: If you would like for me to leave, I understand.
+    choice1: I already knew that Ming. Your father told me. I am not offended by
+      this.
+    response1: Thank you, My Liege! You are very gracious.
+    affection1: 0
+    choice2: Despite what you just said, my feelings for you are still beyond that
+      of friendship.
+    response2: My Liege...
+    affection2: 0
+    choice3: I cannot look at you the same after hearing this, Ming.
+    response3: I do not blame you, My Liege.
+    affection3: 0
+    choice4: "\u2026"
+    response4: I deserve that silence, My Liege.
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: Ming
+    dialogueText: If I might say one last thing, My Liege.
     choice1: 
     response1: 
     affection1: 0
@@ -24774,8 +24851,10 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Ming
+    dialogueText: Just because you did not receive any of them, does not mean I did
+      not reply to your letters. I have all my replies kept in the same box with
+      the letters you sent me.
     choice1: 
     response1: 
     affection1: 0
@@ -24807,8 +24886,42 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Ming
+    dialogueText: Although, my pining for you is embarrassing, I will let you read
+      each and every one of them if you would like?
+    choice1: No need, Ming. I am long over you.
+    response1: I hold no animosity towards you for that, My Liege.
+    affection1: 0
+    choice2: I will take you up on your offer after our wedding.
+    response2: Then I will eagerly await your visit, My Liege.
+    affection2: 0
+    choice3: I will get back to you on that offer, Ming.
+    response3: And I will eagerly await your response, My Liege.
+    affection3: 0
+    choice4: "\u2026"
+    response4: Your silence says enough, My Liege.
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: Ming looks at you fondly one last time.
     choice1: 
     response1: 
     affection1: 0
@@ -24840,8 +24953,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Ming
+    dialogueText: 'I am afraid I cannot take up any more of your time, My Liege. '
     choice1: 
     response1: 
     affection1: 0
@@ -24873,8 +24986,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Ming
+    dialogueText: I hope the one you choose is someone who loves you as much as you
+      love them.
     choice1: 
     response1: 
     affection1: 0
@@ -24906,8 +25020,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Ming
+    dialogueText: Ah, I see my father is here to see what you have decided.
     choice1: 
     response1: 
     affection1: 0
@@ -24939,8 +25053,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Ming
+    dialogueText: 'Goodbye, My Liege. '
     choice1: 
     response1: 
     affection1: 0
@@ -24972,107 +25086,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: With that, Ming walks off and Royal Advisor Wu walks happily towards
+      you.
     choice1: 
     response1: 
     affection1: 0
