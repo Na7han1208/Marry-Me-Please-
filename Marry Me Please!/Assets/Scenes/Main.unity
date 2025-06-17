@@ -27815,16 +27815,52 @@ MonoBehaviour:
         m_Calls: []
     choiceMethod2:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     choiceMethod3:
       m_PersistentCalls:
         m_Calls: []
     choiceMethod4:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -28408,8 +28444,8 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Wu
+    dialogueText: Now you must make your decision.
     choice1: 
     response1: 
     affection1: 0
@@ -28439,7 +28475,19 @@ MonoBehaviour:
         m_Calls: []
     methodOnEnd:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: loadEndScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - dialogueIndex: 0
     characterName: 
     dialogueText: 
@@ -28625,59 +28673,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8795251dddae475428dde92f04122c82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mingNeutral: {fileID: -6549638832799677037, guid: 9abe518a7a35b5c4e872d89f0911e126, type: 3}
+  mingNeutral: {fileID: 2831464766918163199, guid: 1a4d5f09f36bb714caa5c9e917aa0071, type: 3}
   mingHappy: {fileID: -6549638832799677037, guid: 9abe518a7a35b5c4e872d89f0911e126, type: 3}
-  mingSad: {fileID: 0}
-  mingAngry: {fileID: 0}
+  mingSad: {fileID: 1847907055610734636, guid: 2aa170db72a67dc4eaded14806f6a590, type: 3}
+  mingAngry: {fileID: 6319153605895102732, guid: a565bbbea6929d442bda778c3eae47ce, type: 3}
   mingBlushing: {fileID: 166539192878022904, guid: 5fa8b169b66cf3e4e9a8f35ba3eee6c4, type: 3}
-  mingSurprised: {fileID: -8702513961137739686, guid: 141ae6e42bd79bf479b6b85ee70055d8, type: 3}
-  mingIrritated: {fileID: 0}
-  mingTerror: {fileID: 0}
+  mingSurprised: {fileID: 2336296418606512089, guid: 2933482368201dc4e982db3a9569836a, type: 3}
+  mingIrritated: {fileID: -8702513961137739686, guid: 141ae6e42bd79bf479b6b85ee70055d8, type: 3}
+  mingTerror: {fileID: 2831464766918163199, guid: 1a4d5f09f36bb714caa5c9e917aa0071, type: 3}
   mingSmug: {fileID: -2011099038086359619, guid: ae8e41a01b1b6ec4a894effd88d10247, type: 3}
-  jinhuiNeutral: {fileID: -5834652182648715005, guid: c2c38003cc72c6a4596c0dc629a97eb6, type: 3}
-  jinhuiHappy: {fileID: 0}
-  jinhuiSad: {fileID: 0}
-  jinhuiAngry: {fileID: 0}
-  jinhuiBlushing: {fileID: 0}
-  jinhuiSurprised: {fileID: 0}
-  jinhuiIrritated: {fileID: 0}
-  jinhuiTerror: {fileID: 0}
-  jinhuiSmug: {fileID: 0}
-  yilinNeutral: {fileID: -9029922364625917327, guid: 73fc6b28993d99b438b561a4b016e36b, type: 3}
-  yilinHappy: {fileID: 0}
-  yilinSad: {fileID: 0}
-  yilinAngry: {fileID: 0}
-  yilinBlushing: {fileID: 0}
-  yilinSurprised: {fileID: 0}
-  yilinIrritated: {fileID: 0}
-  yilinTerror: {fileID: 0}
-  yilinSmug: {fileID: 0}
+  jinhuiNeutral: {fileID: -7635851449660514114, guid: 555bb24c8b134134aac877715dfb3732, type: 3}
+  jinhuiHappy: {fileID: 3761873894233972919, guid: 8867d04bcc12c2248b662488d1e10bf7, type: 3}
+  jinhuiSad: {fileID: -5094876217242302715, guid: 37fd3cb8b486b5a4aa5a1a54cc47c0b6, type: 3}
+  jinhuiAngry: {fileID: -7635851449660514114, guid: 555bb24c8b134134aac877715dfb3732, type: 3}
+  jinhuiBlushing: {fileID: -8677068499106241411, guid: 632ae868116aad64ab016b0e8cbf5c5a, type: 3}
+  jinhuiSurprised: {fileID: 5512542089037616584, guid: 924e2d7fbd0540c4cba7ce5ff159c490, type: 3}
+  jinhuiIrritated: {fileID: -5188619144398190112, guid: 857fd2a09a403224783b0cf30e709107, type: 3}
+  jinhuiTerror: {fileID: 5512542089037616584, guid: 924e2d7fbd0540c4cba7ce5ff159c490, type: 3}
+  jinhuiSmug: {fileID: -4726192533215841056, guid: c7f01e194b5a6bb46b979598d8daeda7, type: 3}
+  yilinNeutral: {fileID: -1098348396490006010, guid: 70464e187bcd02c4ab439bb47cfca87a, type: 3}
+  yilinHappy: {fileID: 3814483620978136597, guid: ed5073083f1ee7d43b0be824119dd327, type: 3}
+  yilinSad: {fileID: -7032661225804592479, guid: c8d0c614b408e7143aae22e1da194a5a, type: 3}
+  yilinAngry: {fileID: 6909377423522581591, guid: b1f722b1b5d3cc34e8be5dfa3c95dcd7, type: 3}
+  yilinBlushing: {fileID: -1899746669655028500, guid: 715a5d9348e74004b9b18b9d43e158de, type: 3}
+  yilinSurprised: {fileID: 6283753464727535078, guid: 386fab1cab3b74c4e82518643ba7d905, type: 3}
+  yilinIrritated: {fileID: 5062068775296898500, guid: 539be2c7b008f734ebc0617d523d848e, type: 3}
+  yilinTerror: {fileID: 4385478678687892858, guid: 94337e80cec08a843ad790f79779c5c1, type: 3}
+  yilinSmug: {fileID: 2212104786535674603, guid: a4fe7ad867ea3dd408ac931eccdb185b, type: 3}
   fenNeutral: {fileID: 1939179754109832752, guid: 48bfc7aa7fd3d834e87e71e0791de371, type: 3}
   fenHappy: {fileID: -683057325140697023, guid: 5717a1f84cb2af44d92a2bd8e48f3ebf, type: 3}
   fenSad: {fileID: -895321099221540881, guid: deb036432fe0b984883a32bf490c68cf, type: 3}
-  fenAngry: {fileID: 0}
+  fenAngry: {fileID: 5004919705910826640, guid: bedb020779d39614bb1c073089cf1e51, type: 3}
   fenBlushing: {fileID: 7389096188665695196, guid: a194df6c468a9ad4687f571a01f11552, type: 3}
-  fenSurprised: {fileID: 0}
-  fenIrritated: {fileID: 0}
-  fenTerror: {fileID: 0}
-  fenSmug: {fileID: 0}
-  yukiNeutral: {fileID: 0}
-  yukiHappy: {fileID: 0}
-  yukiSad: {fileID: 0}
-  yukiAngry: {fileID: 0}
-  yukiBlushing: {fileID: 0}
-  yukiSurprised: {fileID: 0}
-  yukiIrritated: {fileID: 0}
-  yukiTerror: {fileID: 0}
-  yukiSmug: {fileID: 0}
-  theodoreNeutral: {fileID: 7795769537173211125, guid: 5a4dd43cc05d385428bbd5f5d038191b, type: 3}
+  fenSurprised: {fileID: 7542620272099947112, guid: 1ba2323dc9b59284aaec6828dac1313d, type: 3}
+  fenIrritated: {fileID: 1309533540649522007, guid: ffe6bbb4b3a4d2c4b9e5f02b540023ab, type: 3}
+  fenTerror: {fileID: -374852459548898035, guid: b20b09e6b05e48a45a1ab94ed068b77c, type: 3}
+  fenSmug: {fileID: -8712669333753768358, guid: 38db79e23141d9540b7929100b760115, type: 3}
+  yukiNeutral: {fileID: 2980337125651944425, guid: 1e338a339b652d04db55f800d14e7048, type: 3}
+  yukiHappy: {fileID: -8216617235166128114, guid: 85561e95444e5b643afd47bed3e21f0f, type: 3}
+  yukiSad: {fileID: -8216617235166128114, guid: 85561e95444e5b643afd47bed3e21f0f, type: 3}
+  yukiAngry: {fileID: -8216617235166128114, guid: 85561e95444e5b643afd47bed3e21f0f, type: 3}
+  yukiBlushing: {fileID: -5356046003669760032, guid: 9b428c722edbe464a87f2a799fb4fcdd, type: 3}
+  yukiSurprised: {fileID: -4418044544212204214, guid: ae204347f51f3d34ab16321670090d8d, type: 3}
+  yukiIrritated: {fileID: -8216617235166128114, guid: 85561e95444e5b643afd47bed3e21f0f, type: 3}
+  yukiTerror: {fileID: -8216617235166128114, guid: 85561e95444e5b643afd47bed3e21f0f, type: 3}
+  yukiSmug: {fileID: 7647960977395203910, guid: 0d56da1bfac8a2c45aa5e15cb2fcd913, type: 3}
+  theodoreNeutral: {fileID: -159074360521330907, guid: d163830a295272148a977864ed82c99b, type: 3}
   theodoreHappy: {fileID: 7795769537173211125, guid: 5a4dd43cc05d385428bbd5f5d038191b, type: 3}
   theodoreSad: {fileID: 9195161786608706598, guid: 3e2742121106c1d469d2f5f1b8b662be, type: 3}
-  theodoreAngry: {fileID: 0}
+  theodoreAngry: {fileID: -5545920007043108997, guid: a7ec31a5056d2b84a885471b2b345f17, type: 3}
   theodoreBlushing: {fileID: 1866418089228837304, guid: 49571f7e4f27360468527cfcb593e415, type: 3}
-  theodoreSurprised: {fileID: 0}
-  theodoreIrritated: {fileID: 0}
-  theodoreTerror: {fileID: 0}
+  theodoreSurprised: {fileID: -3401568957830617713, guid: 7d3c163c39403a644b257b21fca7da47, type: 3}
+  theodoreIrritated: {fileID: 8099454293244501538, guid: ca77dfb6c756a984f9964e572e4156d5, type: 3}
+  theodoreTerror: {fileID: -5545920007043108997, guid: a7ec31a5056d2b84a885471b2b345f17, type: 3}
   theodoreSmug: {fileID: 8828512870284193607, guid: 9fcef3e172f830342a163832257de327, type: 3}
   zihanNeutral: {fileID: -9053833119717683007, guid: c89e70618f675b24f9ebe1af5af07719, type: 3}
   zihanHappy: {fileID: -9053833119717683007, guid: c89e70618f675b24f9ebe1af5af07719, type: 3}

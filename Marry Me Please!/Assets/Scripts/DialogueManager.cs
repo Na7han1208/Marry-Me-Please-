@@ -421,7 +421,8 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void callShowBanner(int index){
+    public void callShowBanner(int index)
+    {
         StartCoroutine(showBanner(index));
     }
 
@@ -436,6 +437,12 @@ public class DialogueManager : MonoBehaviour
         Banners[index].enabled = true;
         yield return new WaitForSeconds(3f);
         Banners[index].enabled = false;
+    }
+
+    public void loadEndScene()
+    {
+        AudioManager.Instance.StopAll();
+        SceneManager.LoadScene("End Screen");
     }
 }
 

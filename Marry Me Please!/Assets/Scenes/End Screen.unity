@@ -154,7 +154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -348, y: 203}
+  m_AnchoredPosition: {x: -881, y: 486}
   m_SizeDelta: {x: 413, y: 149}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &96743223
@@ -364,7 +364,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 379, y: 24}
+  m_AnchoredPosition: {x: 885, y: 153}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &196601451
@@ -387,13 +387,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This is the end of our prototype! In the final game you will be able to
-    marry the person you won the most affinity with! But for now, here are your affinities.
-
-    Press
-    ESC to leave.
-
-'
+  m_text: " \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd163f292ac04e641acd3769c1695ec0, type: 2}
   m_sharedMaterial: {fileID: -874025721158157560, guid: bd163f292ac04e641acd3769c1695ec0, type: 2}
@@ -402,8 +396,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -426,7 +420,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -458,7 +452,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -168.58151, y: -38.494934, z: 101.52869, w: -199.50943}
+  m_margin: {x: -359.943, y: -72.40713, z: 101.52869, w: -601.6105}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -638,10 +632,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f24c7fb64b5de0479439aa00f489d1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endingText: {fileID: 0}
-  characters: []
+  endingText: {fileID: 196601449}
+  characters:
+  - {fileID: 992714915}
+  - {fileID: 970343929}
+  - {fileID: 802372308}
+  - {fileID: 998813111}
+  - {fileID: 567567725}
+  - {fileID: 1180309822}
+  - {fileID: 972400477}
   background: {fileID: 983003959}
-  returnButton: {fileID: 0}
+  returnButton: {fileID: 96743221}
   mingEndingBG: {fileID: 0}
   theoEndingBG: {fileID: 0}
   zihanEndingBG: {fileID: 0}
@@ -650,14 +651,176 @@ MonoBehaviour:
   yukiEndingBG: {fileID: 0}
   jinhuiEndingBG: {fileID: 0}
   noBitchesEndingBG: {fileID: 0}
-  mingEndingTxt: 
-  theoEndingTxt: 
-  zihanEndingTxt: 
-  fenEndingTxt: 
-  yilinEndingTxt: 
-  yukiEndingTxt: 
-  jinhuiEndingTxt: 
-  noBitchesEndingTxt: 
+  mingEndingTxt: "Ming found a scroll hidden at the back of the study.\r\n\r\nNot
+    a scroll depicting their love for you. Those were found in abundance. \r\n\r\nThis
+    peculiar scroll detailed the start of the Chance War. The story went as follows:\r\n\r\nA
+    century ago, France, in an attempt to form an alliance with China created a fusion
+    of the two nations' delicacies. An ingenious invention that was not so ingenious
+    after all. The escargot dumpling infuriated the emperor of the time, leading
+    to him waging war on the French.\r\n\r\nUpon hearing this, you could not contain
+    your laughter. The French seemed to hold the same sentiment. The war immediately
+    drew to a close with both sides becoming allies instead, in pursuit of a new
+    fusion food to celebrate both nations. With Ming at the forefront of these negotiations
+    you could rest assured, knowing that the Chance War II was no longer a possibility.
+    \r\n\r\nMing\u2019s resourcefulness did not stop there. \r\n\r\nAmidst your busy
+    schedules, Ming always found the time to detail their love.\r\n\r\nFrom sneaking
+    with you into the kitchen, to grab a few more of the latest pastries. To swapping
+    out the weapons in the armoury with tree branches. To picnics along the river,
+    no longer chasing the butterflies but rather waiting for them to land on your
+    finger. To hiding Wu\u2019s mahjong tiles, now that he permanently moved into
+    the palace after Ming\u2019s wedding (Yes, he retired and yes, you should stop
+    pranking him, he is old). Ming, keen on making up for lost time, had mastered
+    the art of making you feel the joys of your youth. \r\n\r\nAlthough not obligated
+    to, Ming continued their duties as your Royal Advisor, not trusting anyone else
+    to deliver news of such utmost importance to you. They took this as an opportunity
+    to slip letters to you in every scroll. Letters that returned the pieces of your
+    heart you had discarded after each unreturned letter sent during your youth.
+    These letters continued despite your heart being whole again. \r\n\r\nNow of
+    something you were certain. This time Ming had chosen you for you.\r"
+  theoEndingTxt: "The Chance War ended peacefully, with a union between heirs and 
+    the rise of new Sovereigns. Both nations celebrated this newfound  peace with
+    a festival that lasted for days to come.  \r\nFireworks rang where canon fire
+    would not be missed, cheers took  the places of war cries on the battle field
+    and the clashing of blades  turned into the clinging of cups. Wine was poured
+    and spilt instead  of blood staining the grounds crimson red. Where bodies once
+    lay,  graves and memorials we\u2019re built to honour the dead.  \r\nThe \u2018emissary\u2019
+    was a prince, the prince was an enemy, the enemy  now turned a lover. Theod\xF3re
+    was not what Northern China  expected of an emperor, but they grew to accept
+    him for who he  was. Though they would never understand him the way you do, 
+    acceptance from you is all he ever needs.  \r\nFor you are his Darling, his Sweetheart,
+    his Majest\xE9. And he is  yours. Between the friendly banter at meal times to
+    the serious  moments at meetings, being in each others presence is all you  need. 
+    \r\nThough sometimes the Emperor of Northern China will roam the  palace halls
+    in his old attire, it is in those times when people know  he misses home. \r\nMaybe
+    after everything from the war is settled, and the air no longer  lingers with
+    death, he can take you to his homeland like he once  promised when the two of
+    you first met.  \r\nMaybe does not seem too far out of reach. \r\nMaybe might
+    be around the corner. \r\nMaybe it is his turn to show you why one should never
+    judge a book  by its cover.  \r\nTake his hand, explore this peace together.
+    \r\nTake his hand\u2026 and take a chance.\r"
+  zihanEndingTxt: "They said the scandal began in whispers, perfumed letters, broken
+    betrothals, the Southern prince who kissed more than he bowed. A boy with too
+    much charm and too little discipline. But those who listened closely knew: the
+    true scandal was not in his behaviour, but in his blood.\r\nZihan was called
+    the Second Prince, but no imperial record could name the hour of his birth. No
+    nursemaids remembered his cry. He arrived as a replacement, a shadow stitched
+    into golden robes, his cradle set beside the corpse of a child who never drew
+    breath.\r\nHe grew up in borrowed halls, draped in silks that were not woven
+    for him, smiling too brightly, laughing too easily. When the Emperor looked at
+    him, there was always calculation behind the pride. When the Empress looked,
+    there was nothing at all.\r\nHe was sent north to be wed, not for love, but for
+    alliance. And like everything else in his life, he ruined it. Court scandal followed
+    him like perfume: nobles\u2019 sons kissed in moonlit corridors, whispered dares
+    in the garden, a necklace left behind in the wrong chamber. When the engagement
+    was annulled, the court sighed in relief. And the Emperor, who had built him
+    like a lie, sent him away to remember what silence tasted like.\r\nBut Zihan
+    returned.\r\nNot with armies. Not with apologies. But with stories untold and
+    intentions unclear. The same face, the same smile, but something behind the eyes
+    had changed.\r\nHe did not ask for forgiveness. He asked for a second chance.\r\nThey
+    expected a snake. They received a fox, clever, dangerous, unpredictable. In council,
+    he watched. In court, he charmed. And behind closed doors, he spoke softly, as
+    if the truth might break if said too loudly.\r\nHe never claimed he was born
+    for the throne. Only that he could be worthy of it.\r\nWith you, he was not the
+    Scandalous Prince. He was something else: careful, searching, hopeful. His hands,
+    once known for mischief, now lingered at your sleeve with reverence. His glances
+    carried questions he no longer assumed had answers.\r\nYour bond was not forged
+    in battle. It was forged in shadow, in the unspoken understanding between two
+    people who had both once been cast aside.\r\nSome say Zihan wanted your throne.
+    Some say he wanted you.\r\nAnd some say, quietly, always quietly, that he never
+    truly wanted either. Only to be seen, and chosen, for the first time in his life.\r\nIf
+    history remembers him, it will not be as a prince of scandal. It will be as the
+    man who stood beside you at the edge of legitimacy, offering not blood, nor oath,
+    but true love.\r"
+  fenEndingTxt: "They said the war ended with thunder, armies kneeling, French flags
+    torn, ripped, burned. The old order cleaved in two. But those who observed closely
+    knew: the true turning point came not on the battlefield, but at the palace,
+    when the sovereign took the hand of the blade.\r\nGeneral Fen did not walk into
+    marriage like a maiden in silk. She wore her armour to the ceremony, polished
+    steel catching the light of dawn. Some scoffed. Others whispered. None could
+    meet her gaze for long.\r\nThey expected a queen of poetry, of demure smiles
+    and soft diplomacy. They received instead a war-born consort who laughed loudly
+    at council meetings, cleaned her blade in the royal bathhouse, and slept with
+    a dagger beneath her pillow; one she never needed. Because no one dared draw
+    steel against the sovereign while Fen lived.\r\nAnd yet, behind the lacquered
+    doors of the inner palace, yours was not a marriage of fear, but of fierce loyalty
+    and quiet flame. Fen did not offer flowery words or courtly games. She offered
+    presence. She offered protection. She offered truth.\r\nShe sat at your side
+    without flinching, even when tempers rose. She rode at their back during hunts
+    and drills, always a breath away from battle, always watching. At night, her
+    hands were rough, her voice low, her affection clumsy but earnest, every touch
+    a promise, every glance a question asked only once: Are you safe?\r\nYours was
+    not a romance sung by bards. It was not gentle or predictable. It was sharp-edged
+    and weather-worn, the kind of love built between two people who had both survived
+    too much to lie.\r\nSome said Fen had blood on her hands, family blood, the kind
+    that taints a soul. When asked, she only smiled, a quiet, warning smile. She
+    never denied it. Nor did you ask her to.\r\nTogether, you ruled not by lineage,
+    but by conviction. A sovereign and their blade, bound not just by duty, but by
+    choice. And if history ever dared question the nature of your bond, the answer
+    would be written in the silence of a room only you two shared: where no guards
+    were needed, and no masks were worn.\r"
+  yilinEndingTxt: "The day you married Yilin, the palace kitchens went silent.\r\nNot
+    from protest, no, they wept. They knew what they had lost.\r\nThere was a time
+    she wouldn\u2019t speak unless spoken to.\r\nBut now? Now, she writes menus in
+    six scripts, debates foreign spice prices with ambassadors, and corrects arrogant
+    nobles with the polite precision of a blade.\r\nShe still says \u201CYour Excellency\u201D
+    when the mood takes her.\r\nSometimes playfully.\r\nSometimes pointed.\r\nThe
+    Empress of the Northern Court smells faintly of jasmine broth and firewood.\r\nChildren
+    run to her because she always has something warm tucked in her sleeves.\r\nHer
+    hands are calloused from cleavers, not combs.\r\nShe forgets her crown in the
+    kitchen, and finds your heart exactly where she left it.\r\nIt is only in the
+    quietest hours, when the doors are latched and the windows steam from her night
+    pot of ginger-sesame tea, that she ever brings up the pufferfish. A haunted tale
+    of a dish prepared wrong, with dire consequences.\r\nNever directly.\r\nOnly
+    as a caution.\r\nOr a question.\r\nOr a ghost.\r\nBut you never flinch.\r\nAnd
+    so, eventually, neither does she.\r\nIn a palace of cold marble and sharper smiles,
+    Yilin was not meant to rise.\r\nBut she did, without stepping on a single back.\r\nOnly
+    hands, yours, mostly, lifting her forward, until she learned to stand without
+    trembling.\r\nShe doesn\u2019t spill anymore.\r\nExcept, sometimes, over the
+    garden peas.\r\nYou laugh.\r\nShe blushes.\r\nAnd the court learns that sometimes,
+    love is not loud.\r\nIt\u2019s just well-seasoned.\r"
+  yukiEndingTxt: "Your wedding did not reflect the simple man that Yuki had shown
+    himself to be. Elaborate decorations, a variety of delicacies, and a multitude
+    of smiling people surrounded you both on the day of your celebration. It was
+    apparent to you that Yuki pulls out all the stops when it comes to the one that
+    he loves. \r\n\r\nSaid delicacies were sublime. A fusion of Chinese and Japanese
+    food that left your mouth watering as soon as the scent wafted in your direction.
+    But this was not the star of the show.\r\n\r\nAn hour before your wedding, Yuki
+    brewed the most magnificent cup of tea you had ever tasted. It tasted of sunshine
+    and smiles and filled your entire being with warmth, no matter how impossible
+    that might sound. This cup of tea was enough to make you understand why Yuki
+    was always smiling.\r\n\r\nAnd always smiling he was.\r\n\r\nHe was smiling before
+    your wedding, after your wedding and on the many days that followed.\r\n\r\nHe
+    was smiling while he told you that he had a way to stop the war as the secret
+    head of the most feared Yakuza organisation in Japan.\r\n\r\nHe was smiling on
+    the day he and his organisation had returned from defeating the French, and he
+    held you in his arms.\r\n\r\nYuki\u2019s smile had inspired you to smile too.\r\n\r\nAt
+    the children you invited into the palace to be fed and taken care of, not wanting
+    any of them to experience the pain that Yuki had.\r\n\r\nAt the foreigners that
+    visited your now prosperous country, wanting them to feel nothing but welcome.
+    \r\n\r\nAnd you smiled at Yuki. The man who had shown you that a smile can cut
+    through hearts more effectively than a sword.\r\n\r\nYou granted Yuki\u2019s
+    wish. Sitting with him under the beautiful sky, made more beautiful by your love
+    for each other.\r\n\r\nThe sun did not eclipse the moon. They shone brightly
+    in unison.\r"
+  jinhuiEndingTxt: "Jinhui was right. Art speaks the words that man cannot.\r\n\r\nA
+    single painting ended the war. \r\n\r\nA painting that moved the French so deeply,
+    it mended a bond long forgotten.\r\n\r\nYet you were what had mended Jinhui.\r\n\r\nFeelings
+    of elation overtook you in every minute that the two of you spent together. Jinhui\u2019s
+    presence was enough to make you feel like you were the most important person
+    in the world. From the way he looked at you, taking in every detail as if he
+    had not painted you a hundred times already. To the way he spoke to you, hushed
+    words threaded with passion meant only for you. \r\n\r\nNo longer was he a poor,
+    scared boy. A boy who thought a noble scholar was killed for providing him with
+    an education. A boy who thought his presence worsened many a situation. A boy
+    who hid from the world and from himself.\r\n\r\nHe was now a man. A man who taught
+    other children like him how to read and write. A man who was not afraid to be
+    in your presence knowing that you strengthened him and he strengthened you. A
+    man who had forgiven the world and himself. \r\n\r\nJinhui\u2019s paintings adorned
+    not only the halls of the palace but the chambers of your heart. Each brush of
+    his skin against yours told the story his entire being spoke...\r\n\r\nThe beauty
+    in each stroke on the canvas was from him, yet the beauty in him was from you.\r"
+  noBitchesEndingTxt: You got absolutely no bitches. Not even one. Just zero bitches,
+    deal with that. Can't even get bitches in a dating sim, smh.
 --- !u!4 &466999472
 Transform:
   m_ObjectHideFlags: 0
@@ -708,7 +871,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 261, y: -130}
+  m_AnchoredPosition: {x: 264, y: -292}
   m_SizeDelta: {x: 239.9, y: 551.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &567567727
@@ -787,8 +950,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 3814483620978136597, guid: ed5073083f1ee7d43b0be824119dd327, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -840,7 +1003,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -222, y: -132}
+  m_AnchoredPosition: {x: -274, y: -305}
   m_SizeDelta: {x: 239.9, y: 551.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &802372310
@@ -972,7 +1135,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -475, y: -131}
+  m_AnchoredPosition: {x: -530, y: -307}
   m_SizeDelta: {x: 239.9, y: 551.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &970343931
@@ -1051,8 +1214,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 7795769537173211125, guid: 5a4dd43cc05d385428bbd5f5d038191b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1104,7 +1267,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 797, y: -131}
+  m_AnchoredPosition: {x: 811, y: -307}
   m_SizeDelta: {x: 239.9, y: 551.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &972400479
@@ -1183,8 +1346,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 3761873894233972919, guid: 8867d04bcc12c2248b662488d1e10bf7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1311,8 +1474,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -787, y: -131}
-  m_SizeDelta: {x: 239.9, y: 551.9}
+  m_AnchoredPosition: {x: -787, y: -294}
+  m_SizeDelta: {x: 225.53, y: 551.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &992714917
 MonoBehaviour:
@@ -1390,8 +1553,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -6549638832799677037, guid: 9abe518a7a35b5c4e872d89f0911e126, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1443,7 +1606,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 34, y: -132}
+  m_AnchoredPosition: {x: -1, y: -305}
   m_SizeDelta: {x: 239.9, y: 551.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &998813113
@@ -1522,8 +1685,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -683057325140697023, guid: 5717a1f84cb2af44d92a2bd8e48f3ebf, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1655,7 +1818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1160791909}
   m_Layer: 5
-  m_Name: Characters
+  m_Name: CharacterContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1722,7 +1885,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 525, y: -132}
+  m_AnchoredPosition: {x: 501, y: -312}
   m_SizeDelta: {x: 239.9, y: 551.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1180309824
@@ -1801,8 +1964,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -8216617235166128114, guid: 85561e95444e5b643afd47bed3e21f0f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

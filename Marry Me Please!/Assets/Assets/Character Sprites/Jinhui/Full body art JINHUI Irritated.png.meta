@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 24a3d758707f1ca449846bd47f32d4d9
+guid: 857fd2a09a403224783b0cf30e709107
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8217489540088475392
-    second: Full Body Art ZIHAN Smug_0
+      213: -5188619144398190112
+    second: Full body art JINHUI Irritated_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,43 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Full Body Art ZIHAN Smug_0
+      name: Full body art JINHUI Irritated_0
       rect:
         serializedVersion: 2
-        x: 150
-        y: 0
-        width: 774
-        height: 1920
+        x: 193
+        y: 4
+        width: 710
+        height: 1916
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 001d9892dcc95fd80800000000000000
-      internalID: -8217489540088475392
+      spriteID: 0e9ca5fe0625ef7b0800000000000000
+      internalID: -5188619144398190112
       vertices: []
       indices: 
       edges: []
@@ -160,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Full Body Art ZIHAN Smug_0: -8217489540088475392
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
