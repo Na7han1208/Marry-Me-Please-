@@ -21082,8 +21082,7 @@ MonoBehaviour:
     dialogueText: 'On the scroll is the painting that he was working on the first
       day you met.
 
-      It is the same as it was that day apart from a single
-      change.
+      It is the same as it was that day apart from a single change.
 
 '
     choice1: 
@@ -21775,8 +21774,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: The garden is peaceful, Fen swings her sword at the calm air, slicing
+      through it cleanly.
     choice1: 
     response1: 
     affection1: 0
@@ -21808,8 +21808,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Fen
+    dialogueText: "Your Honour. You are lucky I didn\u2019t mistake you for a sparring
+      dummy,  approaching me from behind like that.  "
     choice1: 
     response1: 
     affection1: 0
@@ -21841,8 +21842,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: She sheathes the blade with a casual spin and steps closer.
     choice1: 
     response1: 
     affection1: 0
@@ -21874,8 +21875,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Fen
+    dialogueText: "You have come to see me more often lately. Should I be suspicious\u2026
+      or hopeful?"
     choice1: 
     response1: 
     affection1: 0
@@ -21907,8 +21909,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: She walks a slow circle around you, measured and deliberate.
     choice1: 
     response1: 
     affection1: 0
@@ -21940,8 +21942,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Fen
+    dialogueText: Most in court want the crown, not the person wearing it. I have
+      seen it in their eyes.
     choice1: 
     response1: 
     affection1: 0
@@ -21973,8 +21976,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Fen
+    dialogueText: "But I have fought for your banner since I could lift a blade.
+      What I want now\u2026 is more than a title.  "
     choice1: 
     response1: 
     affection1: 0
@@ -22006,8 +22010,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: She stops just behind your shoulder.
     choice1: 
     response1: 
     affection1: 0
@@ -22039,8 +22043,45 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Fen
+    dialogueText: "I\u2019ve faced armies, beasts, traitors... And yet this, you,
+      feels like the real risk. "
+    choice1: You talk like someone making a proposal.
+    response1: "Would you prefer I knelt? I\u2019m better on one knee after a battle
+      than before a wedding.  "
+    affection1: 0
+    choice2: You speak of risk. Are you afraid of being chosen?
+    response2: I have never feared being chosen. Only of being seen too clearly.
+    affection2: 0
+    choice3: Marriage is a sacred vow. Are you ready to put down the sword for it?
+    response3: I would sheath it, not abandon it. I will not trade steel for silence. 
+      If that is what you seek, I am not your bride.
+    affection3: 0
+    choice4: "\u2026"
+    response4: 'Still testing my patience or enjoying my voice?  '
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: "She moves to a bench beneath a plum tree. It\u2019s an oddly quiet
+      moment."
     choice1: 
     response1: 
     affection1: 0
@@ -22072,8 +22113,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Fen
+    dialogueText: "My mother used to say I would never marry. Said I was too wild.
+      Too much like\u2026 him."
     choice1: 
     response1: 
     affection1: 0
@@ -22105,8 +22147,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: "Her jaw flexes, then relaxes. She doesn\u2019t meet your gaze."
     choice1: 
     response1: 
     affection1: 0
@@ -22138,8 +22180,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Fen
+    dialogueText: 'But he is not around anymore. Have not seen him since I was younger.
+      One day he raised his hand to me, and then never raised anything again. '
     choice1: 
     response1: 
     affection1: 0
@@ -22171,8 +22214,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: She finally looks at you, one brow lifted.
     choice1: 
     response1: 
     affection1: 0
@@ -22204,8 +22247,44 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Fen
+    dialogueText: 'Funny how life works, is it not? '
+    choice1: What happened that day?
+    response1: 'I taught him what happens when you raise your hand to a soldier. 
+      He never got the chance to try again. '
+    affection1: 0
+    choice2: "You\u2026 killed him?"
+    response2: 'I said he disappeared. You said the rest.  '
+    affection2: 0
+    choice3: You survived something few speak of. I admire that.
+    response3: "Admiration\u2019s not what I expected from that story. But thank
+      you."
+    affection3: 0
+    choice4: "\u2026"
+    response4: 'Ah. Struck speechless. Most are, when they realize I bite harder 
+      than I bark. '
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: She stands again, closer now, her expression unreadable.
     choice1: 
     response1: 
     affection1: 0
@@ -22237,8 +22316,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Fen
+    dialogueText: "I will not beg for marriage. I will not play coy, or sweet, or
+      anything I\u2019m not."
     choice1: 
     response1: 
     affection1: 0
@@ -22270,8 +22350,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Fen
+    dialogueText: "But if you  choose me\u2026 I will be the sharpest sword in your
+      hand, and the last warmth you know before sleep.  "
     choice1: 
     response1: 
     affection1: 0
@@ -22303,8 +22384,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: She steps back, and just for a moment, her voice softens.
     choice1: 
     response1: 
     affection1: 0
@@ -22336,8 +22417,46 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Fen
+    dialogueText: Think carefully, Your Honour. I only offer this once. And I never
+      make promises I will not keep.
+    choice1: Then I will think carefully. But I am leaning toward yes.
+    response1: "Good. Just remember, I don\u2019t wear veils. What you see is what
+      you get.  "
+    affection1: 0
+    choice2: "That is\u2026 a compelling offer. You\u2019re unlike anyone I have
+      known."
+    response2: 'I will take that as a compliment. Or a warning.  '
+    affection2: 0
+    choice3: You may be too dangerous for me, Fen.
+    response3: 'Then may you find safety in boredom. I was never meant for cages. '
+    affection3: 0
+    choice4: "\u2026"
+    response4: 'Keep watching me with that look, and I will start thinking you have
+      already chosen. '
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: She gives a sharp, respectful bow, still soldier-like, but slower
+      this time.
     choice1: 
     response1: 
     affection1: 0
@@ -22369,8 +22488,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Fen
+    dialogueText: 'I will return to training. Or waiting. Or wondering what answer
+      your silence hides. '
     choice1: 
     response1: 
     affection1: 0
@@ -22402,107 +22522,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: She leaves without looking back, her cloak catching the wind like
+      a banner.
     choice1: 
     response1: 
     affection1: 0
