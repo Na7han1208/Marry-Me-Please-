@@ -14,6 +14,7 @@ public class EndScreenManager : MonoBehaviour
     [SerializeField] private GameObject[] characters;
     [SerializeField] private GameObject background;
     [SerializeField] private GameObject returnButton;
+    [SerializeField] private RectTransform scrollContent;
 
     [Header("End Backgrounds")]
     [SerializeField] private Sprite mingEndingBG;
@@ -26,14 +27,14 @@ public class EndScreenManager : MonoBehaviour
     [SerializeField] private Sprite noBitchesEndingBG;
 
     [Header("End Text")]
-    [TextArea] [SerializeField] private String mingEndingTxt;
-    [TextArea] [SerializeField] private String theoEndingTxt;
-    [TextArea] [SerializeField] private String zihanEndingTxt;
-    [TextArea] [SerializeField] private String fenEndingTxt;
-    [TextArea] [SerializeField] private String yilinEndingTxt;
-    [TextArea] [SerializeField] private String yukiEndingTxt;
-    [TextArea] [SerializeField] private String jinhuiEndingTxt;
-    [TextArea] [SerializeField] private String noBitchesEndingTxt;
+    [TextArea][SerializeField] private String mingEndingTxt;
+    [TextArea][SerializeField] private String theoEndingTxt;
+    [TextArea][SerializeField] private String zihanEndingTxt;
+    [TextArea][SerializeField] private String fenEndingTxt;
+    [TextArea][SerializeField] private String yilinEndingTxt;
+    [TextArea][SerializeField] private String yukiEndingTxt;
+    [TextArea][SerializeField] private String jinhuiEndingTxt;
+    [TextArea][SerializeField] private String noBitchesEndingTxt;
 
     void Start()
     {
@@ -42,13 +43,13 @@ public class EndScreenManager : MonoBehaviour
 
         SaveData data = SaveLoadManager.Instance.LoadGame();
 
-        if (data.mingAffinity > 50) characters[0].SetActive(true);
-        if (data.theodoreAffinity > 50) characters[1].SetActive(true);
-        if (data.zihanAffinity > 50) characters[2].SetActive(true);
-        if (data.fenAffinity > 50) characters[3].SetActive(true);
-        if (data.yilinAffinity > 50) characters[4].SetActive(true);
-        if (data.yukiAffinity > 50) characters[5].SetActive(true);
-        if (data.jinhuiAffinity > 50) characters[6].SetActive(true);
+        if (data.mingAffinity >= 0 || data.jinhuiAffinity.IsUnityNull()) characters[0].SetActive(true);
+        if (data.theodoreAffinity >= 0 || data.jinhuiAffinity.IsUnityNull()) characters[1].SetActive(true);
+        if (data.zihanAffinity >= 0 || data.jinhuiAffinity.IsUnityNull()) characters[2].SetActive(true);
+        if (data.fenAffinity >= 0 || data.jinhuiAffinity.IsUnityNull()) characters[3].SetActive(true);
+        if (data.yilinAffinity >= 0 || data.jinhuiAffinity.IsUnityNull()) characters[4].SetActive(true);
+        if (data.yukiAffinity >= 0 || data.jinhuiAffinity.IsUnityNull()) characters[5].SetActive(true);
+        if (data.jinhuiAffinity >= 0 || data.jinhuiAffinity.IsUnityNull()) characters[6].SetActive(true);
 
         if (playerGetsNoBitches(characters))
         {
@@ -154,21 +155,21 @@ public class EndScreenManager : MonoBehaviour
         }
 
         returnButton.SetActive(true);
-        float scrollSpeed = 60f;
-        float endOffset = 100f;
 
-        RectTransform rt = GetComponent<RectTransform>();
+        float scrollSpeed = 45f;
+        float startOffset = -500f;
+        float endOffset = 100f;  
 
-        // Start position: below the screen
-        rt.anchoredPosition = new Vector2(rt.anchoredPosition.x, -Screen.height);
+        scrollContent.anchoredPosition = new Vector2(
+            scrollContent.anchoredPosition.x,
+            -Screen.height - startOffset
+        );
 
-        // Calculate target position: above the screen
-        float targetY = Screen.height + rt.rect.height + endOffset;
+        float targetY = Screen.height + scrollContent.rect.height + endOffset;
 
-        // Scroll upward
-        while (rt.anchoredPosition.y < targetY)
+        while (scrollContent.anchoredPosition.y < targetY)
         {
-            rt.anchoredPosition += Vector2.up * scrollSpeed * Time.deltaTime;
+            scrollContent.anchoredPosition += Vector2.up * scrollSpeed * Time.deltaTime;
             yield return null;
         }
     }

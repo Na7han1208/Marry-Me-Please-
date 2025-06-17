@@ -364,7 +364,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 885, y: 153}
+  m_AnchoredPosition: {x: 885, y: 1162}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &196601451
@@ -414,8 +414,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.9
-  m_fontSizeBase: 28.9
+  m_fontSize: 46.68
+  m_fontSizeBase: 46.68
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -452,7 +452,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -359.943, y: -72.40713, z: 101.52869, w: -601.6105}
+  m_margin: {x: -686.16925, y: -72.40713, z: 101.52869, w: -601.6105}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -643,14 +643,15 @@ MonoBehaviour:
   - {fileID: 972400477}
   background: {fileID: 880407316}
   returnButton: {fileID: 96743221}
-  mingEndingBG: {fileID: 0}
-  theoEndingBG: {fileID: 0}
-  zihanEndingBG: {fileID: 0}
-  fenEndingBG: {fileID: 0}
-  yilinEndingBG: {fileID: 0}
-  yukiEndingBG: {fileID: 0}
-  jinhuiEndingBG: {fileID: 0}
-  noBitchesEndingBG: {fileID: 0}
+  scrollContent: {fileID: 196601450}
+  mingEndingBG: {fileID: -5018656372462927600, guid: bfb8e1e10ab012e4cb0f4fe4969369b8, type: 3}
+  theoEndingBG: {fileID: 6530677590319311546, guid: 6572cf450cd24bf44b1922cb09b6a219, type: 3}
+  zihanEndingBG: {fileID: -9150547322243688836, guid: 8ff1c8ac139fba14aa7b8cd88c53af2b, type: 3}
+  fenEndingBG: {fileID: -6040475183877375064, guid: 33e150ee73107ed4f8fa67c3cc214442, type: 3}
+  yilinEndingBG: {fileID: 6585797548448984796, guid: 627e500b0df9c0c4c9f347781eb31f53, type: 3}
+  yukiEndingBG: {fileID: -3873219731590889277, guid: 70bf83ade5b1a7a4b9b9d47fa39f52e9, type: 3}
+  jinhuiEndingBG: {fileID: 9025519982997913459, guid: 550ce8bd403cc534687e1a8fcb8c64cc, type: 3}
+  noBitchesEndingBG: {fileID: -3131839073670094031, guid: 31a331b82d3f7bd45b49887f52a0b7a9, type: 3}
   mingEndingTxt: "Ming found a scroll hidden at the back of the study.\r\n\r\nNot
     a scroll depicting their love for you. Those were found in abundance. \r\n\r\nThis
     peculiar scroll detailed the start of the Chance War. The story went as follows:\r\n\r\nA
@@ -819,8 +820,11 @@ MonoBehaviour:
     not only the halls of the palace but the chambers of your heart. Each brush of
     his skin against yours told the story his entire being spoke...\r\n\r\nThe beauty
     in each stroke on the canvas was from him, yet the beauty in him was from you.\r"
-  noBitchesEndingTxt: You got absolutely no bitches. Not even one. Just zero bitches,
-    deal with that. Can't even get bitches in a dating sim, smh.
+  noBitchesEndingTxt: Unfortunately due to your terrible personilaty nobody wanted
+    to marry you. The war persisted. You achieved nothing. In an environment where
+    suitors were thirsting after you, you achieved the truly unbelievable achievement
+    of scaring them all away. Now you get to go back to your throne, alone, to live
+    out the rest of your sad lonely life.
 --- !u!4 &466999472
 Transform:
   m_ObjectHideFlags: 0
@@ -1082,8 +1086,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -8217489540088475392, guid: 0e5eec891ecddd2418be0b8b9e77978f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1117,7 +1121,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &880407317
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1157,7 +1161,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 1645236577875321439, guid: 8c26855b70c882645b7546f06693526f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1496,7 +1500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8045002839287462340, guid: f59e9fe94e8a249428281bb9a8772180, type: 3}
+  m_Sprite: {fileID: -779577068393202755, guid: f37f4d0c64f67b14ba18bb03ccb65b32, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

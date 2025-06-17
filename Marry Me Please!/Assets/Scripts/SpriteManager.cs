@@ -163,7 +163,7 @@ public class SpriteManager : MonoBehaviour
                     case 6: return yukiIrritated;
                     case 7: return yukiTerror;
                     case 8: return yukiSmug;
-                    default: return null;
+                    default: return yukiHappy;
                 }                              
                 case "Theodore":
                 switch(mood){

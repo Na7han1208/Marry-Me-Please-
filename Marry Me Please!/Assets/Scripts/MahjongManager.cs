@@ -198,6 +198,7 @@ public class MahjongManager : MonoBehaviour
         AudioManager.Instance.Play("Correct");
         if (PlayerPrefs.GetInt("RouteFromMenu") == 0)
         {
+            /*
             SaveData existingData = SaveLoadManager.Instance.LoadGame();
             SaveData saveData = new SaveData();
 
@@ -212,10 +213,11 @@ public class MahjongManager : MonoBehaviour
             saveData.theodoreAffinity = existingData.theodoreAffinity + 8;
             saveData.zihanAffinity = existingData.zihanAffinity + 8;
             SaveLoadManager.Instance.SaveGame(saveData);
-
+            */
             yield return new WaitForSeconds(3f);
             AudioManager.Instance.StopAll();
             SceneManager.LoadScene("Main");
+            
         }
         else
         {
