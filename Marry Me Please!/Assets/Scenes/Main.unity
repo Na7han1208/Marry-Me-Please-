@@ -25454,7 +25454,8 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: thought
-    dialogueText: 
+    dialogueText: You grab the strange bow and arrow, and get ready to shoot your
+      shot.
     choice1: 
     response1: 
     affection1: 0
