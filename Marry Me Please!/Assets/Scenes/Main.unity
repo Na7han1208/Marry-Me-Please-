@@ -17440,31 +17440,91 @@ MonoBehaviour:
       If you\u2019ll allow it."
     choice1: "Then stay. I\u2019ll make room."
     response1: "Then I will, Your Excellency... and I won\u2019t spill a thing."
-    affection1: 0
+    affection1: 6
     choice2: "Don\u2019t ask for permission."
     response2: S-Sorry, but thank you... Your Excellency.
-    affection2: 0
+    affection2: -2
     choice3: You never needed permission.
     response3: "Then I suppose I\u2019ll start acting like I belong."
-    affection3: 0
+    affection3: 4
     choice4: ...
     response4: "Then I\u2019ll wait. Even if your silence means no."
     affection4: 0
     choiceMethod1:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     choiceMethod2:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     choiceMethod3:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 8
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     choiceMethod4:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -17673,7 +17733,7 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -18015,10 +18075,34 @@ MonoBehaviour:
         m_Calls: []
     methodOnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnEnd:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - dialogueIndex: 0
     characterName: thought
     dialogueText: "You follow Yuki\u2019s eyes and see that a piece of the broken
@@ -18461,10 +18545,34 @@ MonoBehaviour:
         m_Calls: []
     methodOnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnEnd:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - dialogueIndex: 0
     characterName: thought
     dialogueText: "Yuki continues laughing while you release the breath you did not
@@ -18642,14 +18750,14 @@ MonoBehaviour:
       do you think I stay looking so young?
 
 '
-    affection1: 0
+    affection1: -3
     choice2: As much as I would like to tell you, Yuki, my title forbids it.
     response2: The fact that you have done something that is worth telling is enough
       for me.
-    affection2: 0
+    affection2: 2
     choice3: Ridiculous situations happen quite constantly to me.
     response3: They definitely make life more interesting, Your Brilliance.
-    affection3: 0
+    affection3: 4
     choice4: "\u2026"
     response4: Do not feel pressured to answer, Your Brilliance. I have done enough
       ridiculous things for the both of us.
@@ -18662,13 +18770,49 @@ MonoBehaviour:
         m_Calls: []
     choiceMethod3:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     choiceMethod4:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 8
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -18734,10 +18878,34 @@ MonoBehaviour:
         m_Calls: []
     methodOnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 8
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnEnd:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - dialogueIndex: 0
     characterName: thought
     dialogueText: You could not help but shake your head at his silliness.
@@ -18965,16 +19133,52 @@ MonoBehaviour:
         m_Calls: []
     choiceMethod2:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     choiceMethod3:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     choiceMethod4:
       m_PersistentCalls:
         m_Calls: []
     methodOnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -19256,22 +19460,34 @@ MonoBehaviour:
     choice1: 'I assume you knew the previous emperor somehow. Connections can get
       you many places. '
     response1: Not as many as you think, Your Brilliancy.
-    affection1: 0
+    affection1: -7
     choice2: 'You seem like a hard worker with a positive attitude. That is reason
       enough. '
     response2: 'Thank you, Your Brilliance!
 
 '
-    affection2: 0
+    affection2: 5
     choice3: I am not as interested as you might think.
     response3: "I\u2019ll still tell you, Your Brilliance."
-    affection3: 0
+    affection3: 3
     choice4: "\u2026"
     response4: "Well, I guess I\u2019ll tell you then. "
     affection4: 0
     choiceMethod1:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     choiceMethod2:
       m_PersistentCalls:
         m_Calls: []
@@ -19283,7 +19499,19 @@ MonoBehaviour:
         m_Calls: []
     methodOnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -19531,16 +19759,16 @@ MonoBehaviour:
     response1: "Alright, Your Brilliance. I wanted to see if China\u2019s future
       ruler is more open to making this world a better place than most of the people
       I have met are. "
-    affection1: 0
+    affection1: 4
     choice2: "You seem like a genuine person. Let me guess\u2026 You want to spread
       your love for tea on a larger scale?"
     response2: "You are quite humourous, Your Brilliance. I wanted to see if China\u2019s
       future ruler is more open to making this world a better place than most of
       the people I have met are. I am impressed with what I have seen so far."
-    affection2: 0
+    affection2: 6
     choice3: I am no longer interested.
     response3: Alright then, Your Brilliance.
-    affection3: 0
+    affection3: -2
     choice4: "\u2026"
     response4: "Alright then, Your Brilliance. I wanted to see if China\u2019s future
       ruler is more open to making this world a better place than most of the people
@@ -19551,16 +19779,52 @@ MonoBehaviour:
         m_Calls: []
     choiceMethod2:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 8
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     choiceMethod3:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     choiceMethod4:
       m_PersistentCalls:
         m_Calls: []
     methodOnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -19594,7 +19858,19 @@ MonoBehaviour:
         m_Calls: []
     methodOnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -19806,13 +20082,13 @@ MonoBehaviour:
     dialogueText: Are any of us truly here if we are not paying attention?
     choice1: I have no idea what that means.
     response1: I am not sure of what anything means, Your Grace.
-    affection1: 0
+    affection1: 3
     choice2: That was quite beautiful.
     response2: Thank you, Your Grace.
-    affection2: 0
+    affection2: 5
     choice3: Just answer my question.
     response3: I, too, have many questions that need answering, Your Grace.
-    affection3: 0
+    affection3: -8
     choice4: "\u2026"
     response4: I also love silence, Your Grace.
     affection4: 0
@@ -19821,7 +20097,19 @@ MonoBehaviour:
         m_Calls: []
     choiceMethod2:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     choiceMethod3:
       m_PersistentCalls:
         m_Calls: []
@@ -20054,16 +20342,16 @@ MonoBehaviour:
     choice1: Royal Painter Jinhui, do you spend your time alone because you think
       that you are above the rest of us?
     response1: I do not think of others enough to have such thoughts, Your Grace.
-    affection1: 0
+    affection1: -3
     choice2: I heard you like to spend most of your time alone. Why is that?
     response2: 'Whilst in solitude, I can create to the best of my ability, Your
       Grace. And to create is what I am hired for. I see no reason to do anything
       else. '
-    affection2: 0
+    affection2: 2
     choice3: I have heard you like to spend your days painting in solitude. I admire
       your dedication to your craft.
     response3: I admire your empathy, Your Grace.
-    affection3: 0
+    affection3: 4
     choice4: "\u2026\r\n"
     response4: Silence is beautiful, Your Grace.
     affection4: 0
@@ -20081,7 +20369,19 @@ MonoBehaviour:
         m_Calls: []
     methodOnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -20193,15 +20493,15 @@ MonoBehaviour:
     choice1: I think I admire you just as much as your paintings, Jinhui. That is
       a noble goal.
     response1: Thank you, Your Grace.
-    affection1: 0
+    affection1: 1
     choice2: I must admit, that is not my ultimate goal.
     response2: I see, Your Grace.
-    affection2: 0
+    affection2: 5
     choice3: That is a noble goal that you should try to achieve, even if not through
       a marriage with me.
     response3: 'You might be right, Your Grace. But I would prefer it if I could
       do it alongside someone just and fair. '
-    affection3: 0
+    affection3: -6
     choice4: "\u2026"
     response4: I stand by this goal, Your Grace.
     affection4: 0
@@ -20210,16 +20510,52 @@ MonoBehaviour:
         m_Calls: []
     choiceMethod2:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     choiceMethod3:
       m_PersistentCalls:
         m_Calls: []
     choiceMethod4:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -20252,7 +20588,19 @@ MonoBehaviour:
         m_Calls: []
     methodOnStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1649142608}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: ChangeSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     methodOnEnd:
       m_PersistentCalls:
         m_Calls: []
