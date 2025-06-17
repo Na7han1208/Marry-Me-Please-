@@ -32,9 +32,11 @@ public class ArcheryManager : MonoBehaviour
     private Canvas canvas;
 
     private bool isCharging = false;
+    private bool isWaitingForMouseRelease = false;
+    private bool isShooting = false;
+    private bool isAllowingHits = false; 
     private float holdTimer = 0f;
     private float jitterTimer = 0f;
-
     private Vector3 targetJitterPos;
 
     void Start()
@@ -55,7 +57,22 @@ public class ArcheryManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (isShooting)
+            return;
+
+        if (isWaitingForMouseRelease)
+        {
+            if (!Input.GetMouseButton(0))
+            {
+                isWaitingForMouseRelease = false;
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        if (Input.GetMouseButtonDown(0) && !isCharging)
         {
             isCharging = true;
             holdTimer = 0f;
@@ -73,19 +90,73 @@ public class ArcheryManager : MonoBehaviour
 
         if (isCharging && Input.GetMouseButtonUp(0))
         {
+            isCharging = false;
+            cursorImage.gameObject.SetActive(false);
+            isWaitingForMouseRelease = true;
+
             if (holdTimer >= holdTimeRequired)
             {
-                AudioManager.Instance.Play("BowLoad");
-                TryShootAtButton();
+                StartCoroutine(HandleShot());
             }
             else
             {
                 Debug.Log("Released too early.");
-                //Some kind of feedback other than console, maybe a sound or something ****************
+                // ***** ADD SOUND
             }
+        }
+    }
 
-            isCharging = false;
-            cursorImage.gameObject.SetActive(false);
+    IEnumerator HandleShot()
+    {
+        isShooting = true;
+        isAllowingHits = true; // allow scoring only in this window
+
+        AudioManager.Instance.Play("BowLoad");
+
+        shotsRemaining--;
+
+        shotsRemainingText.text = new string('I', shotsRemaining);
+
+        yield return new WaitForSeconds(0.1f); // slight sync delay
+
+        PointerEventData pointerData = new PointerEventData(eventSystem)
+        {
+            position = cursorImage.position
+        };
+
+        List<RaycastResult> results = new List<RaycastResult>();
+        raycaster.Raycast(pointerData, results);
+
+        results.Sort((a, b) => b.depth.CompareTo(a.depth));
+
+        bool hit = false;
+
+        foreach (var result in results)
+        {
+            Button button = result.gameObject.GetComponent<Button>();
+            if (button != null)
+            {
+                button.onClick.Invoke();
+                SpawnHitmarker(cursorImage.position);
+                AudioManager.Instance.Play("ArrowHit");
+                hit = true;
+                break;
+            }
+        }
+
+        if (!hit)
+        {
+            Debug.Log("Missed all buttons.");
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        isAllowingHits = false; // block further scoring
+        isShooting = false;
+
+        if (shotsRemaining <= 0)
+        {
+            EndGame();
         }
     }
 
@@ -93,14 +164,12 @@ public class ArcheryManager : MonoBehaviour
     {
         jitterTimer += Time.deltaTime;
 
-        // Update jitter target periodically
         if (jitterTimer >= 1f / jitterSpeed)
         {
             SetNewJitterTarget();
             jitterTimer = 0f;
         }
 
-        // Smooth movement toward the jittered position
         Vector2 currentPos = cursorImage.anchoredPosition;
 
         Vector2 localTarget;
@@ -109,7 +178,7 @@ public class ArcheryManager : MonoBehaviour
             targetJitterPos,
             canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : canvas.worldCamera,
             out localTarget
-        ); //under no circumstances should anyone touch this code, i works, how? idk, but it does
+        );
 
         Vector2 smoothPos = Vector2.Lerp(currentPos, localTarget, Time.deltaTime * cursorSmoothSpeed);
         cursorImage.anchoredPosition = smoothPos;
@@ -125,59 +194,25 @@ public class ArcheryManager : MonoBehaviour
         targetJitterPos.y = Mathf.Clamp(targetJitterPos.y, 0, Screen.height);
     }
 
-    void TryShootAtButton()
-    {
-        shotsRemaining--;
-        String text = "";
-        for (int i = 0; i < shotsRemaining; i++)
-        {
-            text += "I";
-        }
-        shotsRemainingText.text = text;
-        if (shotsRemaining <= 0)
-        {
-            endGame();
-            return;
-        }
-        PointerEventData pointerData = new PointerEventData(eventSystem)
-        {
-            position = cursorImage.position
-        };
-
-        List<RaycastResult> results = new List<RaycastResult>();
-        raycaster.Raycast(pointerData, results);
-
-        // Sort by depth
-        results.Sort((a, b) => b.depth.CompareTo(a.depth)); //yeah this doesn't work, so pretend the game has rng
-
-        foreach (var result in results)
-        {
-            Button button = result.gameObject.GetComponent<Button>();
-            if (button != null)
-            {
-                button.onClick.Invoke();
-                SpawnHitmarker(cursorImage.position);
-                AudioManager.Instance.Play("ArrowHit");
-                return; // Exit after the first valid hit
-            }
-        }
-        Debug.Log("Missed all buttons.");
-    }
-
+    // only allow scoring during proper shot phase
     public void ChangeScore(int score)
     {
+        if (!isAllowingHits)
+        {
+            return;
+        }
+
         totalScore += score;
-        scoreText.text = totalScore + "";
+        scoreText.text = totalScore.ToString();
     }
 
     void SpawnHitmarker(Vector3 screenPos)
     {
-        if (hitmarkerPrefab == null || hitmarkerParent == null) return;
+        if (hitmarkerPrefab == null || hitmarkerParent == null)
+            return;
 
-        // Instantiate hit marker
         GameObject marker = Instantiate(hitmarkerPrefab, hitmarkerParent);
 
-        // Convert screen position to local canvas position
         Vector2 localPoint;
         RectTransformUtility.ScreenPointToLocalPointInRectangle(
             hitmarkerParent,
@@ -190,51 +225,15 @@ public class ArcheryManager : MonoBehaviour
         rt.anchoredPosition = localPoint;
     }
 
-
-    void endGame()
+    void EndGame()
     {
-        //add affinity
-        if (totalScore >= 400)
-        {
-            SaveData existingData = SaveLoadManager.Instance.LoadGame();
-            SaveData saveData = new SaveData();
-
-            saveData.currentLine = existingData.currentLine;
-            saveData.playerName = existingData.playerName;
-
-            saveData.mingAffinity = existingData.mingAffinity + 8;
-            saveData.jinhuiAffinity = existingData.jinhuiAffinity + 8;
-            saveData.yilinAffinity = existingData.yilinAffinity + 8;
-            saveData.fenAffinity = existingData.fenAffinity + 8;
-            saveData.yukiAffinity = existingData.yukiAffinity + 8;
-            saveData.theodoreAffinity = existingData.theodoreAffinity + 8;
-            saveData.zihanAffinity = existingData.zihanAffinity + 8;
-            SaveLoadManager.Instance.SaveGame(saveData);
-        }
-        else
-        {
-            SaveData existingData = SaveLoadManager.Instance.LoadGame();
-            SaveData saveData = new SaveData();
-
-            saveData.currentLine = existingData.currentLine;
-            saveData.playerName = existingData.playerName;
-
-            saveData.mingAffinity = existingData.mingAffinity - 8;
-            saveData.jinhuiAffinity = existingData.jinhuiAffinity - 8;
-            saveData.yilinAffinity = existingData.yilinAffinity - 8;
-            saveData.fenAffinity = existingData.fenAffinity - 8;
-            saveData.yukiAffinity = existingData.yukiAffinity - 8;
-            saveData.theodoreAffinity = existingData.theodoreAffinity - 8;
-            saveData.zihanAffinity = existingData.zihanAffinity - 8;
-            SaveLoadManager.Instance.SaveGame(saveData);
-        }
         StartCoroutine(Continue());
     }
 
     IEnumerator Continue()
     {
         yield return new WaitForSeconds(3);
-        //return or continue
+
         if (PlayerPrefs.GetInt("RouteFromMenu") == 1)
         {
             SceneManager.LoadScene("MainMenu");

@@ -12,9 +12,9 @@ public class BonusContentManager : MonoBehaviour
     public List<Button> cardButtons;
     public int currentIndex = 0;
     public Vector2 centerPosition = Vector2.zero;
-    public float spacing = 400f;
+    public float spacing = 500f;
     public float moveDuration = 0.3f;
-    public float sideScale = 0.7f;
+    public float sideScale = 0.3f;
 
     [Header("Card Art")]
     public Sprite[] unlockedArt;
