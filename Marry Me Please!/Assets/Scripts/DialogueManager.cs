@@ -23,6 +23,12 @@ public class DialogueManager : MonoBehaviour
     private int theodoreAffinity = 0;
     private int zihanAffinity = 0;
 
+    [Header("Backgrounds")]
+    [SerializeField] GameObject BlackScreen;
+    [SerializeField] GameObject ThroneRoom;
+    [SerializeField] GameObject Study;
+    [SerializeField] GameObject Garden;
+
     [Header("UI References")]
     public TMP_Text characterNameText;
     public Image characterSprite;
@@ -89,7 +95,6 @@ public class DialogueManager : MonoBehaviour
         }
 
         ShowNextDialogue();
-        StartCoroutine(AutoSave(20f));
     }
 
     void Update()
@@ -164,7 +169,7 @@ public class DialogueManager : MonoBehaviour
             characterNameText.text = line.characterName;
         }
 
-        if (line.characterName == "thought")
+        if (line.characterName.Trim() == "thought")
         {
             NameBox.SetActive(false);
             line.dialogueText = "<I>" + line.dialogueText + "</I>";
@@ -350,7 +355,7 @@ public class DialogueManager : MonoBehaviour
 
     public void ChangeSprite(int moodIndex)
     {
-        characterSprite.sprite = spriteManager.changeSprite(moodIndex, dialogueLines[currentLine].characterName);
+        characterSprite.sprite = spriteManager.changeSprite(moodIndex, dialogueLines[currentLine].characterName.Trim());
         Debug.Log("Change Sprite Called:\nMoodIndex:\t" + moodIndex + "Character Name:\t" + dialogueLines[currentLine].characterName);
     }
 
@@ -412,24 +417,34 @@ public class DialogueManager : MonoBehaviour
         Debug.Log(saveData.currentLine + " saved.");
     }
 
-    private IEnumerator AutoSave(float delay)
-    {
-        while (true)
-        {
-            SaveDialogueState();
-            yield return new WaitForSeconds(delay);
-        }
-    }
-
     public void callShowBanner(int index)
     {
         StartCoroutine(showBanner(index));
     }
 
-    public void loadScene(int index)
-    {
-        MainManager mainManager = new MainManager();
-        mainManager.loadBackground(index);
+    public void ChangeBackground(int levelIndex){
+        /*
+            LEVEL INDEX
+            0 - BLack screen
+            1 - Throne room
+            2 - Study
+            3 - Garden
+        */
+
+        //Make sure all other rooms are inactive
+
+        BlackScreen.SetActive(false);
+            ThroneRoom.SetActive(false);               
+            Garden.SetActive(false);             
+            Study.SetActive(false);              
+
+            //Load parsed room
+            switch(levelIndex){
+                case 0: BlackScreen.SetActive(true);        break;
+                case 1: ThroneRoom.SetActive(true);         break;
+                case 2: Study.SetActive(true);              break;
+                case 3: Garden.SetActive(true);             break;
+            }
     }
 
     public IEnumerator showBanner(int index)

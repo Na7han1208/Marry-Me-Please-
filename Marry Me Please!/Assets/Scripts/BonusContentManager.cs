@@ -40,15 +40,17 @@ public class BonusContentManager : MonoBehaviour
         if (PlayerPrefs.GetInt("JinhuiUnlocked") == 1) cardButtons[5].GetComponent<Image>().sprite = unlockedArt[5];
         if (PlayerPrefs.GetInt("YilinUnlocked") == 1) cardButtons[6].GetComponent<Image>().sprite = unlockedArt[6];
 
-        if (PlayerPrefs.GetInt("3CMUnlocked") == 1) cardButtons[7].GetComponent<Image>().sprite = unlockedArt[7];
-        if (PlayerPrefs.GetInt("ArcheryUnlocked") == 1) cardButtons[8].GetComponent<Image>().sprite = unlockedArt[8];
-        if (PlayerPrefs.GetInt("MahjongUnlocked") == 1) cardButtons[9].GetComponent<Image>().sprite = unlockedArt[9];
+        cardButtons[7].GetComponent<Image>().sprite = unlockedArt[7];
+        cardButtons[8].GetComponent<Image>().sprite = unlockedArt[8];
+        cardButtons[9].GetComponent<Image>().sprite = unlockedArt[9];
 
         RepositionCardsImmediate();
     }
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            returnToMenu();
         if (isAnimating) return;
 
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
@@ -137,7 +139,7 @@ public class BonusContentManager : MonoBehaviour
         isAnimating = false;
     } //I am shocked and flabbergasted this method works, so don't touch
 
-    void RepositionCardsImmediate() 
+    void RepositionCardsImmediate()
     {
         for (int i = 0; i < cardButtons.Count; i++)
         {
@@ -196,6 +198,10 @@ public class BonusContentManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("RouteFromMenu", 1);
         SceneManager.LoadScene("Mahjong");
+    }
+
+    public void returnToMenu(){
+        SceneManager.LoadScene("MainMenu");
     }
 }
 

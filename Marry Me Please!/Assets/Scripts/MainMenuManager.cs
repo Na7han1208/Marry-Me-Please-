@@ -62,6 +62,11 @@ public class MainMenuManager : MonoBehaviour
         }
     }
 
+    public void BonusContent()
+    {
+        SceneManager.LoadScene("BonusContent");
+    }
+
     public void OpenSettings()
     {
         SceneManager.LoadScene("Settings");

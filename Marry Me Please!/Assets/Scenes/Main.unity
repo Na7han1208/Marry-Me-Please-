@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 71192241}
   - component: {fileID: 71192243}
   - component: {fileID: 71192242}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: CurrentCharacter (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -646,10 +646,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6687edc3547ab3418cb1631a354d965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BlackScreen: {fileID: 0}
-  ThroneRoom: {fileID: 245789948}
-  Study: {fileID: 1658394674}
-  Garden: {fileID: 1417685107}
 --- !u!4 &216781389
 Transform:
   m_ObjectHideFlags: 0
@@ -1263,7 +1259,7 @@ GameObject:
   - component: {fileID: 701037714}
   - component: {fileID: 701037716}
   - component: {fileID: 701037715}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Debug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1397,7 +1393,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 716799609}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Debug - REMOVE BEFORE BUILD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1465,7 +1461,7 @@ GameObject:
   - component: {fileID: 815592531}
   - component: {fileID: 815592530}
   - component: {fileID: 815592529}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1881,7 +1877,7 @@ GameObject:
   - component: {fileID: 906450905}
   - component: {fileID: 906450907}
   - component: {fileID: 906450906}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: CurrentLine (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2017,7 +2013,7 @@ GameObject:
   - component: {fileID: 1009372550}
   - component: {fileID: 1009372552}
   - component: {fileID: 1009372551}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2056,7 +2052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3509434, g: 0.3509434, b: 0.3509434, a: 1}
+  m_Color: {r: 0.7660377, g: 0.12574577, b: 0.12574577, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2327,7 +2323,7 @@ GameObject:
   - component: {fileID: 1169907061}
   - component: {fileID: 1169907063}
   - component: {fileID: 1169907062}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: CurrentAffinityWithCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3473,7 +3469,7 @@ GameObject:
   - component: {fileID: 1453473293}
   - component: {fileID: 1453473295}
   - component: {fileID: 1453473294}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: CurrentAffinityWithCharacter (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3880,7 +3876,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1583266490}
   - component: {fileID: 1583266491}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: DebugManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3929,7 +3925,7 @@ GameObject:
   - component: {fileID: 1601531095}
   - component: {fileID: 1601531097}
   - component: {fileID: 1601531096}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: CurrentLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8946,6 +8942,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9daee31be99f9394c9f00f31895793da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BlackScreen: {fileID: 726958334}
+  ThroneRoom: {fileID: 245789948}
+  Study: {fileID: 1658394674}
+  Garden: {fileID: 1417685107}
   characterNameText: {fileID: 1368570659}
   characterSprite: {fileID: 372251047}
   dialogueText: {fileID: 1381315267}
@@ -9221,7 +9221,7 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 1649142608}
           m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-          m_MethodName: loadScene
+          m_MethodName: ChangeBackground
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -28727,15 +28727,15 @@ MonoBehaviour:
   theodoreIrritated: {fileID: 8099454293244501538, guid: ca77dfb6c756a984f9964e572e4156d5, type: 3}
   theodoreTerror: {fileID: -5545920007043108997, guid: a7ec31a5056d2b84a885471b2b345f17, type: 3}
   theodoreSmug: {fileID: 8828512870284193607, guid: 9fcef3e172f830342a163832257de327, type: 3}
-  zihanNeutral: {fileID: -9053833119717683007, guid: c89e70618f675b24f9ebe1af5af07719, type: 3}
-  zihanHappy: {fileID: -9053833119717683007, guid: c89e70618f675b24f9ebe1af5af07719, type: 3}
-  zihanSad: {fileID: -7721098912069712815, guid: c23a5274e75887a429ad51d593378448, type: 3}
-  zihanAngry: {fileID: 0}
-  zihanBlushing: {fileID: 1987885564773744848, guid: 472c179bd7bce9c4086238f395f652ce, type: 3}
-  zihanSurprised: {fileID: 0}
-  zihanIrritated: {fileID: 0}
-  zihanTerror: {fileID: 0}
-  zihanSmug: {fileID: -8217489540088475392, guid: 24a3d758707f1ca449846bd47f32d4d9, type: 3}
+  zihanNeutral: {fileID: 5319118002613258254, guid: aebdcb905884e59408d86299c685177b, type: 3}
+  zihanHappy: {fileID: -9053833119717683007, guid: 2acbaa98b8d345049b17079529e14840, type: 3}
+  zihanSad: {fileID: -7721098912069712815, guid: 00abb94dcbf047d47ad7cd08c3a2ca4f, type: 3}
+  zihanAngry: {fileID: -7664034272095910321, guid: bd0372ca508d51c43ace8a39d4167776, type: 3}
+  zihanBlushing: {fileID: 1987885564773744848, guid: 0aea6b04bb1af0442a7ec748a0c244f6, type: 3}
+  zihanSurprised: {fileID: -1892790016615372770, guid: 7af925f85532455468857e8c1e0ec4b5, type: 3}
+  zihanIrritated: {fileID: 9174196469923782341, guid: bc30e80f98b4c0c4e95190d0262189b8, type: 3}
+  zihanTerror: {fileID: -7478123607370120837, guid: 4bbac2a778f537248b1e5cd3933067ba, type: 3}
+  zihanSmug: {fileID: -8217489540088475392, guid: 0e5eec891ecddd2418be0b8b9e77978f, type: 3}
   wu: {fileID: -8802557877359725616, guid: 8160b0393042dd242bec21f3f5799e8a, type: 3}
 --- !u!1 &1651862429
 GameObject:
@@ -28908,6 +28908,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1649142607}
+  - {fileID: 1914230682}
   - {fileID: 696715180}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -29342,7 +29343,7 @@ Canvas:
   m_RenderMode: 1
   m_Camera: {fileID: 1239127111}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -29351,7 +29352,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -69
   m_TargetDisplay: 0
 --- !u!1 &1897026984
 GameObject:
@@ -29364,7 +29365,7 @@ GameObject:
   - component: {fileID: 1897026985}
   - component: {fileID: 1897026987}
   - component: {fileID: 1897026986}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: CurrentCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29513,8 +29514,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914230681}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 482.73343, y: 215.55894, z: -3.9173121}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -61.51291, y: 92.78285, z: -1.6766961}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29522,7 +29523,7 @@ Transform:
   - {fileID: 245789949}
   - {fileID: 1658394675}
   - {fileID: 1417685108}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1714191796}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2083616294
 GameObject:
@@ -29768,5 +29769,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 217618784}
   - {fileID: 1714191796}
-  - {fileID: 1914230682}
   - {fileID: 1333743162}

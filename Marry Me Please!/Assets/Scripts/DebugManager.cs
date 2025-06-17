@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -11,10 +12,15 @@ public class DebugManager : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     void Update()
+    {
+        StartCoroutine(UpdateDebug());
+    }
+
+    IEnumerator UpdateDebug()
     {
         SaveData data = SaveLoadManager.Instance.LoadGame();
         line.text = data.currentLine + "";
@@ -46,5 +52,8 @@ public class DebugManager : MonoBehaviour
                 affinity.text = "n/a";
                 break;
         }
+        yield return new WaitForSeconds(2);
     }
+
+    
 }
