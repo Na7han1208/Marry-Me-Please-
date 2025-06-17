@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System;
+using System.Collections;
 
 public class ArcheryManager : MonoBehaviour
 {
@@ -131,7 +132,8 @@ public class ArcheryManager : MonoBehaviour
         for (int i = 0; i < shotsRemaining; i++)
         {
             text += "I";
-        } shotsRemainingText.text = text;
+        }
+        shotsRemainingText.text = text;
         if (shotsRemaining <= 0)
         {
             endGame();
@@ -226,7 +228,12 @@ public class ArcheryManager : MonoBehaviour
             saveData.zihanAffinity = existingData.zihanAffinity - 8;
             SaveLoadManager.Instance.SaveGame(saveData);
         }
+        StartCoroutine(Continue());
+    }
 
+    IEnumerator Continue()
+    {
+        yield return new WaitForSeconds(3);
         //return or continue
         if (PlayerPrefs.GetInt("RouteFromMenu") == 1)
         {

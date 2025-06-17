@@ -16,6 +16,7 @@ public class MainMenuManager : MonoBehaviour
 
     void Awake()
     {
+        AudioManager.Instance.StopAll();
         //DontDestroyOnLoad(this.gameObject);
         if (!AudioManager.Instance.isPlaying("MainMenuMusic"))
         {

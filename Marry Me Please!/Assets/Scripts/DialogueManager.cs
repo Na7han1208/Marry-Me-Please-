@@ -54,6 +54,28 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
+        //Load background on continue game
+        if (SaveLoadManager.Instance.SaveExists())
+        {
+            currentLine = SaveLoadManager.Instance.LoadGame().currentLine;
+            if (currentLine >= 314)
+            {
+                ChangeBackground(3);
+            }
+            else if (currentLine >= 185)
+            {
+                ChangeBackground(2);
+            }
+            else if (currentLine >= 7)
+            {
+                ChangeBackground(1);
+            }
+            else
+            {
+                ChangeBackground(0);
+            }
+        }
+
         //Hide all banners
         foreach (Image b in Banners)
         {
@@ -457,7 +479,7 @@ public class DialogueManager : MonoBehaviour
     public void loadEndScene()
     {
         AudioManager.Instance.StopAll();
-        SceneManager.LoadScene("End Screen");
+        SceneManager.LoadScene(8);
     }
 }
 
