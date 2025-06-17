@@ -25120,8 +25120,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Wu
+    dialogueText: Your Highness! I hope you have had fruitful conversations today.
     choice1: 
     response1: 
     affection1: 0
@@ -25153,8 +25153,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Wu
+    dialogueText: 'I propose we play a final game. One that helps you narrow down
+      your focus so that you can really shoot your shot. '
     choice1: 
     response1: 
     affection1: 0
@@ -25186,8 +25187,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Wu
+    dialogueText: Can you guess what it is?
     choice1: 
     response1: 
     affection1: 0
@@ -25219,8 +25220,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: ...
     choice1: 
     response1: 
     affection1: 0
@@ -25252,8 +25253,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Wu
+    dialogueText: It is archery! Are my jokes not hilarious?
     choice1: 
     response1: 
     affection1: 0
@@ -25285,8 +25286,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: 'Advisor Wu? '
     choice1: 
     response1: 
     affection1: 0
@@ -25318,8 +25319,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Wu
+    dialogueText: Yes, my child?
     choice1: 
     response1: 
     affection1: 0
@@ -25351,8 +25352,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: Do you promise me you will actually retire after my wedding? You
+      are still working far too hard.
     choice1: 
     response1: 
     affection1: 0
@@ -25384,8 +25386,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: Royal Advisor Wu smiles at you and laughs.
     choice1: 
     response1: 
     affection1: 0
@@ -25417,8 +25419,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Wu
+    dialogueText: I promise, my child. Now, grab this bow and arrow. I can promise
+      it will stop your brain from working far too hard.
     choice1: 
     response1: 
     affection1: 0
@@ -25450,7 +25453,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
+    characterName: thought
     dialogueText: 
     choice1: 
     response1: 
