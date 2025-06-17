@@ -23297,8 +23297,8 @@ MonoBehaviour:
         m_Calls: []
   - dialogueIndex: 0
     characterName: thought
-    dialogueText: 'She turns and walks away silently, before you can even mutter
-      a word.]'
+    dialogueText: She turns and walks away silently, before you can even mutter a
+      word.
     choice1: 
     response1: 
     affection1: 0
@@ -23330,8 +23330,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: 'After Yilin leaves, you see a swoosh of yellow and then suddenly
+      Yuki is sitting right next to you. '
     choice1: 
     response1: 
     affection1: 0
@@ -23363,8 +23364,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yuki
+    dialogueText: Your Brilliance!!
     choice1: 
     response1: 
     affection1: 0
@@ -23396,8 +23397,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: Even after speaking with Yuki on multiple occasions, this man never
+      seems to stop smiling.
     choice1: 
     response1: 
     affection1: 0
@@ -23429,8 +23431,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yuki
+    dialogueText: I was going to have tea with you, Your Brilliance, but I see that
+      Yilin has beaten me to it.
     choice1: 
     response1: 
     affection1: 0
@@ -23462,8 +23465,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He giggles.
     choice1: 
     response1: 
     affection1: 0
@@ -23495,8 +23498,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yuki
+    dialogueText: But that does not mean we still cannot have a bit of fun.
     choice1: 
     response1: 
     affection1: 0
@@ -23528,8 +23531,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: Unfortunately Yuki. I have no time for fun today. I have an important
+      choice to make later on.
     choice1: 
     response1: 
     affection1: 0
@@ -23561,8 +23565,44 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yuki
+    dialogueText: I am well aware, Your Brilliance, but just because something is
+      important does not mean you cannot have fun whilst doing it. I have plenty
+      of fun every time I speak with you.
+    choice1: I appreciate your optimism Yuki.
+    response1: I have an abundance of it to share with you, Your Brilliance!
+    affection1: 0
+    choice2: I am afraid I do not agree with you, Yuki.
+    response2: It is okay, Your Brilliance. You are entitled to your own opinion,
+      even if it is gloomy.
+    affection2: 0
+    choice3: I have fun every time I speak with you as well, Yuki.
+    response3: Thank you, Your Brilliance!
+    affection3: 0
+    choice4: "\u2026"
+    response4: Your Brilliance...
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: Yuki beams at you.
     choice1: 
     response1: 
     affection1: 0
@@ -23594,8 +23634,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yuki
+    dialogueText: It is a beautiful day. I can say that without even looking at the
+      sky.
     choice1: 
     response1: 
     affection1: 0
@@ -23627,8 +23668,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: You laugh. A few days ago, you would have thought Yuki was joking
+      but after getting to know him better you are certain that he is sincere.
     choice1: 
     response1: 
     affection1: 0
@@ -23660,8 +23702,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yuki
+    dialogueText: "You know, Your Brilliance\u2026"
     choice1: 
     response1: 
     affection1: 0
@@ -23693,8 +23735,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yuki
+    dialogueText: When I first came to China as a child, after my parents were gone
+      I asked many people for assistance, none of whom offered it to me.
     choice1: 
     response1: 
     affection1: 0
@@ -23726,8 +23769,14 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yuki
+    dialogueText: 'Just as I was about to give up, Song, my adoptive mother, took
+      me in without hesitation.
+
+      To me, she was like the sun, coming out after
+      a long, cold winter.
+
+'
     choice1: 
     response1: 
     affection1: 0
@@ -23759,8 +23808,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yuki
+    dialogueText: I would like to be that sun for someone.
     choice1: 
     response1: 
     affection1: 0
@@ -23792,8 +23841,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He pauses and looks at you carefully.
     choice1: 
     response1: 
     affection1: 0
@@ -23825,8 +23874,44 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yuki
+    dialogueText: You are certainly my moon. A light that illuminates the path for
+      me, even if it is dark.
+    choice1: I cannot get any closer to you Yuki, out of fear that I may eclipse
+      your light.
+    response1: The closer you get the brighter my light shines.
+    affection1: 0
+    choice2: "You keep on calling me \u2018Your Brilliance\u2019 but the moon only
+      reflects the light from the sun.\r\n"
+    response2: "Yuki: Your Brilliance\u2026"
+    affection2: 0
+    choice3: I apologise for all you went through Yuki.
+    response3: "What I went through led me to you\u2026"
+    affection3: 0
+    choice4: "\u2026"
+    response4: Well, I am glad that I leave you speechless, Your Brilliance.
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: Yuki suddenly starts giggling.
     choice1: 
     response1: 
     affection1: 0
@@ -23858,8 +23943,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yuki
+    dialogueText: "I am glad that you are such a delight, Your Brilliance\u2026"
     choice1: 
     response1: 
     affection1: 0
@@ -23891,8 +23976,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yuki
+    dialogueText: Plan A is much better than Plan B.
     choice1: 
     response1: 
     affection1: 0
@@ -23924,8 +24009,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: What?
     choice1: 
     response1: 
     affection1: 0
@@ -23957,8 +24042,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yuki
+    dialogueText: Nothing, Your Brilliance. Just know that no matter what happens,
+      I will never hurt you.
     choice1: 
     response1: 
     affection1: 0
@@ -23990,8 +24076,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: MC
+    dialogueText: "I am not sure what you are talking about, but thank you\u2026
+      I think?"
     choice1: 
     response1: 
     affection1: 0
@@ -24023,8 +24110,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: Yuki suddenly looks off into the sky.
     choice1: 
     response1: 
     affection1: 0
@@ -24056,8 +24143,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yuki
+    dialogueText: Now that I am looking at it, the sky is actually quite beautiful.
     choice1: 
     response1: 
     affection1: 0
@@ -24089,8 +24176,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yuki
+    dialogueText: My wish for the future is that I get to spend many more peaceful
+      days under this beautiful sky with the person whose beauty rivals it.
     choice1: 
     response1: 
     affection1: 0
@@ -24122,8 +24210,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He looks eagerly at you.
     choice1: 
     response1: 
     affection1: 0
@@ -24155,8 +24243,43 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yuki
+    dialogueText: I will fight for the peace of this land despite the cost, if it
+      might earn me a glimpse of that future.
+    choice1: I will try my best to grant our shared wish, Yuki.
+    response1: "Your Brilliance\u2026"
+    affection1: 0
+    choice2: I do not share your sentiments, Yuki.
+    response2: And I will not force you to, Your Brilliance.
+    affection2: 0
+    choice3: That is a noble of you, Yuki.
+    response3: You inspire me to be noble, Your Brilliance.
+    affection3: 0
+    choice4: "\u2026"
+    response4: No pressure, Your Brilliance.
+    affection4: 0
+    choiceMethod1:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod2:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod3:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceMethod4:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    methodOnEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueIndex: 0
+    characterName: thought
+    dialogueText: Yuki grins at you, this smile somehow more sincere than every other
+      smile he has given you before.
     choice1: 
     response1: 
     affection1: 0
@@ -24188,8 +24311,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: 'Then as suddenly as he arrived, Yuki gets up to leave. '
     choice1: 
     response1: 
     affection1: 0
@@ -24221,8 +24344,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: Yuki
+    dialogueText: I do hope to share another cup of tea with you one day, Your Brilliance.
     choice1: 
     response1: 
     affection1: 0
@@ -24254,8 +24377,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: He walks off.
     choice1: 
     response1: 
     affection1: 0
@@ -24287,8 +24410,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: You look around the garden and find only one person left, standing
+      in the distance, waiting patiently for their turn.
     choice1: 
     response1: 
     affection1: 0
@@ -24320,107 +24444,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
-    choice1: 
-    response1: 
-    affection1: 0
-    choice2: 
-    response2: 
-    affection2: 0
-    choice3: 
-    response3: 
-    affection3: 0
-    choice4: 
-    response4: 
-    affection4: 0
-    choiceMethod1:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod2:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod3:
-      m_PersistentCalls:
-        m_Calls: []
-    choiceMethod4:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnStart:
-      m_PersistentCalls:
-        m_Calls: []
-    methodOnEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueIndex: 0
-    characterName: 
-    dialogueText: 
+    characterName: thought
+    dialogueText: You walk over to them quietly.
     choice1: 
     response1: 
     affection1: 0
